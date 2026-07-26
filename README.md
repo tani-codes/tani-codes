@@ -4,6 +4,10 @@
 
 <br>
 
+<h1 align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=35&duration=2500&pause=800&color=5B8DEF&center=true&vCenter=true&width=900&lines=Tanish+Bandodkar;AI+Engineer;Data+Science+Enthusiast;Software+Developer" />
+</h1>
+
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=24&duration=2800&pause=900&color=5B8DEF&center=true&vCenter=true&width=900&lines=AI+%7C+Data+Science+%7C+Software+Engineering;Building+intelligent+products;Turning+ideas+into+code;Exploring+Machine+Learning+%26+AI">
+AI • Data Science • Software Engineering
 </p>
