@@ -6,18 +6,101 @@ width="1600"
 height="500"
 viewBox="0 0 1600 500">
 
+
 <defs>
 
-<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+<linearGradient id="bg"
+x1="0%"
+y1="0%"
+x2="100%"
+y2="100%">
+
 <stop offset="0%" stop-color="#FFFDF8"/>
 <stop offset="100%" stop-color="#F3EBDD"/>
+
 </linearGradient>
 
+
 <filter id="shadow">
+
 <feGaussianBlur stdDeviation="12"/>
+
 </filter>
 
+
+
+<!-- TEXT REVEAL -->
+
+<clipPath id="nameClip">
+
+<rect x="500" y="115" width="0" height="60">
+
+<animate
+attributeName="width"
+from="0"
+to="430"
+begin="1s"
+dur="3s"
+fill="freeze"/>
+
+</rect>
+
+</clipPath>
+
+
+<clipPath id="dataClip">
+
+<rect x="500" y="190" width="0" height="45">
+
+<animate
+attributeName="width"
+from="0"
+to="260"
+begin="5s"
+dur="2s"
+fill="freeze"/>
+
+</rect>
+
+</clipPath>
+
+
+<clipPath id="aiClip">
+
+<rect x="500" y="235" width="0" height="45">
+
+<animate
+attributeName="width"
+from="0"
+to="300"
+begin="8s"
+dur="2s"
+fill="freeze"/>
+
+</rect>
+
+</clipPath>
+
+
+<clipPath id="devClip">
+
+<rect x="500" y="280" width="0" height="45">
+
+<animate
+attributeName="width"
+from="0"
+to="340"
+begin="11s"
+dur="2s"
+fill="freeze"/>
+
+</rect>
+
+</clipPath>
+
+
 </defs>
+
 
 
 <!-- BACKGROUND -->
@@ -28,14 +111,15 @@ height="500"
 fill="url(#bg)"/>
 
 
+
 <!-- NOTEBOOK SHADOW -->
 
 <rect
-x="390"
-y="65"
-width="820"
-height="330"
-rx="25"
+x="330"
+y="40"
+width="950"
+height="390"
+rx="30"
 fill="#000"
 opacity="0.12"
 filter="url(#shadow)"/>
@@ -45,10 +129,10 @@ filter="url(#shadow)"/>
 <!-- NOTEBOOK -->
 
 <rect
-x="380"
-y="55"
-width="820"
-height="320"
+x="340"
+y="50"
+width="920"
+height="380"
 rx="25"
 fill="#FFFFFF"
 stroke="#E4D8C5"
@@ -58,7 +142,11 @@ stroke-width="3"/>
 
 <!-- SPIRAL -->
 
-<g stroke="#B7AA98" stroke-width="4" fill="none">
+<g
+stroke="#B7AA98"
+stroke-width="4"
+fill="none">
+
 
 <circle cx="420" cy="95" r="8"/>
 <circle cx="420" cy="140" r="8"/>
@@ -73,56 +161,129 @@ stroke-width="3"/>
 
 <!-- PAGE LINES -->
 
-<g stroke="#EEE4D6" stroke-width="2">
+<g
+stroke="#EEE4D6"
+stroke-width="2">
 
-<line x1="470" y1="130" x2="1120" y2="130"/>
-<line x1="470" y1="175" x2="1120" y2="175"/>
-<line x1="470" y1="220" x2="1120" y2="220"/>
-<line x1="470" y1="265" x2="1120" y2="265"/>
-<line x1="470" y1="310" x2="1120" y2="310"/>
+
+<line x1="430" y1="130" x2="1180" y2="130"/>
+<line x1="430" y1="180" x2="1180" y2="180"/>
+<line x1="430" y1="230" x2="1180" y2="230"/>
+<line x1="430" y1="280" x2="1180" y2="280"/>
+<line x1="430" y1="330" x2="1180" y2="330"/>
+
 
 </g>
 
 
 
-<!-- NAME -->
-
-
-
-
-
-<!-- ROLE -->
-
-
-
-
-<!-- CODE CARD -->
-
-<rect
-x="900"
-y="105"
-width="190"
-height="95"
-rx="12"
-fill="#FFF8ED"
-stroke="#E4D8C5"/>
+<!-- TEXT -->
 
 <text
-x="920"
-y="135"
+x="510"
+y="165"
+font-family="cursive"
+font-size="48"
+font-weight="700"
+fill="#2D2A26"
+clip-path="url(#nameClip)">
+
+Tanish Bandodkar
+
+</text>
+
+
+
+<text
+x="510"
+y="225"
+font-family="cursive"
+font-size="20"
+fill="#5C554C"
+clip-path="url(#dataClip)">
+
+DATA ANALYTICS
+
+</text>
+
+
+
+<text
+x="510"
+y="265"
+font-family="cursive"
+font-size="20"
+fill="#5C554C"
+clip-path="url(#aiClip)">
+
+AI / ML ENTHUSIAST
+
+</text>
+
+
+
+<text
+x="510"
+y="305"
+font-family="cursive"
+font-size="20"
+fill="#5C554C"
+clip-path="url(#devClip)">
+
+SOFTWARE DEVELOPER
+
+</text>
+<!-- ================================= -->
+<!-- CODE CARD -->
+<!-- ================================= -->
+
+
+<rect
+
+x="1080"
+
+y="90"
+
+width="190"
+
+height="95"
+
+rx="12"
+
+fill="#FFF8ED"
+
+stroke="#E4D8C5"/>
+
+
+
+<text
+
+x="1100"
+
+y="125"
+
 font-family="monospace"
+
 font-size="14"
+
 fill="#5B8DEF">
 
 model.fit()
 
 </text>
 
+
+
 <text
-x="920"
-y="160"
+
+x="1100"
+
+y="155"
+
 font-family="monospace"
+
 font-size="14"
+
 fill="#6BA368">
 
 accuracy = 98%
@@ -131,47 +292,348 @@ accuracy = 98%
 
 
 
-<!-- AI NETWORK -->
+
+
+<!-- ================================= -->
+<!-- SINGLE AI NETWORK -->
+<!-- ================================= -->
+
 
 <g
-transform="translate(980 255)"
+
+transform="translate(1120 260)"
+
 stroke="#5B8DEF"
+
 stroke-width="2">
 
-<line x1="0" y1="0" x2="55" y2="-35"/>
-<line x1="0" y1="0" x2="55" y2="35"/>
 
-<line x1="55" y1="-35" x2="120" y2="0"/>
-<line x1="55" y1="35" x2="120" y2="0"/>
 
-<circle cx="0" cy="0" r="10" fill="#F4A261"/>
-<circle cx="55" cy="-35" r="8" fill="white"/>
-<circle cx="55" cy="35" r="8" fill="white"/>
-<circle cx="120" cy="0" r="12" fill="#6BA368"/>
+<line
+
+x1="0"
+
+y1="0"
+
+x2="55"
+
+y2="-35"/>
+
+
+
+<line
+
+x1="0"
+
+y1="0"
+
+x2="55"
+
+y2="35"/>
+
+
+
+<line
+
+x1="55"
+
+y1="-35"
+
+x2="120"
+
+y2="0"/>
+
+
+
+<line
+
+x1="55"
+
+y1="35"
+
+x2="120"
+
+y2="0"/>
+
+
+
+<circle
+
+cx="0"
+
+cy="0"
+
+r="10"
+
+fill="#F4A261"/>
+
+
+
+<circle
+
+cx="55"
+
+cy="-35"
+
+r="8"
+
+fill="white"/>
+
+
+
+<circle
+
+cx="55"
+
+cy="35"
+
+r="8"
+
+fill="white"/>
+
+
+
+<circle
+
+cx="120"
+
+cy="0"
+
+r="12"
+
+fill="#6BA368"/>
+
+
 
 </g>
 
 
 
-<!-- GRAPH -->
 
-<g transform="translate(870 300)">
 
-<line x1="0" y1="60" x2="180" y2="60"
+<!-- ================================= -->
+<!-- ANALYTICS GRAPH -->
+<!-- ================================= -->
+
+
+<g
+
+transform="translate(1100 350)">
+
+
+
+<line
+
+x1="0"
+
+y1="60"
+
+x2="170"
+
+y2="60"
+
 stroke="#C8BBA8"/>
 
-<line x1="0" y1="60" x2="0" y2="0"
+
+
+<line
+
+x1="0"
+
+y1="60"
+
+x2="0"
+
+y2="0"
+
 stroke="#C8BBA8"/>
+
+
 
 <polyline
-points="10,50 45,40 80,45 120,20 165,8"
+
+points="10,50 45,40 80,45 120,20 160,10"
+
 fill="none"
+
 stroke="#5B8DEF"
-stroke-width="3"/>
+
+stroke-width="3"
+
+stroke-dasharray="250"
+
+stroke-dashoffset="250">
+
+
+<animate
+
+attributeName="stroke-dashoffset"
+
+from="250"
+
+to="0"
+
+dur="3s"
+
+begin="2s"
+
+fill="freeze"/>
+
+
+</polyline>
+
+
+
+</g>
+<!-- ================================= -->
+<!-- WRITING PENCIL ANIMATION -->
+<!-- ================================= -->
+
+
+<g>
+
+
+<!-- PENCIL PATH -->
+
+<animateTransform
+
+attributeName="transform"
+
+type="translate"
+
+values="
+
+500 145;
+
+850 145;
+
+500 205;
+
+760 205;
+
+500 245;
+
+830 245;
+
+500 285;
+
+880 285
+
+"
+
+keyTimes="
+
+0;
+
+0.25;
+
+0.32;
+
+0.50;
+
+0.57;
+
+0.72;
+
+0.79;
+
+1
+
+"
+
+dur="13s"
+
+fill="freeze"/>
+
+
+
+
+<!-- ================================= -->
+<!-- PENCIL -->
+<!-- TIP TOUCHES TEXT -->
+<!-- ================================= -->
+
+
+<g transform="rotate(-25)">
+
+
+
+<!-- GRAPHITE TIP -->
+
+<polygon
+
+points="0,0 22,-8 22,8"
+
+fill="#333"/>
+
+
+
+<!-- WOOD -->
+
+<polygon
+
+points="22,-8 48,-8 48,8 22,8"
+
+fill="#C49A6A"/>
+
+
+
+<!-- YELLOW BODY -->
+
+<rect
+
+x="48"
+
+y="-8"
+
+width="125"
+
+height="16"
+
+rx="8"
+
+fill="#F4C95D"/>
+
+
+
+<!-- METAL BAND -->
+
+<rect
+
+x="173"
+
+y="-8"
+
+width="8"
+
+height="16"
+
+fill="#B8B8B8"/>
+
+
+
+<!-- ERASER -->
+
+<rect
+
+x="181"
+
+y="-8"
+
+width="22"
+
+height="16"
+
+rx="4"
+
+fill="#E57C7C"/>
+
+
 
 </g>
 
 
+</g>
 
 <!-- ================================= -->
 <!-- COFFEE MUG -->
@@ -179,67 +641,69 @@ stroke-width="3"/>
 
 
 <ellipse
+
 cx="260"
+
 cy="390"
+
 rx="55"
+
 ry="12"
+
 fill="#000"
+
 opacity=".12"/>
 
 
+
 <rect
+
 x="220"
+
 y="310"
+
 width="75"
+
 height="75"
+
 rx="10"
+
 fill="#FFFDF8"
+
 stroke="#D8CCBA"
+
 stroke-width="3"/>
 
 
+
 <rect
+
 x="230"
+
 y="320"
+
 width="55"
+
 height="45"
+
 fill="#8B5E3C"/>
 
 
+
 <path
+
 d="
 M295 325
 Q335 330 320 360
 Q315 380 295 375"
 
 fill="none"
+
 stroke="#D8CCBA"
+
 stroke-width="8"/>
 
 
-
-<!-- ================================= -->
-<!-- PENCIL -->
-<!-- ================================= -->
-
-
-<g transform="translate(320 420) rotate(-20)">
-
-<rect
-width="150"
-height="12"
-rx="6"
-fill="#F4C95D"/>
-
-<polygon
-points="150,0 175,6 150,12"
-fill="#C49A6C"/>
-
-<polygon
-points="175,6 185,6 175,12"
-fill="#333"/>
-
-</g>
 
 
 
@@ -250,21 +714,63 @@ fill="#333"/>
 
 <g transform="translate(130 110) rotate(-8)">
 
+
+
 <rect
+
 width="90"
+
 height="90"
+
 fill="#FFE58A"/>
 
-<line x1="15" y1="30" x2="70" y2="30"
+
+
+<line
+
+x1="15"
+
+y1="30"
+
+x2="70"
+
+y2="30"
+
 stroke="#D5B95A"/>
 
-<line x1="15" y1="45" x2="60" y2="45"
+
+
+<line
+
+x1="15"
+
+y1="45"
+
+x2="60"
+
+y2="45"
+
 stroke="#D5B95A"/>
 
-<line x1="15" y1="60" x2="50" y2="60"
+
+
+<line
+
+x1="15"
+
+y1="60"
+
+x2="50"
+
+y2="60"
+
 stroke="#D5B95A"/>
+
+
 
 </g>
+
+
 
 
 
@@ -275,75 +781,188 @@ stroke="#D5B95A"/>
 
 <g transform="translate(1350 350)">
 
+
+
 <rect
+
 width="170"
+
 height="90"
+
 rx="10"
+
 fill="#2D333B"/>
 
 
+
 <rect
+
 x="8"
+
 y="8"
+
 width="154"
+
 height="65"
+
 fill="#111827"/>
 
 
+
 <line
+
 x1="30"
+
 y1="25"
+
 x2="120"
+
 y2="25"
+
 stroke="#58A6FF"
+
 stroke-width="3"/>
+
 
 
 <line
+
 x1="30"
+
 y1="40"
+
 x2="100"
+
 y2="40"
+
 stroke="#7EE787"
+
 stroke-width="3"/>
 
+
+
+</g>
+<!-- ================================= -->
+<!-- FINAL POLISH -->
+<!-- ================================= -->
+
+
+<g
+
+fill="#D8C7A8"
+
+opacity="0.75">
+
+
+
+<circle
+
+cx="90"
+
+cy="80"
+
+r="3"/>
+
+
+
+<circle
+
+cx="150"
+
+cy="300"
+
+r="2"/>
+
+
+
+<circle
+
+cx="310"
+
+cy="90"
+
+r="2"/>
+
+
+
+<circle
+
+cx="1280"
+
+cy="90"
+
+r="3"/>
+
+
+
+<circle
+
+cx="1450"
+
+cy="160"
+
+r="2"/>
+
+
+
 </g>
 
 
-<!-- FINAL POLISH LAYER -->
 
-<g fill="#D8C7A8" opacity="0.75">
 
-<circle cx="90" cy="80" r="3"/>
-<circle cx="150" cy="300" r="2"/>
-<circle cx="310" cy="90" r="2"/>
-<circle cx="1280" cy="90" r="3"/>
 
-</g>
+<!-- ================================= -->
+<!-- SIGNATURE -->
+<!-- ================================= -->
 
 
 <text
+
 x="520"
-y="335"
+
+y="350"
+
 font-family="cursive"
+
 font-size="18"
+
 fill="#5B8DEF">
+
 
 // create • learn • innovate
 
+
 </text>
+
+
+
+
+
+<!-- ================================= -->
+<!-- AI LABEL -->
+<!-- ================================= -->
 
 
 <text
-x="1030"
-y="85"
+
+x="1080"
+
+y="75"
+
 font-family="cursive"
+
 font-size="15"
+
 fill="#9B8E7D">
+
 
 AI Experiment #01
 
+
 </text>
+
+
+
 
 
 </svg>
