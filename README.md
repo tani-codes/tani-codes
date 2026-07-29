@@ -41,26 +41,26 @@ tanish = {
 
     "internships" : [
         "Technology Analyst @ NorthStar Tech  → Software Testing, BA & Data Science Exposure ⚡",
-        "Associate Data Analyst @ Furrie      → Data Funnels & n8n Agentic Workflows 🤖",
-        "Data Analytics Intern @ KJSCE         → Indian Cricket Team Analytics (2024-25) 🏏",
+        "Associate Data Analyst @ Furrie      → E-Commerce Data Analytics & Predictive Modeling 📈",
+        "Data Analytics Intern @ KJSCE         → Indian Cricket Team Performance Analytics (2024-25) 🏏",
     ],
 
     "superpowers" : [
-        "Data Analytics & Viz  → Python | Pandas | NumPy | Tableau | Power BI | Matplotlib",
-        "AI & Automation       → n8n Workflows | Agentic AI | Web Scraping | Scikit-Learn",
-        "Software Engineering  → Manual & Automated Testing | BRD/FRD Requirement Analysis",
-        "Business Intelligence → Data Funnels | Market Intelligence | Dashboarding",
+        "Machine Learning & DL → PyTorch | TensorFlow | Scikit-Learn | Neural Networks | Computer Vision",
+        "AI & Data Science     → Generative AI | LLMs | Web Scraping | Predictive Modeling | NLP",
+        "Data Analytics & Viz  → Python | Pandas | NumPy | Tableau | Power BI | Matplotlib | SQL",
+        "Software Engineering  → Manual & Automated Testing | BRD/FRD Requirement Analysis | Defect Tracking",
     ],
 
     "experience_highlights" : {
         "NorthStar Tech"     : "Software Testing, UAT, BRDs/FRDs & Analytics Exposure 🏢",
-        "Furrie"             : "n8n Agentic Workflows & E-Commerce Data Funnels 📈",
+        "Furrie"             : "E-Commerce Data Analytics & Predictive Modeling 📈",
         "Cricket Analytics"  : "Indian Cricket Team All-Format Performance 2024-25 🏆",
         "Academic CGPA"      : "9.45  (Consistent Academic Excellence 🌟)",
     },
 
-    "current_mission" : "Build intelligent AI automation workflows & data-driven systems 🚀",
-    "fun_fact"        : "I analyze cricket data for fun & automate workflows with AI 💀",
+    "current_mission" : "Build cutting-edge ML, Deep Learning & Data Science systems 🚀",
+    "fun_fact"        : "I analyze cricket data for fun & train ML models on complex datasets 💀",
 }
 
 ╚════════════════════════════════════════════════════════════════════════════╝
@@ -78,13 +78,13 @@ tanish = {
 
 <div align="center">
 
-### 🧠 AI AUTOMATION & MACHINE LEARNING
+### 🧠 MACHINE LEARNING, DEEP LEARNING & AI
 <p align="center">
   <a href="https://python.org" target="_blank"><img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white" /></a>
-  <a href="https://n8n.io" target="_blank"><img src="https://img.shields.io/badge/N8N_WORKFLOWS-FF6D5A?style=for-the-badge&logo=n8n&logoColor=white" /></a>
+  <a href="https://pytorch.org" target="_blank"><img src="https://img.shields.io/badge/PYTORCH-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" /></a>
+  <a href="https://tensorflow.org" target="_blank"><img src="https://img.shields.io/badge/TENSORFLOW-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" /></a>
   <a href="https://scikit-learn.org" target="_blank"><img src="https://img.shields.io/badge/SCIKIT_LEARN-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" /></a>
-  <a href="https://github.com/tani-codes" target="_blank"><img src="https://img.shields.io/badge/AGENTIC_AI-8B6FE8?style=for-the-badge&logo=probot&logoColor=white" /></a>
-  <a href="https://python.org" target="_blank"><img src="https://img.shields.io/badge/WEB_SCRAPING-5B8DEF?style=for-the-badge&logo=python&logoColor=white" /></a>
+  <a href="https://github.com/tani-codes" target="_blank"><img src="https://img.shields.io/badge/DEEP_LEARNING-8B6FE8?style=for-the-badge&logo=probot&logoColor=white" /></a>
 </p>
 
 <br>
@@ -97,7 +97,7 @@ tanish = {
   <a href="https://numpy.org" target="_blank"><img src="https://img.shields.io/badge/NUMPY-013243?style=for-the-badge&logo=numpy&logoColor=white" /></a>
   <a href="https://matplotlib.org" target="_blank"><img src="https://img.shields.io/badge/MATPLOTLIB-11557C?style=for-the-badge&logo=python&logoColor=white" /></a>
   <a href="https://powerbi.microsoft.com" target="_blank"><img src="https://img.shields.io/badge/POWER_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" /></a>
-  <a href="https://analytics.google.com" target="_blank"><img src="https://img.shields.io/badge/DATA_FUNNELS-5B8DEF?style=for-the-badge&logo=googleanalytics&logoColor=white" /></a>
+  <a href="https://analytics.google.com" target="_blank"><img src="https://img.shields.io/badge/DATA_SCIENCE-5B8DEF?style=for-the-badge&logo=googleanalytics&logoColor=white" /></a>
 </p>
 
 <br>
@@ -145,7 +145,7 @@ tanish = {
 | :--- | :--- | :--- |
 | **B.Tech CSBS** | KJ Somaiya College of Engineering | 🌟 **9.45 CGPA** — Consistent Academic Excellence |
 | **Technology Analyst** | NorthStar Technologies 🏢 | ⚡ Software Testing, BRD/FRD Requirement Analysis & Data Analytics |
-| **Associate Data Analyst** | Furrie 📈 | 🤖 E-Commerce Data Funnels & n8n Agentic Workflows |
+| **Associate Data Analyst** | Furrie 📈 | 🤖 E-Commerce Data Analytics & Predictive Modeling |
 | **Cricket Analytics Intern** | KJSCE Analytics Lab 🏏 | 🏆 Indian Cricket Team Performance Analytics (2024–2025) |
 | **Placement Coordinator** | KJSCE Placement Cell 🎓 | 🤝 Campus Recruitment Strategy & Student Placement Drive Management |
 
@@ -194,9 +194,9 @@ tanish = {
 ```text
 ███████████████████████████████████████████████████████████████████████
 █                                                                     █
-█   > "Build intelligent AI automation workflows & data systems."      █
+█   > "Build intelligent ML, Deep Learning & Data Science systems."   █
 █                                                                     █
-█   > OPEN TO : Full-time Roles | AI Automations | Data Analytics     █
+█   > OPEN TO : Full-time Roles | ML / DL Engineering | Data Science  █
 █   > REACH ME: bandodkartanish@gmail.com                             █
 █                                                                     █
 ███████████████████████████████████████████████████████████████████████
