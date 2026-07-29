@@ -1,232 +1,240 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  info.svg — Spacious Tanish AI Laboratory Dashboard
-  Theme: Dark AI Research Lab + Neural Network Visualization
-  Palette: Deep Obsidian (#050816) · Neon Cyan (#00F5FF) · Electric Blue (#00D2FF) · Purple Glow (#8B6FE8) · Mint (#00FF88)
+  info.svg — Clean Badges & Command Prompt Profile Section
+  Theme: Ultra-clean dark backdrop · Centered high-contrast badges
   Author: Tanish Bandodkar
 -->
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="460" viewBox="0 0 860 460">
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="340" viewBox="0 0 860 340">
 
 <defs>
 
-  <!-- ── Deep Obsidian Canvas Background ── -->
-  <linearGradient id="labBg" x1="0%" y1="0%" x2="100%" y2="100%">
-    <stop offset="0%"   stop-color="#050816"/>
-    <stop offset="50%"  stop-color="#091026"/>
-    <stop offset="100%" stop-color="#040612"/>
+  <!-- ── Dark Background ── -->
+  <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%"   stop-color="#0B0F19"/>
+    <stop offset="100%" stop-color="#050811"/>
   </linearGradient>
 
-  <!-- ── Electric Cyan / Purple Glow ── -->
-  <linearGradient id="headerGlow" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%"   stop-color="#00F5FF"/>
-    <stop offset="50%"  stop-color="#8B6FE8"/>
-    <stop offset="100%" stop-color="#00D2FF"/>
-  </linearGradient>
-
-  <!-- ── Card Border Gradient ── -->
-  <linearGradient id="borderGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-    <stop offset="0%"   stop-color="#00F5FF" stop-opacity="0.5"/>
-    <stop offset="100%" stop-color="#8B6FE8" stop-opacity="0.25"/>
-  </linearGradient>
-
-  <!-- ── Neon Glow Filters ── -->
-  <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
-    <feGaussianBlur stdDeviation="4" result="blur"/>
-    <feMerge>
-      <feMergeNode in="blur"/>
-      <feMergeNode in="SourceGraphic"/>
-    </feMerge>
+  <!-- ── Badge Drop Shadow ── -->
+  <filter id="bsh" x="-20%" y="-35%" width="150%" height="200%">
+    <feDropShadow dx="0" dy="2" stdDeviation="3.5" flood-color="#000000" flood-opacity="0.45"/>
   </filter>
 
-  <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
-    <feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#00F5FF" flood-opacity="0.12"/>
-  </filter>
+  <!-- ══════════════════════════════════════════════════════════
+       Clip paths for typewriter single-line cycling commands
+       ══════════════════════════════════════════════════════════ -->
+  <clipPath id="tClip1">
+    <rect x="270" y="16" width="0" height="26">
+      <animate attributeName="width"
+        values="0; 320; 320; 0; 0"
+        keyTimes="0; 0.053; 0.173; 0.190; 1"
+        dur="15s" begin="0s" repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+
+  <clipPath id="tClip2">
+    <rect x="270" y="16" width="0" height="26">
+      <animate attributeName="width"
+        values="0; 0; 320; 320; 0; 0"
+        keyTimes="0; 0.200; 0.253; 0.373; 0.390; 1"
+        dur="15s" begin="0s" repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+
+  <clipPath id="tClip3">
+    <rect x="270" y="16" width="0" height="26">
+      <animate attributeName="width"
+        values="0; 0; 320; 320; 0; 0"
+        keyTimes="0; 0.400; 0.453; 0.573; 0.590; 1"
+        dur="15s" begin="0s" repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+
+  <clipPath id="tClip4">
+    <rect x="270" y="16" width="0" height="26">
+      <animate attributeName="width"
+        values="0; 0; 320; 320; 0; 0"
+        keyTimes="0; 0.600; 0.653; 0.773; 0.790; 1"
+        dur="15s" begin="0s" repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+
+  <clipPath id="tClip5">
+    <rect x="270" y="16" width="0" height="26">
+      <animate attributeName="width"
+        values="0; 0; 320; 320; 0; 0"
+        keyTimes="0; 0.800; 0.853; 0.973; 0.990; 1"
+        dur="15s" begin="0s" repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+
+  <!-- ══════════════════════════════════════════════════════════
+       Clip paths — badge rows
+       ══════════════════════════════════════════════════════════ -->
+  <clipPath id="c1"><rect x="154" y="62" width="145" height="46" rx="6"/></clipPath>
+  <clipPath id="c2"><rect x="317" y="62" width="197" height="46" rx="6"/></clipPath>
+  <clipPath id="c3"><rect x="532" y="62" width="175" height="46" rx="6"/></clipPath>
+
+  <clipPath id="c4"><rect x="170" y="122" width="265" height="46" rx="6"/></clipPath>
+  <clipPath id="c5"><rect x="453" y="122" width="237" height="46" rx="6"/></clipPath>
+
+  <clipPath id="c6"><rect x="158" y="182" width="235" height="46" rx="6"/></clipPath>
+  <clipPath id="c7"><rect x="411" y="182" width="291" height="46" rx="6"/></clipPath>
 
 </defs>
 
 <!-- ══════════════════════════════════════════ -->
-<!--  LABORATORY CANVAS BACKGROUND             -->
+<!--  BACKGROUND CANVAS                         -->
 <!-- ══════════════════════════════════════════ -->
-<rect width="860" height="460" fill="url(#labBg)" rx="18"/>
-<rect width="858" height="458" x="1" y="1" rx="17" fill="none" stroke="#1E2A4A" stroke-width="1.5"/>
-
-<!-- Tech Grid Pattern Overlay -->
-<g stroke="#14213D" stroke-width="0.6" opacity="0.4">
-  <line x1="0" y1="75"  x2="860" y2="75"/>
-  <line x1="0" y1="175" x2="860" y2="175"/>
-  <line x1="0" y1="275" x2="860" y2="275"/>
-  <line x1="0" y1="375" x2="860" y2="375"/>
-  <line x1="210" y1="0" x2="210" y2="460"/>
-  <line x1="430" y1="0" x2="430" y2="460"/>
-  <line x1="650" y1="0" x2="650" y2="460"/>
-</g>
+<rect width="860" height="340" fill="url(#bg)" rx="16"/>
 
 <!-- ══════════════════════════════════════════════════════════════ -->
-<!--  NEURAL NETWORK CONNECTIONS & WATERMARK CODE IN BACKGROUND    -->
-<!-- ══════════════════════════════════════════════════════════════ -->
-<g stroke="#00D2FF" stroke-width="1" opacity="0.2">
-  <line x1="120" y1="135" x2="380" y2="135" stroke-dasharray="4,4"/>
-  <line x1="380" y1="135" x2="640" y2="135" stroke-dasharray="4,4"/>
-  <line x1="170" y1="225" x2="430" y2="225" stroke-dasharray="4,4"/>
-  <line x1="430" y1="225" x2="690" y2="225" stroke-dasharray="4,4"/>
-</g>
-
-<!-- Background Code Snippet Watermarks -->
-<g font-family="'Courier New', Courier, monospace" font-size="11" fill="#00F5FF" opacity="0.10">
-  <text x="35"  y="435">model.fit(X_train, y_train) // val_accuracy: 98.45%</text>
-  <text x="520" y="435">predict_pipeline() --batch-size 64 --status: active</text>
-</g>
-
-<!-- Floating Synapse Particles -->
-<circle cx="120" cy="135" r="3" fill="#00F5FF" filter="url(#cyanGlow)">
-  <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
-</circle>
-<circle cx="380" cy="135" r="3.5" fill="#8B6FE8" filter="url(#cyanGlow)">
-  <animate attributeName="opacity" values="1;0.3;1" dur="2.5s" repeatCount="indefinite"/>
-</circle>
-<circle cx="640" cy="135" r="3" fill="#00D2FF" filter="url(#cyanGlow)">
-  <animate attributeName="opacity" values="0.4;1;0.4" dur="3.2s" repeatCount="indefinite"/>
-</circle>
-
-<!-- ══════════════════════════════════════════════════════════════ -->
-<!--  HEADER PANEL — TANISH AI LAB SYSTEM ONLINE                    -->
-<!-- ══════════════════════════════════════════════════════════════ -->
-<g transform="translate(50, 22)">
-  <!-- Outer Header Frame -->
-  <rect width="760" height="54" rx="12" fill="#0B132B" stroke="url(#borderGlow)" stroke-width="1.2" filter="url(#cardShadow)"/>
-  
-  <!-- Corner Tech Accent Lines -->
-  <path d="M10,0 L25,0 M0,10 L0,25" stroke="#00F5FF" stroke-width="2" fill="none"/>
-  <path d="M750,0 L735,0 M760,10 L760,25" stroke="#00F5FF" stroke-width="2" fill="none"/>
-  
-  <!-- Header Text -->
-  <text x="25" y="25" font-family="'Courier New', monospace" font-size="15" font-weight="800" fill="#00F5FF" letter-spacing="1.5">
-    🧬 TANISH AI LAB <tspan fill="#8B6FE8">v2.0</tspan>
-  </text>
-  
-  <text x="25" y="42" font-family="'Courier New', monospace" font-size="10" font-weight="600" fill="#7E8B9B" letter-spacing="1">
-    SYSTEM ONLINE // AI RESEARCH &amp; DATA ENGINE
-  </text>
-  
-  <!-- Blinking Status Indicator -->
-  <g transform="translate(525, 15)">
-    <rect width="220" height="25" rx="7" fill="#05261E" stroke="#00FF88" stroke-width="0.8"/>
-    <circle cx="14" cy="13" r="4" fill="#00FF88">
-      <animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite"/>
-    </circle>
-    <text x="26" y="17" font-family="'Courier New', monospace" font-size="9.5" font-weight="700" fill="#00FF88" letter-spacing="0.8">
-      STATUS: BUILDING AI SYSTEMS
-    </text>
-  </g>
-</g>
-
-<!-- ══════════════════════════════════════════════════════════════ -->
-<!--  ROW 1 LAB MODULES: Location | Academic | Specialization       -->
+<!--  CYCLING COMMAND LINE PROMPT — CENTERED TYPEWRITER             -->
 <!-- ══════════════════════════════════════════════════════════════ -->
 
-<!-- MODULE 1: 📍 LOCATION MODULE -->
-<g transform="translate(50, 100)" filter="url(#cardShadow)">
-  <rect width="240" height="72" rx="12" fill="#0D1730" stroke="#1E2E52" stroke-width="1.2"/>
-  <rect width="6" height="72" rx="3" fill="#00F5FF"/>
-  <text x="18" y="25" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#00F5FF" letter-spacing="1">📍 LOCATION MODULE</text>
-  <text x="18" y="48" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="800" fill="#FFF" letter-spacing="0.5">MUMBAI, INDIA 🇮🇳</text>
-  <text x="18" y="62" font-family="'Segoe UI', sans-serif" font-size="8.5" fill="#6C7D93">TIMEZONE: UTC +5:30</text>
-</g>
-
-<!-- MODULE 2: 🎓 ACADEMIC MODULE -->
-<g transform="translate(310, 100)" filter="url(#cardShadow)">
-  <rect width="240" height="72" rx="12" fill="#0D1730" stroke="#1E2E52" stroke-width="1.2"/>
-  <rect width="6" height="72" rx="3" fill="#8B6FE8"/>
-  <text x="18" y="25" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#8B6FE8" letter-spacing="1">🎓 ACADEMIC MODULE</text>
-  <text x="18" y="47" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="800" fill="#FFF">B.Tech CSBS @ KJSCE</text>
-  <text x="18" y="62" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="700" fill="#00FF88">CGPA: 9.45 / 10.0</text>
-</g>
-
-<!-- MODULE 3: 🤖 SPECIALIZATION MODULE -->
-<g transform="translate(570, 100)" filter="url(#cardShadow)">
-  <rect width="240" height="72" rx="12" fill="#0D1730" stroke="#1E2E52" stroke-width="1.2"/>
-  <rect width="6" height="72" rx="3" fill="#00D2FF"/>
-  <text x="18" y="25" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#00D2FF" letter-spacing="1">🤖 SPECIALIZATION</text>
-  <text x="18" y="47" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="800" fill="#FFF">AI &amp; AUTOMATION</text>
-  <text x="18" y="62" font-family="'Segoe UI', sans-serif" font-size="8.5" fill="#8EA0B5">n8n • Scikit-Learn • Agentic AI</text>
-</g>
-
-<!-- ══════════════════════════════════════════════════════════════ -->
-<!--  ROW 2 LAB MODULES: Data Analytics | Dev Module | Experiments  -->
-<!-- ══════════════════════════════════════════════════════════════ -->
-
-<!-- MODULE 4: 📊 DATA MODULE -->
-<g transform="translate(50, 190)" filter="url(#cardShadow)">
-  <rect width="240" height="72" rx="12" fill="#0D1730" stroke="#1E2E52" stroke-width="1.2"/>
-  <rect width="6" height="72" rx="3" fill="#00FF88"/>
-  <text x="18" y="25" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#00FF88" letter-spacing="1">📊 DATA MODULE</text>
-  <text x="18" y="47" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="800" fill="#FFF">DATA ANALYTICS</text>
-  <text x="18" y="62" font-family="'Segoe UI', sans-serif" font-size="8.5" fill="#8EA0B5">Pandas • Tableau • Power BI</text>
-</g>
-
-<!-- MODULE 5: 💻 DEVELOPMENT MODULE -->
-<g transform="translate(310, 190)" filter="url(#cardShadow)">
-  <rect width="240" height="72" rx="12" fill="#0D1730" stroke="#1E2E52" stroke-width="1.2"/>
-  <rect width="6" height="72" rx="3" fill="#FF9F43"/>
-  <text x="18" y="25" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#FF9F43" letter-spacing="1">💻 DEV MODULE</text>
-  <text x="18" y="47" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="800" fill="#FFF">SOFTWARE ENG</text>
-  <text x="18" y="62" font-family="'Segoe UI', sans-serif" font-size="8.5" fill="#8EA0B5">Testing • BRD/FRD • React</text>
-</g>
-
-<!-- MODULE 6: 🚀 EXPERIMENTS MODULE -->
-<g transform="translate(570, 190)" filter="url(#cardShadow)">
-  <rect width="240" height="72" rx="12" fill="#0D1730" stroke="#1E2E52" stroke-width="1.2"/>
-  <rect width="6" height="72" rx="3" fill="#FF5252"/>
-  <text x="18" y="25" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#FF5252" letter-spacing="1">🚀 CURRENT EXPERIMENTS</text>
-  <text x="18" y="47" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="800" fill="#FFF">AI WORKFLOWS</text>
-  <text x="18" y="62" font-family="'Segoe UI', sans-serif" font-size="8.5" fill="#8EA0B5">Cricket Performance Viz</text>
-</g>
-
-<!-- ══════════════════════════════════════════════════════════════ -->
-<!--  ROW 3 LAB MODULES: Achievements & Experience Module          -->
-<!-- ══════════════════════════════════════════════════════════════ -->
-
-<!-- MODULE 7: 🏆 ACHIEVEMENTS & EXPERIENCE -->
-<g transform="translate(50, 280)" filter="url(#cardShadow)">
-  <rect width="490" height="72" rx="12" fill="#0D1730" stroke="#1E2E52" stroke-width="1.2"/>
-  <rect width="6" height="72" rx="3" fill="#00F5FF"/>
-  <text x="18" y="25" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#00F5FF" letter-spacing="1">🏆 EXPERIENCE &amp; ACHIEVEMENTS</text>
-  <text x="18" y="47" font-family="'Segoe UI', sans-serif" font-size="11.5" font-weight="800" fill="#FFF">
-    NorthStar Tech Analyst <tspan fill="#6C7D93">•</tspan> Furrie Data Analyst <tspan fill="#6C7D93">•</tspan> KJSCE Cricket Analytics
-  </text>
-  <text x="18" y="62" font-family="'Segoe UI', sans-serif" font-size="8.5" fill="#00FF88">Placement Coordinator @ KJSCE • 9.45 CGPA Academic Honor</text>
-</g>
-
-<!-- SOCIAL CONNECTIVITY MODULE -->
-<g transform="translate(560, 280)" filter="url(#cardShadow)">
-  <rect width="250" height="72" rx="12" fill="#0D1730" stroke="#1E2E52" stroke-width="1.2"/>
-  <rect width="6" height="72" rx="3" fill="#8B6FE8"/>
-  <text x="18" y="25" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#8B6FE8" letter-spacing="1">🌐 LAB CONNECTIVITY</text>
-  
-  <g transform="translate(18, 35)">
-    <!-- GitHub -->
-    <a href="https://github.com/tani-codes" target="_blank">
-      <rect width="66" height="26" rx="6" fill="#161F38" stroke="#00F5FF" stroke-width="0.6"/>
-      <text x="33" y="17" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="700" fill="#00F5FF" text-anchor="middle">GITHUB</text>
-    </a>
-    <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/in/tanishbandodkar/" target="_blank" transform="translate(73, 0)">
-      <rect width="75" height="26" rx="6" fill="#161F38" stroke="#0A66C2" stroke-width="0.6"/>
-      <text x="37.5" y="17" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="700" fill="#3897F0" text-anchor="middle">LINKEDIN</text>
-    </a>
-    <!-- Email -->
-    <a href="mailto:bandodkartanish@gmail.com" target="_blank" transform="translate(154, 0)">
-      <rect width="66" height="26" rx="6" fill="#161F38" stroke="#EA4335" stroke-width="0.6"/>
-      <text x="33" y="17" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="700" fill="#FF6B6B" text-anchor="middle">GMAIL</text>
-    </a>
-  </g>
-</g>
-
-<!-- ══════════════════════════════════════════ -->
-<!--  FOOTER TERMINAL LINE                     -->
-<!-- ══════════════════════════════════════════ -->
-<text x="430" y="395" font-family="'Courier New', monospace" font-size="11" fill="#7E8B9B" text-anchor="middle" letter-spacing="1">
-  [TANISH AI LAB] :: INGESTING DATA PIPELINES &amp; EXECUTING AI WORKFLOWS
+<!-- ── 1/5  > python tanish.py ── -->
+<text x="430" y="36" text-anchor="middle" font-family="'Courier New', Courier, monospace"
+      font-size="16" font-weight="700" clip-path="url(#tClip1)" opacity="0">
+  <tspan fill="#00F5FF">&gt; python tanish.py</tspan>
+  <tspan fill="#00F5FF" font-weight="700"> ▋<animate attributeName="opacity" values="1;0.2;1" dur="0.7s" repeatCount="indefinite"/></tspan>
+  <animate attributeName="opacity"
+    values="1;1;1;0;0"
+    keyTimes="0;0.053;0.173;0.190;1"
+    dur="15s" begin="0s" repeatCount="indefinite"/>
 </text>
+
+<!-- ── 2/5  loading profile... ✓ done ── -->
+<text x="430" y="36" text-anchor="middle" font-family="'Courier New', Courier, monospace"
+      font-size="16" font-weight="700" clip-path="url(#tClip2)" opacity="0">
+  <tspan fill="#8B6FE8">loading profile</tspan><tspan fill="#7E8B9B">...</tspan><tspan fill="#00FF88" font-weight="700">  ✓  done</tspan>
+  <tspan fill="#00FF88" font-weight="700"> ▋<animate attributeName="opacity" values="1;0.2;1" dur="0.7s" repeatCount="indefinite"/></tspan>
+  <animate attributeName="opacity"
+    values="0;1;1;1;0;0"
+    keyTimes="0;0.200;0.253;0.373;0.390;1"
+    dur="15s" begin="0s" repeatCount="indefinite"/>
+</text>
+
+<!-- ── 3/5  executing data pipeline... 100% ── -->
+<text x="430" y="36" text-anchor="middle" font-family="'Courier New', Courier, monospace"
+      font-size="16" font-weight="700" clip-path="url(#tClip3)" opacity="0">
+  <tspan fill="#FF9F43">executing pipeline</tspan><tspan fill="#7E8B9B">...</tspan><tspan fill="#00F5FF" font-weight="700">  ██████  100%</tspan>
+  <tspan fill="#00F5FF" font-weight="700"> ▋<animate attributeName="opacity" values="1;0.2;1" dur="0.7s" repeatCount="indefinite"/></tspan>
+  <animate attributeName="opacity"
+    values="0;1;1;1;0;0"
+    keyTimes="0;0.400;0.453;0.573;0.590;1"
+    dur="15s" begin="0s" repeatCount="indefinite"/>
+</text>
+
+<!-- ── 4/5  initializing AI stack... ✓ ready ── -->
+<text x="430" y="36" text-anchor="middle" font-family="'Courier New', Courier, monospace"
+      font-size="16" font-weight="700" clip-path="url(#tClip4)" opacity="0">
+  <tspan fill="#7C6AF7">initializing stack</tspan><tspan fill="#7E8B9B">...</tspan><tspan fill="#00FF88" font-weight="700">  ✓  ready</tspan>
+  <tspan fill="#00FF88" font-weight="700"> ▋<animate attributeName="opacity" values="1;0.2;1" dur="0.7s" repeatCount="indefinite"/></tspan>
+  <animate attributeName="opacity"
+    values="0;1;1;1;0;0"
+    keyTimes="0;0.600;0.653;0.773;0.790;1"
+    dur="15s" begin="0s" repeatCount="indefinite"/>
+</text>
+
+<!-- ── 5/5  ready to collaborate! 🚀 ── -->
+<text x="430" y="36" text-anchor="middle" font-family="'Courier New', Courier, monospace"
+      font-size="16" font-weight="700" clip-path="url(#tClip5)" opacity="0">
+  <tspan fill="#00FF88">ready to collaborate</tspan><tspan fill="#00FF88" font-weight="700">  🚀</tspan>
+  <tspan fill="#00FF88" font-weight="700"> ▋<animate attributeName="opacity" values="1;0.2;1" dur="0.7s" repeatCount="indefinite"/></tspan>
+  <animate attributeName="opacity"
+    values="0;1;1;1;0;0"
+    keyTimes="0;0.800;0.853;0.973;0.990;1"
+    dur="15s" begin="0s" repeatCount="indefinite"/>
+</text>
+
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!--  ROW 1  —  Location | CGPA | Domain                      -->
+<!-- ══════════════════════════════════════════════════════════ -->
+
+<!-- BADGE 1 : 📍 MUMBAI | INDIA -->
+<g filter="url(#bsh)">
+  <rect x="154" y="62" width="145" height="46" rx="6" fill="#474747"/>
+  <rect x="234" y="62" width="65"  height="46" fill="#F49A24" clip-path="url(#c1)"/>
+  <text x="164" y="82" font-family="'Segoe UI',sans-serif" font-size="9.5" font-weight="700" fill="#FFF">📍 MUMBAI</text>
+  <text x="266" y="90" font-family="'Segoe UI',sans-serif" font-size="11" font-weight="800" fill="#FFF" text-anchor="middle" letter-spacing="1">INDIA</text>
+</g>
+
+<!-- BADGE 2 : 🎓 CGPA | 9.45[CUMULATIVE] -->
+<g filter="url(#bsh)">
+  <rect x="317" y="62" width="197" height="46" rx="6" fill="#474747"/>
+  <rect x="377" y="62" width="137" height="46" fill="#00A2E8" clip-path="url(#c2)"/>
+  <text x="327" y="89" font-family="'Segoe UI',sans-serif" font-size="9.5" font-weight="700" fill="#FFF">🎓 CGPA</text>
+  <text x="445" y="90" font-family="'Segoe UI',sans-serif" font-size="11" font-weight="800" fill="#FFF" text-anchor="middle">9.45[CUMULATIVE]</text>
+</g>
+
+<!-- BADGE 3 : 🤖 AI & AUTOMATION | ENTHUSIAST -->
+<g filter="url(#bsh)">
+  <rect x="532" y="62" width="175" height="46" rx="6" fill="#474747"/>
+  <rect x="614" y="62" width="93"  height="46" fill="#9B59B6" clip-path="url(#c3)"/>
+  <text x="542" y="89" font-family="'Segoe UI',sans-serif" font-size="9.5" font-weight="700" fill="#FFF">🤖 AI &amp; AUTO</text>
+  <text x="660" y="90" font-family="'Segoe UI',sans-serif" font-size="10" font-weight="800" fill="#FFF" text-anchor="middle">ENTHUSIAST</text>
+</g>
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!--  ROW 2  —  Skills | Status                               -->
+<!-- ══════════════════════════════════════════════════════════ -->
+
+<!-- BADGE 4 : 📊 DATA ANALYTICS | PYTHON | TABLEAU -->
+<g filter="url(#bsh)">
+  <rect x="170" y="122" width="265" height="46" rx="6" fill="#474747"/>
+  <rect x="310" y="122" width="125" height="46" fill="#2980B9" clip-path="url(#c4)"/>
+  <text x="180" y="149" font-family="'Segoe UI',sans-serif" font-size="9.5" font-weight="700" fill="#FFF">📊 DATA ANALYTICS</text>
+  <text x="372" y="149" font-family="'Segoe UI',sans-serif" font-size="10" font-weight="800" fill="#FFF" text-anchor="middle">PYTHON | TABLEAU</text>
+</g>
+
+<!-- BADGE 5 : 💻 OPEN TO | COLLABORATE -->
+<g filter="url(#bsh)">
+  <rect x="453" y="122" width="237" height="46" rx="6" fill="#474747"/>
+  <rect x="543" y="122" width="147" height="46" fill="#2ECC71" clip-path="url(#c5)"/>
+  <text x="463" y="149" font-family="'Segoe UI',sans-serif" font-size="9.5" font-weight="700" fill="#FFF">💻 OPEN TO</text>
+  <text x="616" y="150" font-family="'Segoe UI',sans-serif" font-size="11" font-weight="800" fill="#FFF" text-anchor="middle">COLLABORATE</text>
+</g>
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!--  ROW 3  —  Achievements | Current Work                   -->
+<!-- ══════════════════════════════════════════════════════════ -->
+
+<!-- BADGE 6 : 🏆 HACKATHONS | ALWAYS READY -->
+<g filter="url(#bsh)">
+  <rect x="158" y="182" width="235" height="46" rx="6" fill="#474747"/>
+  <rect x="278" y="182" width="115" height="46" fill="#E67E22" clip-path="url(#c6)"/>
+  <text x="168" y="209" font-family="'Segoe UI',sans-serif" font-size="9.5" font-weight="700" fill="#FFF">🏆 HACKATHONS</text>
+  <text x="335" y="210" font-family="'Segoe UI',sans-serif" font-size="10" font-weight="800" fill="#FFF" text-anchor="middle">ALWAYS READY</text>
+</g>
+
+<!-- BADGE 7 : 🚀 CURRENTLY | BUILDING AI PROJECTS -->
+<g filter="url(#bsh)">
+  <rect x="411" y="182" width="291" height="46" rx="6" fill="#474747"/>
+  <rect x="531" y="182" width="171" height="46" fill="#8E44AD" clip-path="url(#c7)"/>
+  <text x="421" y="209" font-family="'Segoe UI',sans-serif" font-size="9.5" font-weight="700" fill="#FFF">🚀 CURRENTLY</text>
+  <text x="616" y="210" font-family="'Segoe UI',sans-serif" font-size="10" font-weight="800" fill="#FFF" text-anchor="middle">BUILDING AI PROJECTS</text>
+</g>
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!--  ROW 4  —  Social Links                                  -->
+<!-- ══════════════════════════════════════════════════════════ -->
+
+<!-- GitHub -->
+<a href="https://github.com/tani-codes" target="_blank" rel="noopener">
+  <rect x="238" y="242" width="125" height="42" rx="6" fill="#181717" filter="url(#bsh)"/>
+  <text x="300" y="268" font-family="'Segoe UI',sans-serif" font-size="11" font-weight="800" fill="#FFF" text-anchor="middle" letter-spacing="1">● GITHUB</text>
+</a>
+
+<!-- LinkedIn -->
+<a href="https://www.linkedin.com/in/tanishbandodkar/" target="_blank" rel="noopener">
+  <rect x="375" y="242" width="130" height="42" rx="6" fill="#0A66C2" filter="url(#bsh)"/>
+  <text x="440" y="268" font-family="'Segoe UI',sans-serif" font-size="11" font-weight="800" fill="#FFF" text-anchor="middle" letter-spacing="1">in LINKEDIN</text>
+</a>
+
+<!-- Gmail -->
+<a href="mailto:bandodkartanish@gmail.com" target="_blank" rel="noopener">
+  <rect x="517" y="242" width="115" height="42" rx="6" fill="#EA4335" filter="url(#bsh)"/>
+  <text x="574" y="268" font-family="'Segoe UI',sans-serif" font-size="11" font-weight="800" fill="#FFF" text-anchor="middle" letter-spacing="1">✉ GMAIL</text>
+</a>
 
 </svg>

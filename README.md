@@ -4,18 +4,8 @@
 
 <br>
 
-<h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=35&duration=2500&pause=800&color=00F5FF&center=true&vCenter=true&width=900&lines=Welcome+to+Tanish+AI+Lab;Data+Science+%26+Analytics;Software+Engineering;AI+Automations+Lab" />
-</h1>
-
 <p align="center">
-Data Science • Software Engineering • AI Automation
-</p>
-
-<br>
-
-<p align="center">
-  <img src="./assets/info.svg" width="100%" alt="Tanish Bandodkar — Identity Card">
+  <img src="./assets/info.svg" width="100%" alt="Tanish Bandodkar — Profile Badges">
 </p>
 
 <br>
