@@ -79,28 +79,19 @@
   <!--  FOOTER TYPOGRAPHY                         -->
   <!-- ══════════════════════════════════════════ -->
 
-  <!-- Quote -->
-  <text x="550" y="62"
-        font-family="'Courier New', Courier, monospace"
-        font-size="20" font-style="italic" font-weight="700"
-        fill="#00F5FF" text-anchor="middle"
-        letter-spacing="1">
-    "Craving for reality in the world of AI."
-  </text>
-
   <!-- Subtitle / Signature -->
-  <text x="550" y="102"
+  <text x="550" y="78"
         font-family="'Segoe UI', sans-serif"
-        font-size="14" font-weight="700"
-        fill="#8B6FE8" text-anchor="middle"
+        font-size="16" font-weight="700"
+        fill="#00F5FF" text-anchor="middle"
         letter-spacing="2">
-    TANISH BANDODKAR <tspan fill="#00FF88">•</tspan> SOFTWARE DEVELOPER <tspan fill="#00FF88">•</tspan> ML / DL ENGINEER
+    TANISH BANDODKAR <tspan fill="#8B6FE8">•</tspan> SOFTWARE DEVELOPER <tspan fill="#8B6FE8">•</tspan> ML / DL ENGINEER
   </text>
 
   <!-- Bottom Copyright / System Tag -->
-  <text x="550" y="134"
+  <text x="550" y="116"
         font-family="'Courier New', Courier, monospace"
-        font-size="11"
+        font-size="11.5"
         fill="#5C6B80" text-anchor="middle"
         letter-spacing="1.5">
     DESIGNED &amp; ENGINEERED BY TANISH BANDODKAR © 2026
