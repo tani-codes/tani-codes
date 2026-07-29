@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  hero.svg — Tanish AI Laboratory Hero Banner
-  Theme: Dark AI Research Lab + Neural Network Visualization
-  Palette: Deep Obsidian (#050816) · Electric Cyan (#00F5FF) · Neon Purple (#8B6FE8) · Mint (#00FF88)
+  hero.svg — Futuristic Glassmorphism AI Laboratory Hero Banner
+  Theme: AI Core Neural Network + Futuristic Hologram Dashboard
+  Palette: Deep Obsidian (#050816) · Neon Cyan (#00F5FF) · Electric Purple (#8B6FE8) · Mint (#00FF88)
   Author: Tanish Bandodkar
 -->
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="500" viewBox="0 0 1600 500">
@@ -12,172 +12,192 @@
   <!-- ── Deep Obsidian Canvas Background ── -->
   <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
     <stop offset="0%"   stop-color="#050816"/>
-    <stop offset="50%"  stop-color="#0A1026"/>
-    <stop offset="100%" stop-color="#040612"/>
+    <stop offset="50%"  stop-color="#0A1028"/>
+    <stop offset="100%" stop-color="#030510"/>
   </linearGradient>
 
+  <!-- ── Electric Cyan / Purple Border Gradient ── -->
+  <linearGradient id="borderGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%"   stop-color="#00F5FF" stop-opacity="0.7"/>
+    <stop offset="50%"  stop-color="#8B6FE8" stop-opacity="0.4"/>
+    <stop offset="100%" stop-color="#00D2FF" stop-opacity="0.7"/>
+  </linearGradient>
+
+  <!-- ── AI Core Gradient ── -->
+  <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%"   stop-color="#00F5FF" stop-opacity="0.9"/>
+    <stop offset="50%"  stop-color="#8B6FE8" stop-opacity="0.6"/>
+    <stop offset="100%" stop-color="#050816" stop-opacity="0"/>
+  </radialGradient>
+
   <!-- ── Neon Glow Filter ── -->
-  <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
-    <feGaussianBlur stdDeviation="5" result="blur"/>
+  <filter id="neonBlur" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="6" result="blur"/>
     <feMerge>
       <feMergeNode in="blur"/>
       <feMergeNode in="SourceGraphic"/>
     </feMerge>
   </filter>
 
-  <!-- ── Glassmorphism Card Shadow ── -->
-  <filter id="labShadow" x="-10%" y="-10%" width="120%" height="120%">
-    <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#00F5FF" flood-opacity="0.18"/>
+  <!-- ── Glassmorphism Drop Shadow ── -->
+  <filter id="glassShadow" x="-10%" y="-10%" width="120%" height="120%">
+    <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#00F5FF" flood-opacity="0.16"/>
   </filter>
-
-  <!-- ── Text Mask Clips for Pencil Writing Timeline ── -->
-  <clipPath id="nameClip">
-    <rect x="510" y="115" width="0" height="58">
-      <animate attributeName="width" from="0" to="460" begin="0.3s" dur="6s" fill="freeze"/>
-    </rect>
-  </clipPath>
-
-  <clipPath id="dataClip">
-    <rect x="510" y="190" width="0" height="38">
-      <animate attributeName="width" from="0" to="290" begin="6.8s" dur="4s" fill="freeze"/>
-    </rect>
-  </clipPath>
-
-  <clipPath id="aiClip">
-    <rect x="510" y="235" width="0" height="38">
-      <animate attributeName="width" from="0" to="340" begin="11.3s" dur="4s" fill="freeze"/>
-    </rect>
-  </clipPath>
-
-  <clipPath id="devClip">
-    <rect x="510" y="280" width="0" height="38">
-      <animate attributeName="width" from="0" to="400" begin="15.8s" dur="5s" fill="freeze"/>
-    </rect>
-  </clipPath>
 
 </defs>
 
 <!-- ══════════════════════════════════════════ -->
-<!--  DARK OBSIDIAN BACKGROUND                  -->
+<!--  DARK OBSIDIAN CANVAS BACKGROUND           -->
 <!-- ══════════════════════════════════════════ -->
 <rect width="1600" height="500" fill="url(#heroBg)"/>
 
-<!-- Tech Grid Background -->
+<!-- Cybernetic Grid Lines -->
 <g stroke="#14213D" stroke-width="0.8" opacity="0.4">
   <line x1="0" y1="100" x2="1600" y2="100"/>
   <line x1="0" y1="250" x2="1600" y2="250"/>
   <line x1="0" y1="400" x2="1600" y2="400"/>
-  <line x1="300" y1="0" x2="300" y2="500"/>
-  <line x1="800" y1="0" x2="800" y2="500"/>
-  <line x1="1300" y1="0" x2="1300" y2="500"/>
+  <line x1="250" y1="0" x2="250" y2="500"/>
+  <line x1="750" y1="0" x2="750" y2="500"/>
+  <line x1="1250" y1="0" x2="1250" y2="500"/>
 </g>
 
-<!-- Floating Synapse Particles & Neural Lines -->
-<g stroke="#00D2FF" stroke-width="1" opacity="0.3">
-  <line x1="200" y1="120" x2="350" y2="80" stroke-dasharray="4,4"/>
-  <line x1="1350" y1="400" x2="1480" y2="340" stroke-dasharray="4,4"/>
-</g>
-
-<circle cx="200" cy="120" r="4" fill="#00F5FF" filter="url(#neonGlow)">
+<!-- Floating Ambient Synapse Particles -->
+<circle cx="150"  cy="100" r="4" fill="#00F5FF" filter="url(#neonBlur)">
   <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
 </circle>
-<circle cx="1480" cy="340" r="4" fill="#8B6FE8" filter="url(#neonGlow)">
+<circle cx="1450" cy="400" r="4" fill="#8B6FE8" filter="url(#neonBlur)">
   <animate attributeName="opacity" values="1;0.3;1" dur="2.5s" repeatCount="indefinite"/>
 </circle>
+<circle cx="850"  cy="80"  r="3" fill="#00FF88" filter="url(#neonBlur)">
+  <animate attributeName="opacity" values="0.2;1;0.2" dur="3.5s" repeatCount="indefinite"/>
+</circle>
 
-<!-- ══════════════════════════════════════════ -->
-<!--  GLASSMORPHISM LABORATORY CARD             -->
-<!-- ══════════════════════════════════════════ -->
-<rect x="330" y="40" width="950" height="390" rx="18" fill="#0D1730" opacity="0.9" stroke="#00F5FF" stroke-width="1.5" filter="url(#labShadow)"/>
-
-<!-- Top Card Status Header -->
-<g transform="translate(360, 60)">
-  <rect width="180" height="24" rx="6" fill="#05261E" stroke="#00FF88" stroke-width="0.8"/>
-  <circle cx="12" cy="12" r="3.5" fill="#00FF88">
-    <animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite"/>
-  </circle>
-  <text x="24" y="16" font-family="'Courier New', monospace" font-size="9.5" font-weight="700" fill="#00FF88" letter-spacing="1">SYSTEM: ONLINE</text>
-</g>
-
-<!-- Left Margin & Ruled Lines -->
-<line x1="480" y1="50" x2="480" y2="420" stroke="#00F5FF" stroke-width="1.2" opacity="0.4"/>
-<g stroke="#1A284A" stroke-width="0.8" opacity="0.6">
-  <line x1="490" y1="165" x2="1250" y2="165"/>
-  <line x1="490" y1="220" x2="1250" y2="220"/>
-  <line x1="490" y1="265" x2="1250" y2="265"/>
-  <line x1="490" y1="310" x2="1250" y2="310"/>
-</g>
-
-<!-- ══════════════════════════════════════════ -->
-<!--  TEXT CONTENT                              -->
-<!-- ══════════════════════════════════════════ -->
-<!-- Line 1: Name -->
-<text x="510" y="155" font-family="'Courier New', monospace" font-size="44" font-weight="800" fill="#00F5FF" filter="url(#neonGlow)" clip-path="url(#nameClip)">
-  TANISH BANDODKAR
-</text>
-
-<!-- Line 2: Subtitle 1 -->
-<text x="510" y="210" font-family="'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="#8B6FE8" letter-spacing="1" clip-path="url(#dataClip)">
-  DATA ANALYTICS &amp; BI
-</text>
-
-<!-- Line 3: Subtitle 2 -->
-<text x="510" y="255" font-family="'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="#00D2FF" letter-spacing="1" clip-path="url(#aiClip)">
-  AI AUTOMATION &amp; WORKFLOWS
-</text>
-
-<!-- Line 4: Subtitle 3 -->
-<text x="510" y="300" font-family="'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="#00FF88" letter-spacing="1" clip-path="url(#devClip)">
-  SOFTWARE ENGINEERING
-</text>
-
-<!-- ══════════════════════════════════════════ -->
-<!--  RIGHT SIDE LAB WIDGETS                    -->
-<!-- ══════════════════════════════════════════ -->
-
-<!-- Code Card -->
-<rect x="1050" y="90" width="200" height="95" rx="10" fill="#070E20" stroke="#1E2E52" stroke-width="1.2"/>
-<text x="1068" y="125" font-family="'Courier New', monospace" font-size="13" fill="#00F5FF">model.fit(data)</text>
-<text x="1068" y="152" font-family="'Courier New', monospace" font-size="13" fill="#00FF88">accuracy = 98.4%</text>
-
-<!-- AI Neural Network -->
-<g transform="translate(1110 240)" stroke="#00D2FF" stroke-width="1.5">
-  <line x1="0" y1="0" x2="55" y2="-30"/>
-  <line x1="0" y1="0" x2="55" y2="30"/>
-  <line x1="55" y1="-30" x2="110" y2="0"/>
-  <line x1="55" y1="30"  x2="110" y2="0"/>
-  <circle cx="0"   cy="0"   r="8" fill="#8B6FE8"/>
-  <circle cx="55"  cy="-30" r="7" fill="#00F5FF"/>
-  <circle cx="55"  cy="30"  r="7" fill="#00F5FF"/>
-  <circle cx="110" cy="0"   r="9" fill="#00FF88"/>
-</g>
-
-<!-- Live Line Graph -->
-<g transform="translate(1070 340)">
-  <polyline points="10,50 45,40 80,45 120,20 160,10" fill="none" stroke="#00F5FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="160" cy="10" r="4" fill="#00FF88" filter="url(#neonGlow)"/>
-</g>
-
-<!-- ══════════════════════════════════════════ -->
-<!--  PENCIL WRITING ANIMATION (Pencil Tip)      -->
-<!-- ══════════════════════════════════════════ -->
-<g>
-  <animateTransform attributeName="transform" type="translate"
-    values="
-      510 155; 970 155; 510 210; 800 210; 510 255; 850 255; 510 300; 910 300; 910 300
-    "
-    keyTimes="
-      0; 0.25; 0.2833; 0.45; 0.4708; 0.6375; 0.6583; 0.8667; 1
-    "
-    dur="24s" fill="freeze"/>
+<!-- ══════════════════════════════════════════════════════════════ -->
+<!--  LEFT GLASSMORPHISM PROFILE PANEL                              -->
+<!-- ══════════════════════════════════════════════════════════════ -->
+<g transform="translate(100, 60)" filter="url(#glassShadow)">
+  <!-- Outer Glass Panel -->
+  <rect width="820" height="380" rx="20" fill="#0B132B" fill-opacity="0.85" stroke="url(#borderGlow)" stroke-width="1.5"/>
   
-  <g transform="rotate(-35)">
-    <polygon points="0,0 22,-8 22,8" fill="#00F5FF"/>
-    <polygon points="0,0 7,-2.5 7,2.5" fill="#FFF"/>
-    <rect x="22" y="-8" width="120" height="16" fill="#8B6FE8"/>
-    <rect x="142" y="-8" width="15" height="16" fill="#00D2FF"/>
-    <rect x="157" y="-8" width="20" height="16" rx="3" fill="#00FF88"/>
+  <!-- Corner Tech Accents -->
+  <path d="M12,0 L30,0 M0,12 L0,30" stroke="#00F5FF" stroke-width="2.5" fill="none"/>
+  <path d="M808,0 L790,0 M820,12 L820,30" stroke="#00F5FF" stroke-width="2.5" fill="none"/>
+  <path d="M12,380 L30,380 M0,368 L0,350" stroke="#00F5FF" stroke-width="2.5" fill="none"/>
+  <path d="M808,380 L790,380 M820,368 L820,350" stroke="#00F5FF" stroke-width="2.5" fill="none"/>
+
+  <!-- System Online Status Badge -->
+  <g transform="translate(35, 30)">
+    <rect width="210" height="26" rx="7" fill="#05261E" stroke="#00FF88" stroke-width="0.8"/>
+    <circle cx="14" cy="13" r="4" fill="#00FF88">
+      <animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="28" y="17" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#00FF88" letter-spacing="1">
+      SYSTEM ONLINE // AI LAB v2.0
+    </text>
   </g>
+
+  <!-- Name Header -->
+  <text x="35" y="110" font-family="'Segoe UI', sans-serif" font-size="44" font-weight="900" fill="#00F5FF" filter="url(#neonBlur)" letter-spacing="1">
+    TANISH BANDODKAR
+  </text>
+  
+  <text x="35" y="132" font-family="'Courier New', monospace" font-size="12" font-weight="600" fill="#7E8B9B" letter-spacing="2">
+    DATA ANALYST // SOFTWARE ENGINEER // AI AUTOMATIONS
+  </text>
+
+  <!-- Specialization Badges -->
+  <g transform="translate(35, 160)">
+    <!-- Badge 1: Data Science -->
+    <g transform="translate(0, 0)">
+      <rect width="240" height="42" rx="10" fill="#121F3F" stroke="#00D2FF" stroke-width="0.8"/>
+      <text x="18" y="25" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="800" fill="#00D2FF">📊 DATA SCIENCE &amp; ANALYTICS</text>
+    </g>
+    <!-- Badge 2: AI Automations -->
+    <g transform="translate(255, 0)">
+      <rect width="250" height="42" rx="10" fill="#121F3F" stroke="#8B6FE8" stroke-width="0.8"/>
+      <text x="18" y="25" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="800" fill="#8B6FE8">🤖 AI &amp; AGENTIC WORKFLOWS</text>
+    </g>
+    <!-- Badge 3: Software Eng -->
+    <g transform="translate(520, 0)">
+      <rect width="230" height="42" rx="10" fill="#121F3F" stroke="#00FF88" stroke-width="0.8"/>
+      <text x="18" y="25" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="800" fill="#00FF88">💻 SOFTWARE ENGINEERING</text>
+    </g>
+  </g>
+
+  <!-- Key Highlights Row -->
+  <g transform="translate(35, 230)">
+    <!-- Highlight 1: NorthStar Tech Analyst -->
+    <g transform="translate(0, 0)">
+      <rect width="360" height="48" rx="10" fill="#0D1935" stroke="#1E2E52" stroke-width="1"/>
+      <text x="16" y="22" font-family="'Courier New', monospace" font-size="9.5" font-weight="700" fill="#00F5FF">💼 CURRENT ROLE</text>
+      <text x="16" y="38" font-family="'Segoe UI', sans-serif" font-size="11.5" font-weight="700" fill="#FFF">Technology Analyst @ NorthStar Tech</text>
+    </g>
+    <!-- Highlight 2: Education & CGPA -->
+    <g transform="translate(380, 0)">
+      <rect width="370" height="48" rx="10" fill="#0D1935" stroke="#1E2E52" stroke-width="1"/>
+      <text x="16" y="22" font-family="'Courier New', monospace" font-size="9.5" font-weight="700" fill="#00FF88">🎓 ACADEMIC STANDING</text>
+      <text x="16" y="38" font-family="'Segoe UI', sans-serif" font-size="11.5" font-weight="700" fill="#FFF">B.Tech CSBS @ KJSCE • <tspan fill="#00FF88">9.45 CGPA</tspan></text>
+    </g>
+  </g>
+
+  <!-- Bottom Code Watermark Line -->
+  <text x="35" y="340" font-family="'Courier New', monospace" font-size="11" fill="#4C5D75" letter-spacing="1">
+    &gt; initialize_system() --models=n8n,pandas,tableau,scikit-learn --status=READY 🚀
+  </text>
+</g>
+
+<!-- ══════════════════════════════════════════════════════════════ -->
+<!--  RIGHT SIDE FUTURISTIC AI NEURAL CORE & HOLOGRAM MATRIX        -->
+<!-- ══════════════════════════════════════════════════════════════ -->
+<g transform="translate(1250, 250)">
+  
+  <!-- Outer Orbiting Hologram Rings -->
+  <circle cx="0" cy="0" r="140" fill="none" stroke="#00F5FF" stroke-width="0.8" stroke-dasharray="10,8" opacity="0.35">
+    <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="0" cy="0" r="105" fill="none" stroke="#8B6FE8" stroke-width="1" stroke-dasharray="14,6" opacity="0.45">
+    <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="15s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="0" cy="0" r="70" fill="none" stroke="#00FF88" stroke-width="1.2" stroke-dasharray="8,8" opacity="0.55">
+    <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="10s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Central Glowing AI Core -->
+  <circle cx="0" cy="0" r="45" fill="url(#coreGlow)" filter="url(#neonBlur)"/>
+  <circle cx="0" cy="0" r="22" fill="#00F5FF" opacity="0.85" filter="url(#neonBlur)">
+    <animate attributeName="r" values="20;25;20" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="0" cy="0" r="10" fill="#FFF"/>
+
+  <!-- Neural Synapse Connection Lines & Nodes -->
+  <g stroke="#00F5FF" stroke-width="1.5" opacity="0.6">
+    <!-- Synapse 1 Top Right -->
+    <line x1="0" y1="0" x2="90" y2="-70"/>
+    <circle cx="90" cy="-70" r="7" fill="#8B6FE8" stroke="#00F5FF" stroke-width="1"/>
+    
+    <!-- Synapse 2 Top Left -->
+    <line x1="0" y1="0" x2="-90" y2="-70"/>
+    <circle cx="-90" cy="-70" r="6" fill="#00F5FF" stroke="#00FF88" stroke-width="1"/>
+
+    <!-- Synapse 3 Bottom Right -->
+    <line x1="0" y1="0" x2="90" y2="70"/>
+    <circle cx="90" cy="70" r="7" fill="#00FF88" stroke="#00F5FF" stroke-width="1"/>
+
+    <!-- Synapse 4 Bottom Left -->
+    <line x1="0" y1="0" x2="-90" y2="70"/>
+    <circle cx="-90" cy="70" r="6" fill="#8B6FE8" stroke="#00F5FF" stroke-width="1"/>
+  </g>
+
+  <!-- Live Telemetry / Code Labels -->
+  <g font-family="'Courier New', monospace" font-size="10" font-weight="700">
+    <text x="105" y="-65" fill="#8B6FE8">model.fit()</text>
+    <text x="-160" y="-65" fill="#00F5FF">acc = 98.4%</text>
+    <text x="105" y="75" fill="#00FF88">n8n_flow</text>
+    <text x="-160" y="75" fill="#FF9F43">data_pipeline</text>
+  </g>
+
 </g>
 
 </svg>
