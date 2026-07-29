@@ -4,7 +4,7 @@
   Theme: Ultra-clean dark obsidian backdrop · Widescreen high-impact badges
   Author: Tanish Bandodkar
 -->
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="250" viewBox="0 0 1200 250">
 
 <defs>
 
@@ -94,7 +94,7 @@
 <!-- ══════════════════════════════════════════ -->
 <!--  BACKGROUND CANVAS                         -->
 <!-- ══════════════════════════════════════════ -->
-<rect width="1200" height="340" fill="url(#bg)" rx="16"/>
+<rect width="1200" height="250" fill="url(#bg)" rx="16"/>
 
 <!-- ══════════════════════════════════════════════════════════════ -->
 <!--  CYCLING COMMAND LINE PROMPT — CENTERED TYPEWRITER             -->
@@ -223,27 +223,5 @@
   <text x="720" y="209" font-family="'Segoe UI',sans-serif" font-size="12" font-weight="700" fill="#FFF" text-anchor="middle">🚀 CURRENTLY</text>
   <text x="982" y="210" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="800" fill="#FFF" text-anchor="middle">BUILDING ML &amp; DL PROJECTS</text>
 </g>
-
-<!-- ══════════════════════════════════════════════════════════ -->
-<!--  ROW 4  —  Social Links                                  -->
-<!-- ══════════════════════════════════════════════════════════ -->
-
-<!-- GitHub -->
-<a href="https://github.com/tani-codes" target="_blank" rel="noopener">
-  <rect x="180" y="244" width="240" height="46" rx="8" fill="#181717" filter="url(#bsh)"/>
-  <text x="300" y="273" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="800" fill="#FFF" text-anchor="middle" letter-spacing="1">● GITHUB</text>
-</a>
-
-<!-- LinkedIn -->
-<a href="https://www.linkedin.com/in/tanishbandodkar/" target="_blank" rel="noopener">
-  <rect x="480" y="244" width="240" height="46" rx="8" fill="#0A66C2" filter="url(#bsh)"/>
-  <text x="600" y="273" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="800" fill="#FFF" text-anchor="middle" letter-spacing="1">in LINKEDIN</text>
-</a>
-
-<!-- Gmail -->
-<a href="mailto:bandodkartanish@gmail.com" target="_blank" rel="noopener">
-  <rect x="780" y="244" width="240" height="46" rx="8" fill="#EA4335" filter="url(#bsh)"/>
-  <text x="900" y="273" font-family="'Segoe UI',sans-serif" font-size="13" font-weight="800" fill="#FFF" text-anchor="middle" letter-spacing="1">✉ GMAIL</text>
-</a>
 
 </svg>

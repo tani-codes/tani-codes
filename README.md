@@ -17,11 +17,17 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/tani-codes" target="_blank"><img src="https://img.shields.io/badge/GitHub-tani--codes-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
-  &nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/tanishbandodkar/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Tanish%20Bandodkar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  &nbsp;&nbsp;
-  <a href="mailto:bandodkartanish@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Email-bandodkartanish%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="https://github.com/tani-codes" target="_blank">
+    <img src="./assets/github_btn.svg" alt="GitHub" height="44">
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/tanishbandodkar/" target="_blank">
+    <img src="./assets/linkedin_btn.svg" alt="LinkedIn" height="44">
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="mailto:bandodkartanish@gmail.com" target="_blank">
+    <img src="./assets/gmail_btn.svg" alt="Gmail" height="44">
+  </a>
 </p>
 
 <p align="center">
