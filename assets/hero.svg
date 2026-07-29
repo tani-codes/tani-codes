@@ -1,1082 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<svg
-xmlns="http://www.w3.org/2000/svg"
-width="1600"
-height="500"
-viewBox="0 0 1600 500">
-
+<!--
+  hero.svg — Tanish AI Laboratory Hero Banner
+  Theme: Dark AI Research Lab + Neural Network Visualization
+  Palette: Deep Obsidian (#050816) · Electric Cyan (#00F5FF) · Neon Purple (#8B6FE8) · Mint (#00FF88)
+  Author: Tanish Bandodkar
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="500" viewBox="0 0 1600 500">
 
 <defs>
 
+  <!-- ── Deep Obsidian Canvas Background ── -->
+  <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%"   stop-color="#050816"/>
+    <stop offset="50%"  stop-color="#0A1026"/>
+    <stop offset="100%" stop-color="#040612"/>
+  </linearGradient>
 
-<!-- BACKGROUND -->
+  <!-- ── Neon Glow Filter ── -->
+  <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur stdDeviation="5" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
 
-<linearGradient id="bg"
-x1="0%"
-y1="0%"
-x2="100%"
-y2="100%">
+  <!-- ── Glassmorphism Card Shadow ── -->
+  <filter id="labShadow" x="-10%" y="-10%" width="120%" height="120%">
+    <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#00F5FF" flood-opacity="0.18"/>
+  </filter>
 
-<stop offset="0%" stop-color="#FFFDF8"/>
-<stop offset="100%" stop-color="#F3EBDD"/>
+  <!-- ── Text Mask Clips for Pencil Writing Timeline ── -->
+  <clipPath id="nameClip">
+    <rect x="510" y="115" width="0" height="58">
+      <animate attributeName="width" from="0" to="460" begin="0.3s" dur="6s" fill="freeze"/>
+    </rect>
+  </clipPath>
 
-</linearGradient>
+  <clipPath id="dataClip">
+    <rect x="510" y="190" width="0" height="38">
+      <animate attributeName="width" from="0" to="290" begin="6.8s" dur="4s" fill="freeze"/>
+    </rect>
+  </clipPath>
 
+  <clipPath id="aiClip">
+    <rect x="510" y="235" width="0" height="38">
+      <animate attributeName="width" from="0" to="340" begin="11.3s" dur="4s" fill="freeze"/>
+    </rect>
+  </clipPath>
 
-
-<!-- SHADOW -->
-
-<filter id="shadow">
-
-<feGaussianBlur stdDeviation="14"/>
-
-</filter>
-
-
-
-<!--
-  ANIMATION TIMELINE  (total = 24 s)
-  ─────────────────────────────────────────────────────────────
-  Segment   begin   dur   pencil-start-x  pencil-end-x   text
-  ─────────────────────────────────────────────────────────────
-  Line 1    0.3 s   6 s   510             930            "Tanish Bandodkar"  (48 px font, ~420 px wide)
-  pause           0.5 s   (pencil jumps back to col-start of next line)
-  Line 2    6.8 s   4 s   510             770            "DATA ANALYTICS"    (22 px font, ~260 px wide)
-  pause           0.5 s
-  Line 3   11.3 s   4 s   510             840            "AI / ML ENTHUSIAST"(22 px font, ~330 px wide)
-  pause           0.5 s
-  Line 4   15.8 s   5 s   510             890            "SOFTWARE DEVELOPER" (22 px font, ~380 px wide)
-  ─────────────────────────────────────────────────────────────
-
-  Pencil tip = the very front point of the pencil group.
-  The pencil group origin IS the tip (polygon "0,0 22,-8 22,8").
-  So translate(x, baseline-y) puts the tip at (x, baseline-y).
-
-  Text baselines:
-    Line 1  y=165  → we want pencil tip y ≈ 155  (slightly above baseline)
-    Line 2  y=220  → pencil tip y ≈ 210
-    Line 3  y=265  → pencil tip y ≈ 255
-    Line 4  y=310  → pencil tip y ≈ 300
-
-  clipPath rects use the same begin/dur values as pencil x movement.
-  rect y and height are set to cover the full glyph ascent/descent.
--->
-
-
-<!-- TEXT MASKS -->
-
-
-<clipPath id="nameClip">
-
-  <!-- Line 1: begin=0.3s dur=6s → 0 to 420 px wide -->
-  <rect x="510" y="115" width="0" height="58">
-    <animate
-      attributeName="width"
-      from="0"
-      to="420"
-      begin="0.3s"
-      dur="6s"
-      fill="freeze"/>
-  </rect>
-
-</clipPath>
-
-
-
-<clipPath id="dataClip">
-
-  <!-- Line 2: begin=6.8s dur=4s → 0 to 260 px wide -->
-  <rect x="510" y="190" width="0" height="38">
-    <animate
-      attributeName="width"
-      from="0"
-      to="260"
-      begin="6.8s"
-      dur="4s"
-      fill="freeze"/>
-  </rect>
-
-</clipPath>
-
-
-
-<clipPath id="aiClip">
-
-  <!-- Line 3: begin=11.3s dur=4s → 0 to 330 px wide -->
-  <rect x="510" y="235" width="0" height="38">
-    <animate
-      attributeName="width"
-      from="0"
-      to="330"
-      begin="11.3s"
-      dur="4s"
-      fill="freeze"/>
-  </rect>
-
-</clipPath>
-
-
-
-<clipPath id="devClip">
-
-  <!-- Line 4: begin=15.8s dur=5s → 0 to 380 px wide -->
-  <rect x="510" y="280" width="0" height="38">
-    <animate
-      attributeName="width"
-      from="0"
-      to="380"
-      begin="15.8s"
-      dur="5s"
-      fill="freeze"/>
-  </rect>
-
-</clipPath>
+  <clipPath id="devClip">
+    <rect x="510" y="280" width="0" height="38">
+      <animate attributeName="width" from="0" to="400" begin="15.8s" dur="5s" fill="freeze"/>
+    </rect>
+  </clipPath>
 
 </defs>
 
+<!-- ══════════════════════════════════════════ -->
+<!--  DARK OBSIDIAN BACKGROUND                  -->
+<!-- ══════════════════════════════════════════ -->
+<rect width="1600" height="500" fill="url(#heroBg)"/>
 
-
-<!-- BACKGROUND -->
-
-<rect
-width="1600"
-height="500"
-fill="url(#bg)"/>
-
-<!-- NATURAL BOTANICAL LEAF ACCENTS FOR HERO -->
-<g opacity="0.30" transform="translate(240 80) rotate(-15)">
-  <path d="M0,0 Q20,-20 40,0 Q20,20 0,0 Z" fill="#5C7862"/>
-  <line x1="0" y1="0" x2="40" y2="0" stroke="#3E5443" stroke-width="0.8"/>
-  <path d="M12,0 Q25,-30 45,-15 Q28,-6 12,0 Z" fill="#6E8E75"/>
+<!-- Tech Grid Background -->
+<g stroke="#14213D" stroke-width="0.8" opacity="0.4">
+  <line x1="0" y1="100" x2="1600" y2="100"/>
+  <line x1="0" y1="250" x2="1600" y2="250"/>
+  <line x1="0" y1="400" x2="1600" y2="400"/>
+  <line x1="300" y1="0" x2="300" y2="500"/>
+  <line x1="800" y1="0" x2="800" y2="500"/>
+  <line x1="1300" y1="0" x2="1300" y2="500"/>
 </g>
 
-<g opacity="0.30" transform="translate(1320 380) rotate(20)">
-  <path d="M0,0 Q20,-20 40,0 Q20,20 0,0 Z" fill="#C87A5B"/>
-  <line x1="0" y1="0" x2="40" y2="0" stroke="#9E573C" stroke-width="0.8"/>
-  <path d="M12,0 Q25,-30 45,-15 Q28,-6 12,0 Z" fill="#D4886A"/>
+<!-- Floating Synapse Particles & Neural Lines -->
+<g stroke="#00D2FF" stroke-width="1" opacity="0.3">
+  <line x1="200" y1="120" x2="350" y2="80" stroke-dasharray="4,4"/>
+  <line x1="1350" y1="400" x2="1480" y2="340" stroke-dasharray="4,4"/>
 </g>
 
+<circle cx="200" cy="120" r="4" fill="#00F5FF" filter="url(#neonGlow)">
+  <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+</circle>
+<circle cx="1480" cy="340" r="4" fill="#8B6FE8" filter="url(#neonGlow)">
+  <animate attributeName="opacity" values="1;0.3;1" dur="2.5s" repeatCount="indefinite"/>
+</circle>
 
+<!-- ══════════════════════════════════════════ -->
+<!--  GLASSMORPHISM LABORATORY CARD             -->
+<!-- ══════════════════════════════════════════ -->
+<rect x="330" y="40" width="950" height="390" rx="18" fill="#0D1730" opacity="0.9" stroke="#00F5FF" stroke-width="1.5" filter="url(#labShadow)"/>
 
-
-<!-- NOTEBOOK SHADOW -->
-
-<rect
-
-x="330"
-
-y="40"
-
-width="950"
-
-height="390"
-
-rx="30"
-
-fill="#000"
-
-opacity="0.12"
-
-filter="url(#shadow)"/>
-
-
-
-
-<!-- NOTEBOOK -->
-
-<rect
-
-x="340"
-
-y="50"
-
-width="920"
-
-height="380"
-
-rx="25"
-
-fill="#FFFFFF"
-
-stroke="#E4D8C5"
-
-stroke-width="3"/>
-
-
-
-
-<!-- SPIRAL -->
-
-<g
-
-stroke="#B7AA98"
-
-stroke-width="4"
-
-fill="none">
-
-
-<circle cx="420" cy="95" r="8"/>
-<circle cx="420" cy="140" r="8"/>
-<circle cx="420" cy="185" r="8"/>
-<circle cx="420" cy="230" r="8"/>
-<circle cx="420" cy="275" r="8"/>
-<circle cx="420" cy="320" r="8"/>
-
-
+<!-- Top Card Status Header -->
+<g transform="translate(360, 60)">
+  <rect width="180" height="24" rx="6" fill="#05261E" stroke="#00FF88" stroke-width="0.8"/>
+  <circle cx="12" cy="12" r="3.5" fill="#00FF88">
+    <animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="24" y="16" font-family="'Courier New', monospace" font-size="9.5" font-weight="700" fill="#00FF88" letter-spacing="1">SYSTEM: ONLINE</text>
 </g>
 
-
-
-
-<!-- PAGE LINES -->
-
-<g
-
-stroke="#EEE4D6"
-
-stroke-width="2">
-
-
-<line x1="470" y1="130" x2="1180" y2="130"/>
-<line x1="470" y1="180" x2="1180" y2="180"/>
-<line x1="470" y1="225" x2="1180" y2="225"/>
-<line x1="470" y1="270" x2="1180" y2="270"/>
-<line x1="470" y1="315" x2="1180" y2="315"/>
-
-
+<!-- Left Margin & Ruled Lines -->
+<line x1="480" y1="50" x2="480" y2="420" stroke="#00F5FF" stroke-width="1.2" opacity="0.4"/>
+<g stroke="#1A284A" stroke-width="0.8" opacity="0.6">
+  <line x1="490" y1="165" x2="1250" y2="165"/>
+  <line x1="490" y1="220" x2="1250" y2="220"/>
+  <line x1="490" y1="265" x2="1250" y2="265"/>
+  <line x1="490" y1="310" x2="1250" y2="310"/>
 </g>
-<!-- ================================= -->
-<!-- TEXT CONTENT -->
-<!-- ================================= -->
 
-
-<text
-
-x="510"
-
-y="165"
-
-font-family="cursive"
-
-font-size="48"
-
-font-weight="700"
-
-fill="#2D2A26"
-
-clip-path="url(#nameClip)">
-
-Tanish Bandodkar
-
+<!-- ══════════════════════════════════════════ -->
+<!--  TEXT CONTENT                              -->
+<!-- ══════════════════════════════════════════ -->
+<!-- Line 1: Name -->
+<text x="510" y="155" font-family="'Courier New', monospace" font-size="44" font-weight="800" fill="#00F5FF" filter="url(#neonGlow)" clip-path="url(#nameClip)">
+  TANISH BANDODKAR
 </text>
 
-
-
-
-<text
-
-x="510"
-
-y="220"
-
-font-family="cursive"
-
-font-size="22"
-
-fill="#5C554C"
-
-clip-path="url(#dataClip)">
-
-DATA ANALYTICS
-
+<!-- Line 2: Subtitle 1 -->
+<text x="510" y="210" font-family="'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="#8B6FE8" letter-spacing="1" clip-path="url(#dataClip)">
+  DATA ANALYTICS &amp; BI
 </text>
 
-
-
-
-<text
-
-x="510"
-
-y="265"
-
-font-family="cursive"
-
-font-size="22"
-
-fill="#5C554C"
-
-clip-path="url(#aiClip)">
-
-AI / ML ENTHUSIAST
-
+<!-- Line 3: Subtitle 2 -->
+<text x="510" y="255" font-family="'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="#00D2FF" letter-spacing="1" clip-path="url(#aiClip)">
+  AI AUTOMATION &amp; WORKFLOWS
 </text>
 
-
-
-
-<text
-
-x="510"
-
-y="310"
-
-font-family="cursive"
-
-font-size="22"
-
-fill="#5C554C"
-
-clip-path="url(#devClip)">
-
-SOFTWARE DEVELOPER
-
+<!-- Line 4: Subtitle 3 -->
+<text x="510" y="300" font-family="'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="#00FF88" letter-spacing="1" clip-path="url(#devClip)">
+  SOFTWARE ENGINEERING
 </text>
 
-
-
-
-<!-- ================================= -->
-<!-- CODE CARD -->
-<!-- ================================= -->
-
-
-<rect
-
-x="1060"
-
-y="90"
-
-width="210"
-
-height="100"
-
-rx="14"
-
-fill="#FFF8ED"
-
-stroke="#E4D8C5"
-
-stroke-width="2"/>
-
-
-
-
-<text
-
-x="1080"
-
-y="130"
-
-font-family="monospace"
-
-font-size="15"
-
-fill="#5B8DEF">
-
-model.fit()
-
-</text>
-
-
-
-
-<text
-
-x="1080"
-
-y="160"
-
-font-family="monospace"
-
-font-size="15"
-
-fill="#6BA368">
-
-accuracy = 98%
-
-</text>
-
-
-
-
-<!-- ================================= -->
-<!-- AI NETWORK -->
-<!-- ================================= -->
-
-
-<g
-
-transform="translate(1120 250)"
-
-stroke="#5B8DEF"
-
-stroke-width="2">
-
-
-
-<line
-
-x1="0"
-
-y1="0"
-
-x2="55"
-
-y2="-35"/>
-
-
-
-<line
-
-x1="0"
-
-y1="0"
-
-x2="55"
-
-y2="35"/>
-
-
-
-<line
-
-x1="55"
-
-y1="-35"
-
-x2="120"
-
-y2="0"/>
-
-
-
-<line
-
-x1="55"
-
-y1="35"
-
-x2="120"
-
-y2="0"/>
-
-
-
-<circle
-
-cx="0"
-
-cy="0"
-
-r="10"
-
-fill="#F4A261"/>
-
-
-
-<circle
-
-cx="55"
-
-cy="-35"
-
-r="8"
-
-fill="#FFFFFF"/>
-
-
-
-<circle
-
-cx="55"
-
-cy="35"
-
-r="8"
-
-fill="#FFFFFF"/>
-
-
-
-<circle
-
-cx="120"
-
-cy="0"
-
-r="12"
-
-fill="#6BA368"/>
-
-
-
-</g>
-<!-- ================================= -->
-<!-- ANALYTICS GRAPH -->
-<!-- ================================= -->
-
-
-<g transform="translate(1090 350)">
-
-
-
-<line
-
-x1="0"
-
-y1="60"
-
-x2="170"
-
-y2="60"
-
-stroke="#C8BBA8"/>
-
-
-
-<line
-
-x1="0"
-
-y1="60"
-
-x2="0"
-
-y2="0"
-
-stroke="#C8BBA8"/>
-
-
-
-<polyline
-points="10,50 45,40 80,45 120,20 160,10"
-fill="none"
-stroke="#5B8DEF"
-stroke-width="3"
-stroke-linecap="round"
-stroke-linejoin="round"
-stroke-dasharray="165"
-stroke-dashoffset="165">
-<animate
-attributeName="stroke-dashoffset"
-from="165"
-to="0"
-begin="3s"
-dur="3s"
-fill="freeze"/>
-</polyline>
-
-<!-- TECH STYLUS DRAWING LINE GRAPH LIVE (Synched at t=3s to 6s) -->
-<g opacity="0">
-  <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.95;1" begin="2.8s" dur="3.4s" fill="freeze"/>
-  <animateTransform attributeName="transform" type="translate"
-    values="10 50; 45 40; 80 45; 120 20; 160 10"
-    keyTimes="0; 0.227; 0.448; 0.743; 1"
-    begin="3s" dur="3s" fill="freeze"/>
-  
-  <g transform="rotate(-35)">
-    <polygon points="0,0 -3,-12 3,-12" fill="#5B8DEF"/>
-    <circle cx="0" cy="0" r="1.5" fill="#FFF"/>
-    <rect x="-3.5" y="-24" width="7" height="12" rx="1" fill="#4A4A4A" stroke="#222" stroke-width="0.5"/>
-    <polygon points="-2.5,-24 2.5,-24 3.5,-75 -3.5,-75" fill="#24292E"/>
-    <line x1="0" y1="-24" x2="0" y2="-72" stroke="#5B8DEF" stroke-width="0.8" opacity="0.8"/>
-  </g>
+<!-- ══════════════════════════════════════════ -->
+<!--  RIGHT SIDE LAB WIDGETS                    -->
+<!-- ══════════════════════════════════════════ -->
+
+<!-- Code Card -->
+<rect x="1050" y="90" width="200" height="95" rx="10" fill="#070E20" stroke="#1E2E52" stroke-width="1.2"/>
+<text x="1068" y="125" font-family="'Courier New', monospace" font-size="13" fill="#00F5FF">model.fit(data)</text>
+<text x="1068" y="152" font-family="'Courier New', monospace" font-size="13" fill="#00FF88">accuracy = 98.4%</text>
+
+<!-- AI Neural Network -->
+<g transform="translate(1110 240)" stroke="#00D2FF" stroke-width="1.5">
+  <line x1="0" y1="0" x2="55" y2="-30"/>
+  <line x1="0" y1="0" x2="55" y2="30"/>
+  <line x1="55" y1="-30" x2="110" y2="0"/>
+  <line x1="55" y1="30"  x2="110" y2="0"/>
+  <circle cx="0"   cy="0"   r="8" fill="#8B6FE8"/>
+  <circle cx="55"  cy="-30" r="7" fill="#00F5FF"/>
+  <circle cx="55"  cy="30"  r="7" fill="#00F5FF"/>
+  <circle cx="110" cy="0"   r="9" fill="#00FF88"/>
 </g>
 
+<!-- Live Line Graph -->
+<g transform="translate(1070 340)">
+  <polyline points="10,50 45,40 80,45 120,20 160,10" fill="none" stroke="#00F5FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="160" cy="10" r="4" fill="#00FF88" filter="url(#neonGlow)"/>
 </g>
 
-
-
-
-<!-- ================================= -->
-<!-- PENCIL WRITING ANIMATION -->
-<!-- ================================= -->
-
-<!--
-  The pencil group origin = the TIP of the pencil.
-  translate(x, y) moves the tip to absolute SVG coordinates (x, y).
-
-  Timeline (all values in seconds):
-    t=0.3   tip at (510, 155)   — start of "Tanish Bandodkar"
-    t=6.3   tip at (930, 155)   — end of "Tanish Bandodkar"   (+420 px in 6 s)
-    t=6.3   tip jumps to (510, 210) — start of "DATA ANALYTICS"
-    t=6.8   tip at (510, 210)   — tiny pause / re-position
-    t=10.8  tip at (770, 210)   — end of "DATA ANALYTICS"     (+260 px in 4 s)
-    t=10.8  tip jumps to (510, 255) — start of "AI / ML…"
-    t=11.3  tip at (510, 255)   — tiny pause / re-position
-    t=15.3  tip at (840, 255)   — end of "AI / ML ENTHUSIAST" (+330 px in 4 s)
-    t=15.3  tip jumps to (510, 300) — start of "SOFTWARE DEVELOPER"
-    t=15.8  tip at (510, 300)   — tiny pause / re-position
-    t=20.8  tip at (890, 300)   — end of "SOFTWARE DEVELOPER" (+380 px in 5 s)
-
-  We express all this within a single animateTransform on dur="21s"
-  (total = 20.8 s rounded up with a small hold).
-
-  keyTimes are fractions of 21 s:
-    0.3/21  = 0.0143  → writing line 1 starts
-    6.3/21  = 0.3000  → writing line 1 ends
-    6.3/21  = 0.3000  → jump (same keyTime, instant)
-    6.8/21  = 0.3238  → arrive at line 2 start
-    10.8/21 = 0.5143  → writing line 2 ends
-    10.8/21 = 0.5143  → jump
-    11.3/21 = 0.5381  → arrive at line 3 start
-    15.3/21 = 0.7286  → writing line 3 ends
-    15.3/21 = 0.7286  → jump
-    15.8/21 = 0.7524  → arrive at line 4 start
-    20.8/21 = 0.9905  → writing line 4 ends
-    1.0000           → hold
-
-  Because SVG animateTransform can't repeat a keyTime, we use calcMode="linear"
-  and tiny epsilon offsets (0.0001) for instant jumps.
--->
-
+<!-- ══════════════════════════════════════════ -->
+<!--  PENCIL WRITING ANIMATION (Pencil Tip)      -->
+<!-- ══════════════════════════════════════════ -->
 <g>
-
-  <animateTransform
-    attributeName="transform"
-    type="translate"
-    calcMode="linear"
+  <animateTransform attributeName="transform" type="translate"
     values="
-      510 155;
-      510 155;
-      930 155;
-      510 210;
-      510 210;
-      770 210;
-      510 255;
-      510 255;
-      840 255;
-      510 300;
-      510 300;
-      890 300;
-      890 300
+      510 155; 970 155; 510 210; 800 210; 510 255; 850 255; 510 300; 910 300; 910 300
     "
     keyTimes="
-      0;
-      0.0143;
-      0.3000;
-      0.3001;
-      0.3238;
-      0.5143;
-      0.5144;
-      0.5381;
-      0.7286;
-      0.7287;
-      0.7524;
-      0.9905;
-      1
+      0; 0.25; 0.2833; 0.45; 0.4708; 0.6375; 0.6583; 0.8667; 1
     "
-    dur="21s"
-    fill="freeze"/>
-
-
-  <!-- PENCIL -->
-
-  <g transform="rotate(-25)">
-
-
-
-    <!-- TIP -->
-
-    <polygon
-
-    points="0,0 22,-8 22,8"
-
-    fill="#333"/>
-
-
-
-    <!-- WOOD -->
-
-    <polygon
-
-    points="22,-8 48,-8 48,8 22,8"
-
-    fill="#C49A6A"/>
-
-
-
-    <!-- BODY -->
-
-    <rect
-
-    x="48"
-
-    y="-8"
-
-    width="125"
-
-    height="16"
-
-    rx="8"
-
-    fill="#F4C95D"/>
-
-
-
-    <!-- METAL -->
-
-    <rect
-
-    x="173"
-
-    y="-8"
-
-    width="8"
-
-    height="16"
-
-    fill="#B8B8B8"/>
-
-
-
-    <!-- ERASER -->
-
-    <rect
-
-    x="181"
-
-    y="-8"
-
-    width="22"
-
-    height="16"
-
-    rx="4"
-
-    fill="#E57C7C"/>
-
-
+    dur="24s" fill="freeze"/>
+  
+  <g transform="rotate(-35)">
+    <polygon points="0,0 22,-8 22,8" fill="#00F5FF"/>
+    <polygon points="0,0 7,-2.5 7,2.5" fill="#FFF"/>
+    <rect x="22" y="-8" width="120" height="16" fill="#8B6FE8"/>
+    <rect x="142" y="-8" width="15" height="16" fill="#00D2FF"/>
+    <rect x="157" y="-8" width="20" height="16" rx="3" fill="#00FF88"/>
   </g>
-
-
 </g>
-<!-- ================================= -->
-<!-- COFFEE MUG -->
-<!-- ================================= -->
-
-
-<ellipse
-
-cx="260"
-
-cy="390"
-
-rx="55"
-
-ry="12"
-
-fill="#000"
-
-opacity="0.12"/>
-
-
-
-<rect
-
-x="220"
-
-y="310"
-
-width="75"
-
-height="75"
-
-rx="10"
-
-fill="#FFFDF8"
-
-stroke="#D8CCBA"
-
-stroke-width="3"/>
-
-
-
-<rect
-
-x="230"
-
-y="320"
-
-width="55"
-
-height="45"
-
-fill="#8B5E3C"/>
-
-
-
-<path
-
-d="
-M295 325
-Q335 330 320 360
-Q315 380 295 375"
-
-fill="none"
-
-stroke="#D8CCBA"
-
-stroke-width="8"/>
-
-
-
-
-<!-- ================================= -->
-<!-- STICKY NOTE -->
-<!-- ================================= -->
-
-
-<g transform="translate(130 110) rotate(-8)">
-
-
-
-<rect
-
-width="90"
-
-height="90"
-
-fill="#FFE58A"/>
-
-
-
-<line
-
-x1="15"
-
-y1="30"
-
-x2="70"
-
-y2="30"
-
-stroke="#D5B95A"/>
-
-
-
-<line
-
-x1="15"
-
-y1="45"
-
-x2="60"
-
-y2="45"
-
-stroke="#D5B95A"/>
-
-
-
-<line
-
-x1="15"
-
-y1="60"
-
-x2="50"
-
-y2="60"
-
-stroke="#D5B95A"/>
-
-
-
-</g>
-
-
-
-
-<!-- ================================= -->
-<!-- LAPTOP CORNER -->
-<!-- ================================= -->
-
-
-<g transform="translate(1350 350)">
-
-
-
-<rect
-
-width="170"
-
-height="90"
-
-rx="10"
-
-fill="#2D333B"/>
-
-
-
-<rect
-
-x="8"
-
-y="8"
-
-width="154"
-
-height="65"
-
-fill="#111827"/>
-
-
-
-<line
-
-x1="30"
-
-y1="25"
-
-x2="120"
-
-y2="25"
-
-stroke="#58A6FF"
-
-stroke-width="3"/>
-
-
-
-<line
-
-x1="30"
-
-y1="40"
-
-x2="100"
-
-y2="40"
-
-stroke="#7EE787"
-
-stroke-width="3"/>
-
-
-
-</g>
-
-
-
-
-<!-- ================================= -->
-<!-- SMALL DECORATION -->
-<!-- ================================= -->
-
-
-<g
-
-fill="#D8C7A8"
-
-opacity="0.75">
-
-
-
-<circle
-
-cx="90"
-
-cy="80"
-
-r="3"/>
-
-
-
-<circle
-
-cx="150"
-
-cy="300"
-
-r="2"/>
-
-
-
-<circle
-
-cx="310"
-
-cy="90"
-
-r="2"/>
-
-
-
-<circle
-
-cx="1280"
-
-cy="90"
-
-r="3"/>
-
-
-
-<circle
-
-cx="1450"
-
-cy="160"
-
-r="2"/>
-
-
-
-</g>
-<!-- ================================= -->
-<!-- SIGNATURE -->
-<!-- ================================= -->
-
-
-<text
-
-x="520"
-
-y="350"
-
-font-family="cursive"
-
-font-size="18"
-
-fill="#5B8DEF">
-
-
-// create • learn • innovate
-
-
-</text>
-
-
-
-
-<!-- ================================= -->
-<!-- AI LABEL -->
-<!-- ================================= -->
-
-
-<text
-
-x="1080"
-
-y="75"
-
-font-family="cursive"
-
-font-size="15"
-
-fill="#9B8E7D">
-
-
-AI Experiment #01
-
-
-</text>
-
-
-
 
 </svg>

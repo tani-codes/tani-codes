@@ -5,7 +5,7 @@
 <br>
 
 <h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=35&duration=2500&pause=800&color=5B8DEF&center=true&vCenter=true&width=900&lines=Tanish+Bandodkar;Data+Analyst;Software+Engineer;AI+Automations+Enthusiast" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=35&duration=2500&pause=800&color=00F5FF&center=true&vCenter=true&width=900&lines=Welcome+to+Tanish+AI+Lab;Data+Science+%26+Analytics;Software+Engineering;AI+Automations+Lab" />
 </h1>
 
 <p align="center">
@@ -128,3 +128,32 @@ tanish = {
 </p>
 
 </div>
+
+<br>
+<br>
+
+<h2 align="center">📈 REAL-TIME GITHUB ANALYTICS & STATS</h2>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=tani-codes&color=5B8DEF&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
+</p>
+
+<br>
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=tani-codes&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" width="48%" alt="GitHub Profile Stats" />
+  &nbsp;
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tani-codes&layout=compact&theme=tokyonight&hide_border=true" width="48%" alt="Top Languages" />
+</div>
+
+<br>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=tani-codes&theme=tokyonight&hide_border=true" width="97%" alt="GitHub Streak Stats" />
+</p>
+
+<br>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=tani-codes&theme=tokyo-night&hide_border=true" width="97%" alt="GitHub Contribution Activity Graph" />
+</p>
