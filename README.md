@@ -12,9 +12,43 @@
 
 <br>
 
+<div align="center">
+
 <p align="center">
-  <img src="./assets/info.svg" width="100%" alt="Tanish Bandodkar — Profile Badges">
+  <img src="https://img.shields.io/badge/LOCATION-MUMBAI%2C%20INDIA-F49A24?style=for-the-badge&logo=googlemaps&logoColor=white" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/CGPA-9.45%20%5BCUMULATIVE%5D-00A2E8?style=for-the-badge&logo=academic&logoColor=white" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/ROLE-ML%20%26%20DL%20DEVELOPER-9B59B6?style=for-the-badge&logo=probot&logoColor=white" />
 </p>
+
+<br>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/DATA_ANALYTICS-PYTHON_%7C_TABLEAU_%7C_SQL-2980B9?style=for-the-badge&logo=tableau&logoColor=white" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/OPEN_TO-COLLABORATION_%26_ROLES-2ECC71?style=for-the-badge&logo=github&logoColor=white" />
+</p>
+
+<br>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/QA_ANALYST-TESTING%2C_UAT_%26_BRD%2FFRD-E67E22?style=for-the-badge&logo=jira&logoColor=white" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/CURRENTLY-BUILDING_ML_%26_DL_PROJECTS-8E44AD?style=for-the-badge&logo=pytorch&logoColor=white" />
+</p>
+
+<br>
+
+<p align="center">
+  <a href="https://github.com/tani-codes" target="_blank"><img src="https://img.shields.io/badge/GITHUB-tani--codes-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+  &nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/tanishbandodkar/" target="_blank"><img src="https://img.shields.io/badge/LINKEDIN-Tanish_Bandodkar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  &nbsp;&nbsp;
+  <a href="mailto:bandodkartanish@gmail.com" target="_blank"><img src="https://img.shields.io/badge/GMAIL-bandodkartanish%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+</p>
+
+</div>
 
 <p align="center">
   <img src="./assets/splash.svg" width="100%" alt="Section Divider">
