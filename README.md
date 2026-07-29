@@ -42,7 +42,6 @@ tanish = {
     "internships" : [
         "QA Analyst & Tech Analyst @ NorthStar Tech → Manual/Automated Testing, UAT & BRD/FRDs ⚡",
         "Associate Data Analyst @ Furrie            → E-Commerce Data Analytics & Predictive Modeling 📈",
-        "Data Analytics Intern @ KJSCE               → Indian Cricket Team Performance Analytics (2024-25) 🏏",
     ],
 
     "superpowers" : [
@@ -58,11 +57,10 @@ tanish = {
     "experience_highlights" : {
         "NorthStar Tech"     : "Software QA Analyst, Testing, UAT, BRDs/FRDs & Analytics Exposure 🏢",
         "Furrie"             : "E-Commerce Data Analytics & Predictive Modeling 📈",
-        "Cricket Analytics"  : "Indian Cricket Team All-Format Performance 2024-25 🏆",
         "Academic CGPA"      : "9.45  (Consistent Academic Excellence 🌟)",
     },
 
-    "fun_fact"        : "I analyze cricket data for fun & train ML/DL models on complex datasets 💀",
+    "fun_fact"        : "I train ML/DL models on complex datasets & build scalable software 🚀",
 }
 
 ╚════════════════════════════════════════════════════════════════════════════╝
@@ -149,7 +147,6 @@ tanish = {
 | **B.Tech CSBS** | KJ Somaiya College of Engineering | 🌟 **9.45 CGPA** — Consistent Academic Excellence |
 | **QA Analyst & Tech Analyst** | NorthStar Technologies 🏢 | ⚡ Manual & Automated Testing, UAT, Defect Lifecycle, BRDs/FRDs |
 | **Associate Data Analyst** | Furrie 📈 | 🤖 E-Commerce Data Analytics & Predictive Modeling |
-| **Cricket Analytics Intern** | KJSCE Analytics Lab 🏏 | 🏆 Indian Cricket Team Performance Analytics (2024–2025) |
 | **Placement Coordinator** | KJSCE Placement Cell 🎓 | 🤝 Campus Recruitment Strategy & Student Placement Drive Management |
 
 <br>
