@@ -1,98 +1,156 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  hero.svg — Tanish Bandodkar Profile Banner
-  Theme: Deep Space & Cyber Obsidian Gradient (Inspired by Niharika/Aryan Hero)
+  hero.svg — Uncluttered AI Laboratory Hero Banner
+  Theme: Dark AI Research Lab + Subtle Neural Network Nodes (No Moon, Clean & Spacious)
+  Palette: Deep Obsidian (#050816) · Neon Cyan (#00F5FF) · Electric Purple (#8B6FE8) · Mint (#00FF88)
   Author: Tanish Bandodkar
 -->
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="460" viewBox="0 0 1600 460">
 
 <defs>
 
-  <!-- ── Deep Space & Cyber Obsidian Background Gradient ── -->
-  <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-    <stop offset="0%"   stop-color="#080E24"/>
-    <stop offset="45%"  stop-color="#160C2E"/>
-    <stop offset="85%"  stop-color="#2D114D"/>
-    <stop offset="100%" stop-color="#050816"/>
+  <!-- ── Deep Obsidian Canvas Background ── -->
+  <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%"   stop-color="#050816"/>
+    <stop offset="50%"  stop-color="#0A1028"/>
+    <stop offset="100%" stop-color="#030510"/>
+  </linearGradient>
+
+  <!-- ── Electric Cyan / Purple Border Gradient ── -->
+  <linearGradient id="borderGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%"   stop-color="#00F5FF" stop-opacity="0.8"/>
+    <stop offset="50%"  stop-color="#8B6FE8" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#00D2FF" stop-opacity="0.8"/>
   </linearGradient>
 
   <!-- ── White Name Glow ── -->
   <filter id="whiteGlow" x="-20%" y="-20%" width="140%" height="140%">
-    <feGaussianBlur stdDeviation="8" result="blur"/>
+    <feGaussianBlur stdDeviation="6" result="blur"/>
     <feMerge>
       <feMergeNode in="blur"/>
       <feMergeNode in="SourceGraphic"/>
     </feMerge>
   </filter>
 
-  <!-- ── Moon Glow ── -->
-  <filter id="moonGlow" x="-30%" y="-30%" width="160%" height="160%">
-    <feGaussianBlur stdDeviation="15" result="blur"/>
+  <!-- ── Neon Cyan Blur ── -->
+  <filter id="neonBlur" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="6" result="blur"/>
     <feMerge>
       <feMergeNode in="blur"/>
       <feMergeNode in="SourceGraphic"/>
     </feMerge>
+  </filter>
+
+  <!-- ── Glassmorphism Drop Shadow ── -->
+  <filter id="glassShadow" x="-10%" y="-10%" width="120%" height="120%">
+    <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#00F5FF" flood-opacity="0.14"/>
   </filter>
 
 </defs>
 
 <!-- ══════════════════════════════════════════ -->
-<!--  BACKGROUND CANVAS                         -->
+<!--  DARK OBSIDIAN CANVAS BACKGROUND           -->
 <!-- ══════════════════════════════════════════ -->
-<rect width="1600" height="460" fill="url(#heroGradient)" rx="16"/>
+<rect width="1600" height="460" fill="url(#heroBg)" rx="16"/>
 
-<!-- Starry Sky Particles -->
-<g fill="#FFF">
-  <circle cx="120"  cy="80"  r="1.5" opacity="0.8"/>
-  <circle cx="340"  cy="140" r="2"   opacity="0.6"/>
-  <circle cx="560"  cy="60"  r="1.2" opacity="0.9"/>
-  <circle cx="890"  cy="110" r="1.8" opacity="0.7"/>
-  <circle cx="1120" cy="70"  r="2.2" opacity="0.8"/>
-  <circle cx="1450" cy="130" r="1.5" opacity="0.9"/>
-  <circle cx="220"  cy="320" r="2"   opacity="0.5"/>
-  <circle cx="480"  cy="380" r="1.2" opacity="0.7"/>
-  <circle cx="950"  cy="350" r="1.6" opacity="0.6"/>
-  <circle cx="1380" cy="390" r="2"   opacity="0.8"/>
+<!-- Cybernetic Grid Overlay (Subtle) -->
+<g stroke="#14213D" stroke-width="0.7" opacity="0.35">
+  <line x1="0" y1="90"  x2="1600" y2="90"/>
+  <line x1="0" y1="230" x2="1600" y2="230"/>
+  <line x1="0" y1="370" x2="1600" y2="370"/>
+  <line x1="250" y1="0" x2="250" y2="460"/>
+  <line x1="800" y1="0" x2="800" y2="460"/>
+  <line x1="1350" y1="0" x2="1350" y2="460"/>
 </g>
 
-<!-- Glowing Celestial Orb / Moon (Top Right) -->
-<circle cx="1320" cy="110" r="55" fill="#FFFFFF" opacity="0.92" filter="url(#moonGlow)"/>
+<!-- ══════════════════════════════════════════════════════════════ -->
+<!--  UNCLUTTERED NEURAL NETWORK CONNECTIONS & SYNAPSE NODES        -->
+<!-- ══════════════════════════════════════════════════════════════ -->
+<g stroke="#00D2FF" stroke-width="1" opacity="0.2">
+  <line x1="120" y1="120" x2="320" y2="70"  stroke-dasharray="4,4"/>
+  <line x1="320" y1="70"  x2="520" y2="120" stroke-dasharray="4,4"/>
+  <line x1="1080" y1="120" x2="1280" y2="70" stroke-dasharray="4,4"/>
+  <line x1="1280" y1="70"  x2="1480" y2="120" stroke-dasharray="4,4"/>
+</g>
 
-<!-- Shooting Star Beam -->
-<line x1="450" y1="90" x2="680" y2="160" stroke="#FFF" stroke-width="1.8" stroke-linecap="round" opacity="0.6"/>
+<!-- Floating Synapse Nodes -->
+<circle cx="120"  cy="120" r="4" fill="#00F5FF" filter="url(#neonBlur)">
+  <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+</circle>
+<circle cx="320"  cy="70"  r="5" fill="#8B6FE8" filter="url(#neonBlur)">
+  <animate attributeName="opacity" values="1;0.3;1" dur="2.5s" repeatCount="indefinite"/>
+</circle>
+<circle cx="1280" cy="70"  r="5" fill="#00FF88" filter="url(#neonBlur)">
+  <animate attributeName="opacity" values="0.3;1;0.3" dur="3.2s" repeatCount="indefinite"/>
+</circle>
+<circle cx="1480" cy="120" r="4" fill="#00F5FF" filter="url(#neonBlur)">
+  <animate attributeName="opacity" values="1;0.3;1" dur="2.8s" repeatCount="indefinite"/>
+</circle>
 
-<!-- ══════════════════════════════════════════ -->
-<!--  HERO TEXT CONTENT (CENTERED & BOLD)        -->
-<!-- ══════════════════════════════════════════ -->
+<!-- Background Code Snippet Watermarks -->
+<g font-family="'Courier New', Courier, monospace" font-size="11" fill="#00F5FF" opacity="0.10">
+  <text x="40"   y="415">model.fit(X_train, y_train) // val_accuracy: 98.45%</text>
+  <text x="1260" y="415">n8n_pipeline() --status: active</text>
+</g>
 
-<!-- Main Name -->
-<text x="800" y="210"
-      font-family="'Segoe UI', Arial, sans-serif"
-      font-size="68" font-weight="900"
-      fill="#FFFFFF" text-anchor="middle"
-      letter-spacing="4" filter="url(#whiteGlow)">
-  TANISH BANDODKAR
-</text>
+<!-- ══════════════════════════════════════════════════════════════ -->
+<!--  CENTERED SPACIOUS GLASSMORPHISM PANEL                         -->
+<!-- ══════════════════════════════════════════════════════════════ -->
+<g transform="translate(250, 50)" filter="url(#glassShadow)">
+  <!-- Outer Glass Frame -->
+  <rect width="1100" height="360" rx="18" fill="#0B132B" fill-opacity="0.85" stroke="url(#borderGlow)" stroke-width="1.5"/>
 
-<!-- Subtitle 1: Roles -->
-<text x="800" y="280"
-      font-family="'Segoe UI', Arial, sans-serif"
-      font-size="25" font-weight="700"
-      fill="#E2D4FF" text-anchor="middle"
-      letter-spacing="1">
-  Data Analyst <tspan fill="#00F5FF">•</tspan> AI &amp; Automations Enthusiast <tspan fill="#00F5FF">•</tspan> Software Engineer
-</text>
+  <!-- Corner Tech Accent Lines -->
+  <path d="M12,0 L30,0 M0,12 L0,30" stroke="#00F5FF" stroke-width="2.5" fill="none"/>
+  <path d="M1088,0 L1070,0 M1100,12 L1100,30" stroke="#00F5FF" stroke-width="2.5" fill="none"/>
+  <path d="M12,360 L30,360 M0,348 L0,330" stroke="#00F5FF" stroke-width="2.5" fill="none"/>
+  <path d="M1088,360 L1070,360 M1100,348 L1100,330" stroke="#00F5FF" stroke-width="2.5" fill="none"/>
 
-<!-- Subtitle 2: Tagline -->
-<text x="800" y="325"
-      font-family="'Courier New', Courier, monospace"
-      font-size="16" font-style="italic"
-      fill="#A894E6" text-anchor="middle"
-      letter-spacing="1.5">
-  Building Intelligent Solutions &amp; Data-Driven Workflows.
-</text>
+  <!-- Top Status Badge -->
+  <g transform="translate(435, 28)">
+    <rect width="230" height="26" rx="7" fill="#05261E" stroke="#00FF88" stroke-width="0.8"/>
+    <circle cx="14" cy="13" r="4" fill="#00FF88">
+      <animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="28" y="17" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#00FF88" letter-spacing="1">
+      SYSTEM ONLINE // TANISH AI LAB
+    </text>
+  </g>
 
-<!-- Bottom Subtle Wavy Curve -->
-<path d="M0,420 Q400,450 800,420 Q1200,390 1600,420 L1600,460 L0,460 Z" fill="#0A0618" opacity="0.8"/>
+  <!-- ══════════════════════════════════════════ -->
+  <!--  CENTERED HERO TYPOGRAPHY                  -->
+  <!-- ══════════════════════════════════════════ -->
+
+  <!-- Main Name Header -->
+  <text x="550" y="145"
+        font-family="'Segoe UI', sans-serif"
+        font-size="64" font-weight="900"
+        fill="#FFFFFF" text-anchor="middle"
+        letter-spacing="3" filter="url(#whiteGlow)">
+    TANISH BANDODKAR
+  </text>
+
+  <!-- Subtitle 1: Roles -->
+  <text x="550" y="215"
+        font-family="'Segoe UI', sans-serif"
+        font-size="23" font-weight="700"
+        fill="#00F5FF" text-anchor="middle"
+        letter-spacing="1">
+    Data Analyst <tspan fill="#8B6FE8">•</tspan> AI &amp; Automations Enthusiast <tspan fill="#8B6FE8">•</tspan> Software Engineer
+  </text>
+
+  <!-- Subtitle 2: Tagline -->
+  <text x="550" y="260"
+        font-family="'Courier New', Courier, monospace"
+        font-size="15" font-style="italic"
+        fill="#7E8B9B" text-anchor="middle"
+        letter-spacing="1.5">
+    Building Intelligent Solutions &amp; Data-Driven Workflows.
+  </text>
+
+  <!-- Bottom Accent Line -->
+  <line x1="350" y1="300" x2="750" y2="300" stroke="url(#borderGlow)" stroke-width="1.5" opacity="0.6"/>
+
+</g>
 
 </svg>
