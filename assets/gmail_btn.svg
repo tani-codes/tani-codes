@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="200" height="46" viewBox="0 0 200 46">
-  <filter id="sh" x="-20%" y="-30%" width="140%" height="180%">
-    <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.4"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="270" height="46" viewBox="0 0 270 46">
+  <filter id="bsh" x="-20%" y="-35%" width="150%" height="200%">
+    <feDropShadow dx="0" dy="2" stdDeviation="3.5" flood-color="#000000" flood-opacity="0.45"/>
   </filter>
-  <rect width="200" height="46" rx="8" fill="#EA4335" filter="url(#sh)"/>
-  <text x="100" y="28" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="1.5">✉ GMAIL</text>
+  <rect width="270" height="46" rx="6" fill="#EA4335" filter="url(#bsh)"/>
+  <text x="135" y="29" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">✉ GMAIL</text>
 </svg>
