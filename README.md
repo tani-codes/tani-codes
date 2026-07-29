@@ -72,61 +72,6 @@ tanish = {
 
 <br>
 
-<h2 align="center">⏱️ WAKATIME & DEVELOPER METRICS</h2>
-
-<br>
-
-```text
-🐱 My GitHub & Development Profile
-
-📦 Storage & Codebase      → 4.2 MB Codebase Footprint
-🏆 Yearly Contributions     → 1,150+ Contributions in 2026
-📜 Repositories Footprint   → 24 Public Repositories | 8 Private Repositories
-📍 Primary Timezone         → Asia/Kolkata (UTC +5:30)
-
-I'm a Night 🦉
-
-🌞 Morning                142 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   06.20 %
-🌆 Daytime                680 commits         ████████░░░░░░░░░░░░░░░░░   29.70 %
-🌃 Evening                945 commits         ████████████░░░░░░░░░░░░░   41.20 %
-🌙 Night                  523 commits         ██████░░░░░░░░░░░░░░░░░░░   22.90 %
-
-📅 I'm Most Productive on Saturday & Wednesday
-
-Monday                   312 commits         ████░░░░░░░░░░░░░░░░░░░░░   13.62 %
-Tuesday                  415 commits         █████░░░░░░░░░░░░░░░░░░░░   18.12 %
-Wednesday                540 commits         ███████░░░░░░░░░░░░░░░░░░   23.58 %
-Thursday                 290 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.66 %
-Friday                   380 commits         █████░░░░░░░░░░░░░░░░░░░░   16.59 %
-Saturday                 650 commits         ████████░░░░░░░░░░░░░░░░░   28.38 %
-Sunday                   293 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.79 %
-
-📊 Weekly Time Distribution & Stack Usage
-
-💬 Languages & Ecosystem:
-Python                   18 hrs 40 mins      ██████████████████░░░░░░░   55.40 %
-SQL & Databases          5 hrs 15 mins       █████░░░░░░░░░░░░░░░░░░░░   15.58 %
-JavaScript / TypeScript  4 hrs 20 mins       ████░░░░░░░░░░░░░░░░░░░░░   12.87 %
-HTML / CSS / Web         3 hrs 10 mins       ███░░░░░░░░░░░░░░░░░░░░░░   09.41 %
-C / C++                  2 hrs 15 mins       ██░░░░░░░░░░░░░░░░░░░░░░░   06.74 %
-
-🤖 AI Workflows & Automation Stack:
-n8n Agentic Workflows    8 hrs 30 mins       ████████████████████░░░░░   42.50 %
-Scikit-Learn & Pandas    6 hrs 45 mins       ████████████████░░░░░░░░░   33.75 %
-Automated Testing & QA   4 hrs 45 mins       ███████████░░░░░░░░░░░░░░   23.75 %
-
-🔎 AI Coding & Engineering Insights:
-🤖 Agentic AI Integration — Automated data funnels & n8n workflows
-📈 Data-Driven Focus      — Extensive Python data science & cricket analytics
-⚡ Quality Assurance      — Automated testing, BRD/FRD analysis & UAT defect tracking
-```
-
-<p align="center">
-  <img src="./assets/splash.svg" width="100%" alt="Section Divider">
-</p>
-
-<br>
-
 <h2 align="center">🛠️ TECH ARSENAL</h2>
 
 <br>
@@ -196,7 +141,7 @@ Automated Testing & QA   4 hrs 45 mins       ███████████�
 
 <br>
 
-| Role / Degree | Organization / Institution | Highlights & Achievements |
+| Role / Degree | Organization / Institution | Key Highlights |
 | :--- | :--- | :--- |
 | **B.Tech CSBS** | KJ Somaiya College of Engineering | 🌟 **9.45 CGPA** — Consistent Academic Excellence |
 | **Technology Analyst** | NorthStar Technologies 🏢 | ⚡ Software Testing, BRD/FRD Requirement Analysis & Data Analytics |
@@ -212,7 +157,9 @@ Automated Testing & QA   4 hrs 45 mins       ███████████�
 
 <br>
 
-<h2 align="center">📈 GITHUB ANALYTICS</h2>
+<h2 align="center">📈 REAL-TIME GITHUB METRICS</h2>
+
+<br>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=tani-codes&color=5B8DEF&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
@@ -220,6 +167,14 @@ Automated Testing & QA   4 hrs 45 mins       ███████████�
 
 <br>
 
+<!-- Real-time GitHub Profile Trophies (Fetched live directly from tani-codes GitHub account) -->
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=tani-codes&theme=tokyonight&margin-w=15&row=1" alt="GitHub Trophies" />
+</p>
+
+<br>
+
+<!-- Real-time GitHub Stats Cards (Fetched live directly from tani-codes GitHub account) -->
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=tani-codes&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" width="48%" alt="GitHub Profile Stats" />
   &nbsp;
@@ -228,14 +183,9 @@ Automated Testing & QA   4 hrs 45 mins       ███████████�
 
 <br>
 
+<!-- Real-time GitHub Streak Card -->
 <p align="center">
   <img src="https://streak-stats.demolab.com/?user=tani-codes&theme=tokyonight&hide_border=true" width="97%" alt="GitHub Streak Stats" />
-</p>
-
-<br>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=tani-codes&theme=tokyo-night&hide_border=true" width="97%" alt="GitHub Contribution Activity Graph" />
 </p>
 
 <p align="center">
