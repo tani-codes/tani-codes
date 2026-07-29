@@ -17,14 +17,6 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/tani-codes" target="_blank"><img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
-  &nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/tanishbandodkar/" target="_blank"><img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  &nbsp;&nbsp;
-  <a href="mailto:bandodkartanish@gmail.com" target="_blank"><img src="https://img.shields.io/badge/GMAIL-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-</p>
-
-<p align="center">
   <img src="./assets/splash.svg" width="100%" alt="Section Divider">
 </p>
 
@@ -68,7 +60,8 @@ tanish = {
         "Academic CGPA"      : "9.45  (Consistent Academic Excellence 🌟)",
     },
 
-    "fun_fact"        : "I train ML/DL models on complex datasets & build scalable software 🚀",
+    "philosophy"       : "Craving for reality in the world of AI",
+    "fun_fact"         : "I train ML/DL models on complex datasets & build scalable software 🚀",
 }
 
 ╚════════════════════════════════════════════════════════════════════════════╝
@@ -195,17 +188,23 @@ tanish = {
 
 <br>
 
-<h2 align="center">💬 TRANSMISSION COMPLETE</h2>
+<h2 align="center">📡 CONNECT & INITIALIZE</h2>
 
 <br>
 
-```text
-███████████████████████████████████████████████████████████████████████
-█                                                                     █
-█   > "Build scalable software, ML models & Deep Learning solutions." █
-█                                                                     █
-█   > OPEN TO : Software Developer | QA Analyst | ML/DL Engineering   █
-█   > REACH ME: bandodkartanish@gmail.com                             █
-█                                                                     █
-███████████████████████████████████████████████████████████████████████
-```
+<div align="center">
+
+> ### *"Craving for reality in the world of AI."*
+> — **Tanish Bandodkar**
+
+<br>
+
+<p align="center">
+  <a href="https://github.com/tani-codes" target="_blank"><img src="https://img.shields.io/badge/GitHub-tani--codes-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+  &nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/tanishbandodkar/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Tanish%20Bandodkar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  &nbsp;&nbsp;
+  <a href="mailto:bandodkartanish@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Email-bandodkartanish%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+</p>
+
+</div>
