@@ -211,12 +211,12 @@
 <!--  ROW 3  —  Achievements | Current Work                   -->
 <!-- ══════════════════════════════════════════════════════════ -->
 
-<!-- BADGE 6 : 🏆 HACKATHONS | ALWAYS READY -->
+<!-- BADGE 6 : ⚡ QA ANALYST | TESTING & UAT -->
 <g filter="url(#bsh)">
   <rect x="158" y="182" width="235" height="46" rx="6" fill="#474747"/>
   <rect x="278" y="182" width="115" height="46" fill="#E67E22" clip-path="url(#c6)"/>
-  <text x="168" y="209" font-family="'Segoe UI',sans-serif" font-size="9.5" font-weight="700" fill="#FFF">🏆 HACKATHONS</text>
-  <text x="335" y="210" font-family="'Segoe UI',sans-serif" font-size="10" font-weight="800" fill="#FFF" text-anchor="middle">ALWAYS READY</text>
+  <text x="168" y="209" font-family="'Segoe UI',sans-serif" font-size="9.5" font-weight="700" fill="#FFF">⚡ QA ANALYST</text>
+  <text x="335" y="210" font-family="'Segoe UI',sans-serif" font-size="10" font-weight="800" fill="#FFF" text-anchor="middle">TESTING &amp; UAT</text>
 </g>
 
 <!-- BADGE 7 : 🚀 CURRENTLY | BUILDING ML & DL PROJECTS -->

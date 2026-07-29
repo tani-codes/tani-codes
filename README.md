@@ -32,7 +32,7 @@
 ╠════════════════════════════════════════════════════════════════════════════╣
 
 tanish = {
-    "role"        : "Software Developer & Technology Analyst @ NorthStar Technologies 💼",
+    "role"        : "Software Developer & QA Analyst @ NorthStar Technologies 💼",
     "also"        : "Placement Coordinator @ KJSCE 🎓",
     "education"   : "B.Tech CSBS @ KJ Somaiya College of Engineering 🏫",
     "cgpa"        : 9.45,
@@ -40,23 +40,23 @@ tanish = {
     "github"      : "https://github.com/tani-codes 🌐",
 
     "internships" : [
-        "Technology Analyst @ NorthStar Tech  → Software Development, QA & Data Exposure ⚡",
-        "Associate Data Analyst @ Furrie      → E-Commerce Data Analytics & Predictive Modeling 📈",
-        "Data Analytics Intern @ KJSCE         → Indian Cricket Team Performance Analytics (2024-25) 🏏",
+        "QA Analyst & Tech Analyst @ NorthStar Tech → Manual/Automated Testing, UAT & BRD/FRDs ⚡",
+        "Associate Data Analyst @ Furrie            → E-Commerce Data Analytics & Predictive Modeling 📈",
+        "Data Analytics Intern @ KJSCE               → Indian Cricket Team Performance Analytics (2024-25) 🏏",
     ],
 
     "superpowers" : [
         "Software Development  → Python | C++ | TypeScript | JavaScript | React | Next.js | Web Stack",
+        "Software QA & Testing  → QA Analyst | Manual & Automated Testing | UAT | Defect Lifecycle | Jira",
         "Machine Learning & DL  → PyTorch | TensorFlow | Scikit-Learn | Neural Networks | Computer Vision",
         "Data Analytics & Viz   → Python | Pandas | NumPy | Tableau | Power BI | Matplotlib | SQL",
-        "Software QA & BA       → Manual & Automated Testing | Requirement Analysis | BRDs/FRDs | Jira",
     ],
 
     "currently_building" : "Executing hands-on Machine Learning (ML) & Deep Learning (DL) Projects 🚀",
     "currently_learning" : "Deepening expertise in Deep Learning (PyTorch, Neural Networks, Computer Vision) 🧠",
 
     "experience_highlights" : {
-        "NorthStar Tech"     : "Software Testing, UAT, BRDs/FRDs & Analytics Exposure 🏢",
+        "NorthStar Tech"     : "Software QA Analyst, Testing, UAT, BRDs/FRDs & Analytics Exposure 🏢",
         "Furrie"             : "E-Commerce Data Analytics & Predictive Modeling 📈",
         "Cricket Analytics"  : "Indian Cricket Team All-Format Performance 2024-25 🏆",
         "Academic CGPA"      : "9.45  (Consistent Academic Excellence 🌟)",
@@ -87,6 +87,17 @@ tanish = {
 
 <br>
 
+### ⚡ SOFTWARE QA ANALYST & BUSINESS ANALYSIS
+<p align="center">
+  <a href="https://github.com/tani-codes" target="_blank"><img src="https://img.shields.io/badge/QA_ANALYST-24292E?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/tani-codes" target="_blank"><img src="https://img.shields.io/badge/SOFTWARE_TESTING-3776AB?style=for-the-badge&logo=python&logoColor=white" /></a>
+  <a href="https://github.com/tani-codes" target="_blank"><img src="https://img.shields.io/badge/UAT_%26_DEFECTS-5B8DEF?style=for-the-badge&logo=jira&logoColor=white" /></a>
+  <a href="https://github.com/tani-codes" target="_blank"><img src="https://img.shields.io/badge/BUSINESS_ANALYSIS-6BA368?style=for-the-badge&logo=microsoftexcel&logoColor=white" /></a>
+  <a href="https://github.com/tani-codes" target="_blank"><img src="https://img.shields.io/badge/BRD_%2F_FRD-8B6FE8?style=for-the-badge&logo=markdown&logoColor=white" /></a>
+</p>
+
+<br>
+
 ### 🧠 MACHINE LEARNING & DEEP LEARNING (DL)
 <p align="center">
   <a href="https://python.org" target="_blank"><img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white" /></a>
@@ -107,16 +118,6 @@ tanish = {
   <a href="https://matplotlib.org" target="_blank"><img src="https://img.shields.io/badge/MATPLOTLIB-11557C?style=for-the-badge&logo=python&logoColor=white" /></a>
   <a href="https://powerbi.microsoft.com" target="_blank"><img src="https://img.shields.io/badge/POWER_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" /></a>
   <a href="https://analytics.google.com" target="_blank"><img src="https://img.shields.io/badge/DATA_ANALYTICS-5B8DEF?style=for-the-badge&logo=googleanalytics&logoColor=white" /></a>
-</p>
-
-<br>
-
-### ⚡ SOFTWARE ENGINEERING & BUSINESS ANALYSIS
-<p align="center">
-  <a href="https://github.com/tani-codes" target="_blank"><img src="https://img.shields.io/badge/SOFTWARE_TESTING-24292E?style=for-the-badge&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/tani-codes" target="_blank"><img src="https://img.shields.io/badge/UAT_%26_DEFECTS-5B8DEF?style=for-the-badge&logo=jira&logoColor=white" /></a>
-  <a href="https://github.com/tani-codes" target="_blank"><img src="https://img.shields.io/badge/BUSINESS_ANALYSIS-6BA368?style=for-the-badge&logo=microsoftexcel&logoColor=white" /></a>
-  <a href="https://github.com/tani-codes" target="_blank"><img src="https://img.shields.io/badge/BRD_%2F_FRD-8B6FE8?style=for-the-badge&logo=markdown&logoColor=white" /></a>
 </p>
 
 <br>
@@ -146,7 +147,7 @@ tanish = {
 | Role / Degree | Organization / Institution | Key Highlights |
 | :--- | :--- | :--- |
 | **B.Tech CSBS** | KJ Somaiya College of Engineering | 🌟 **9.45 CGPA** — Consistent Academic Excellence |
-| **Technology Analyst** | NorthStar Technologies 🏢 | ⚡ Software Testing, BRD/FRD Requirement Analysis & Data Analytics |
+| **QA Analyst & Tech Analyst** | NorthStar Technologies 🏢 | ⚡ Manual & Automated Testing, UAT, Defect Lifecycle, BRDs/FRDs |
 | **Associate Data Analyst** | Furrie 📈 | 🤖 E-Commerce Data Analytics & Predictive Modeling |
 | **Cricket Analytics Intern** | KJSCE Analytics Lab 🏏 | 🏆 Indian Cricket Team Performance Analytics (2024–2025) |
 | **Placement Coordinator** | KJSCE Placement Cell 🎓 | 🤝 Campus Recruitment Strategy & Student Placement Drive Management |
@@ -198,7 +199,7 @@ tanish = {
 █                                                                     █
 █   > "Build scalable software, ML models & Deep Learning solutions." █
 █                                                                     █
-█   > OPEN TO : Software Developer Roles | ML / DL Engineering        █
+█   > OPEN TO : Software Developer | QA Analyst | ML/DL Engineering   █
 █   > REACH ME: bandodkartanish@gmail.com                             █
 █                                                                     █
 ███████████████████████████████████████████████████████████████████████
