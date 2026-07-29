@@ -139,7 +139,7 @@
       <animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite"/>
     </circle>
     <text x="30" y="19" font-family="'Courier New', monospace" font-size="10.5" font-weight="700" fill="#00FF88" letter-spacing="1">
-      STATUS: BUILDING ML &amp; AI SYSTEMS
+      STATUS: BUILDING ML &amp; DL PROJECTS
     </text>
   </g>
 
@@ -162,7 +162,7 @@
         font-size="23" font-weight="700"
         fill="#00F5FF" text-anchor="middle"
         letter-spacing="1">
-    Data Scientist <tspan fill="#8B6FE8">•</tspan> ML / DL &amp; AI Engineer <tspan fill="#8B6FE8">•</tspan> Data Analyst
+    Software Developer <tspan fill="#8B6FE8">•</tspan> ML / DL Engineer <tspan fill="#8B6FE8">•</tspan> Data Analyst
   </text>
 
   <!-- Subtitle 2: Tagline -->
@@ -171,7 +171,7 @@
         font-size="15" font-style="italic"
         fill="#7E8B9B" text-anchor="middle"
         letter-spacing="1.5">
-    Building Intelligent ML Models &amp; Data Science Systems.
+    Building ML &amp; DL Projects | Learning Deep Learning &amp; AI Systems.
   </text>
 
   <!-- Bottom Accent Line -->

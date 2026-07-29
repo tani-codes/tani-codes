@@ -32,7 +32,7 @@
 ╠════════════════════════════════════════════════════════════════════════════╣
 
 tanish = {
-    "role"        : "Technology Analyst @ NorthStar Technologies 💼",
+    "role"        : "Software Developer & Technology Analyst @ NorthStar Technologies 💼",
     "also"        : "Placement Coordinator @ KJSCE 🎓",
     "education"   : "B.Tech CSBS @ KJ Somaiya College of Engineering 🏫",
     "cgpa"        : 9.45,
@@ -40,17 +40,20 @@ tanish = {
     "github"      : "https://github.com/tani-codes 🌐",
 
     "internships" : [
-        "Technology Analyst @ NorthStar Tech  → Software Testing, BA & Data Science Exposure ⚡",
+        "Technology Analyst @ NorthStar Tech  → Software Development, QA & Data Exposure ⚡",
         "Associate Data Analyst @ Furrie      → E-Commerce Data Analytics & Predictive Modeling 📈",
         "Data Analytics Intern @ KJSCE         → Indian Cricket Team Performance Analytics (2024-25) 🏏",
     ],
 
     "superpowers" : [
-        "Machine Learning & DL → PyTorch | TensorFlow | Scikit-Learn | Neural Networks | Computer Vision",
-        "AI & Data Science     → Generative AI | LLMs | Web Scraping | Predictive Modeling | NLP",
-        "Data Analytics & Viz  → Python | Pandas | NumPy | Tableau | Power BI | Matplotlib | SQL",
-        "Software Engineering  → Manual & Automated Testing | BRD/FRD Requirement Analysis | Defect Tracking",
+        "Software Development  → Python | C++ | TypeScript | JavaScript | React | Next.js | Web Stack",
+        "Machine Learning & DL  → PyTorch | TensorFlow | Scikit-Learn | Neural Networks | Computer Vision",
+        "Data Analytics & Viz   → Python | Pandas | NumPy | Tableau | Power BI | Matplotlib | SQL",
+        "Software QA & BA       → Manual & Automated Testing | Requirement Analysis | BRDs/FRDs | Jira",
     ],
+
+    "currently_building" : "Executing hands-on Machine Learning (ML) & Deep Learning (DL) Projects 🚀",
+    "currently_learning" : "Deepening expertise in Deep Learning (PyTorch, Neural Networks, Computer Vision) 🧠",
 
     "experience_highlights" : {
         "NorthStar Tech"     : "Software Testing, UAT, BRDs/FRDs & Analytics Exposure 🏢",
@@ -59,8 +62,7 @@ tanish = {
         "Academic CGPA"      : "9.45  (Consistent Academic Excellence 🌟)",
     },
 
-    "current_mission" : "Build cutting-edge ML, Deep Learning & Data Science systems 🚀",
-    "fun_fact"        : "I analyze cricket data for fun & train ML models on complex datasets 💀",
+    "fun_fact"        : "I analyze cricket data for fun & train ML/DL models on complex datasets 💀",
 }
 
 ╚════════════════════════════════════════════════════════════════════════════╝
@@ -78,7 +80,14 @@ tanish = {
 
 <div align="center">
 
-### 🧠 MACHINE LEARNING, DEEP LEARNING & AI
+### 💻 SOFTWARE DEVELOPMENT & CORE PROGRAMMING
+<p align="center">
+  <a href="https://python.org" target="_blank"><img src="https://skillicons.dev/icons?i=py,cpp,c,ts,js,html,css" height="42" alt="Languages" /></a>
+</p>
+
+<br>
+
+### 🧠 MACHINE LEARNING & DEEP LEARNING (DL)
 <p align="center">
   <a href="https://python.org" target="_blank"><img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white" /></a>
   <a href="https://pytorch.org" target="_blank"><img src="https://img.shields.io/badge/PYTORCH-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" /></a>
@@ -89,7 +98,7 @@ tanish = {
 
 <br>
 
-### 📊 DATA SCIENCE, ANALYTICS & VISUALIZATION
+### 📊 DATA ANALYTICS & VISUALIZATION
 <p align="center">
   <a href="https://pandas.pydata.org" target="_blank"><img src="https://skillicons.dev/icons?i=pandas,postgres,mysql,tableau" height="42" alt="Data Tools" /></a>
 </p>
@@ -97,14 +106,7 @@ tanish = {
   <a href="https://numpy.org" target="_blank"><img src="https://img.shields.io/badge/NUMPY-013243?style=for-the-badge&logo=numpy&logoColor=white" /></a>
   <a href="https://matplotlib.org" target="_blank"><img src="https://img.shields.io/badge/MATPLOTLIB-11557C?style=for-the-badge&logo=python&logoColor=white" /></a>
   <a href="https://powerbi.microsoft.com" target="_blank"><img src="https://img.shields.io/badge/POWER_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" /></a>
-  <a href="https://analytics.google.com" target="_blank"><img src="https://img.shields.io/badge/DATA_SCIENCE-5B8DEF?style=for-the-badge&logo=googleanalytics&logoColor=white" /></a>
-</p>
-
-<br>
-
-### 💻 LANGUAGES & CORE PROGRAMMING
-<p align="center">
-  <a href="https://python.org" target="_blank"><img src="https://skillicons.dev/icons?i=py,cpp,c,ts,js,html,css" height="42" alt="Languages" /></a>
+  <a href="https://analytics.google.com" target="_blank"><img src="https://img.shields.io/badge/DATA_ANALYTICS-5B8DEF?style=for-the-badge&logo=googleanalytics&logoColor=white" /></a>
 </p>
 
 <br>
@@ -194,9 +196,9 @@ tanish = {
 ```text
 ███████████████████████████████████████████████████████████████████████
 █                                                                     █
-█   > "Build intelligent ML, Deep Learning & Data Science systems."   █
+█   > "Build scalable software, ML models & Deep Learning solutions." █
 █                                                                     █
-█   > OPEN TO : Full-time Roles | ML / DL Engineering | Data Science  █
+█   > OPEN TO : Software Developer Roles | ML / DL Engineering        █
 █   > REACH ME: bandodkartanish@gmail.com                             █
 █                                                                     █
 ███████████████████████████████████████████████████████████████████████
