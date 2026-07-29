@@ -71,59 +71,60 @@ tanish = {
 
 ### 🧠 AI AUTOMATION & MACHINE LEARNING
 <p align="center">
-  <a href="https://python.org" target="_blank"><img src="https://skillicons.dev/icons?i=py,sklearn" height="48" alt="Python & Scikit-Learn" /></a>
-  <a href="https://n8n.io" target="_blank"><img src="https://img.shields.io/badge/n8n-FF6D5A?style=for-the-badge&logo=n8n&logoColor=white" height="48" /></a>
-  <a href="https://python.org" target="_blank"><img src="https://img.shields.io/badge/Agentic_AI-8B6FE8?style=for-the-badge&logo=probot&logoColor=white" height="48" /></a>
-  <a href="https://python.org" target="_blank"><img src="https://img.shields.io/badge/Web_Scraping-5B8DEF?style=for-the-badge&logo=python&logoColor=white" height="48" /></a>
+  <a href="https://python.org" target="_blank"><img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white" /></a>
+  <a href="https://n8n.io" target="_blank"><img src="https://img.shields.io/badge/N8N_WORKFLOWS-FF6D5A?style=for-the-badge&logo=n8n&logoColor=white" /></a>
+  <a href="https://scikit-learn.org" target="_blank"><img src="https://img.shields.io/badge/SCIKIT_LEARN-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" /></a>
+  <a href="https://github.com/tani-codes" target="_blank"><img src="https://img.shields.io/badge/AGENTIC_AI-8B6FE8?style=for-the-badge&logo=probot&logoColor=white" /></a>
+  <a href="https://python.org" target="_blank"><img src="https://img.shields.io/badge/WEB_SCRAPING-5B8DEF?style=for-the-badge&logo=python&logoColor=white" /></a>
 </p>
 
 <br>
 
 ### 📊 DATA SCIENCE, ANALYTICS & VISUALIZATION
 <p align="center">
-  <a href="https://pandas.pydata.org" target="_blank"><img src="https://skillicons.dev/icons?i=pandas,postgres,mysql,tableau" height="48" alt="Data Tools" /></a>
+  <a href="https://pandas.pydata.org" target="_blank"><img src="https://skillicons.dev/icons?i=pandas,postgres,mysql,tableau" height="42" alt="Data Tools" /></a>
 </p>
 <p align="center">
-  <a href="https://numpy.org" target="_blank"><img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" height="48" /></a>
-  <a href="https://matplotlib.org" target="_blank"><img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white" height="48" /></a>
-  <a href="https://powerbi.microsoft.com" target="_blank"><img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" height="48" /></a>
-  <a href="https://analytics.google.com" target="_blank"><img src="https://img.shields.io/badge/Data_Funnels-5B8DEF?style=for-the-badge&logo=googleanalytics&logoColor=white" height="48" /></a>
+  <a href="https://numpy.org" target="_blank"><img src="https://img.shields.io/badge/NUMPY-013243?style=for-the-badge&logo=numpy&logoColor=white" /></a>
+  <a href="https://matplotlib.org" target="_blank"><img src="https://img.shields.io/badge/MATPLOTLIB-11557C?style=for-the-badge&logo=python&logoColor=white" /></a>
+  <a href="https://powerbi.microsoft.com" target="_blank"><img src="https://img.shields.io/badge/POWER_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" /></a>
+  <a href="https://analytics.google.com" target="_blank"><img src="https://img.shields.io/badge/DATA_FUNNELS-5B8DEF?style=for-the-badge&logo=googleanalytics&logoColor=white" /></a>
 </p>
 
 <br>
 
 ### 💻 LANGUAGES & CORE PROGRAMMING
 <p align="center">
-  <a href="https://python.org" target="_blank"><img src="https://skillicons.dev/icons?i=py,cpp,c,ts,js,html,css" height="48" alt="Languages" /></a>
+  <a href="https://python.org" target="_blank"><img src="https://skillicons.dev/icons?i=py,cpp,c,ts,js,html,css" height="42" alt="Languages" /></a>
 </p>
 
 <br>
 
 ### ⚡ SOFTWARE ENGINEERING & BUSINESS ANALYSIS
 <p align="center">
-  <a href="https://github.com/tani-codes" target="_blank"><img src="https://img.shields.io/badge/Software_Testing-24292E?style=for-the-badge&logo=github&logoColor=white" height="48" /></a>
-  <a href="https://github.com/tani-codes" target="_blank"><img src="https://img.shields.io/badge/UAT_%26_Defects-5B8DEF?style=for-the-badge&logo=jira&logoColor=white" height="48" /></a>
-  <a href="https://github.com/tani-codes" target="_blank"><img src="https://img.shields.io/badge/Business_Analysis-6BA368?style=for-the-badge&logo=microsoftexcel&logoColor=white" height="48" /></a>
-  <a href="https://github.com/tani-codes" target="_blank"><img src="https://img.shields.io/badge/BRD_%2F_FRD-8B6FE8?style=for-the-badge&logo=markdown&logoColor=white" height="48" /></a>
+  <a href="https://github.com/tani-codes" target="_blank"><img src="https://img.shields.io/badge/SOFTWARE_TESTING-24292E?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/tani-codes" target="_blank"><img src="https://img.shields.io/badge/UAT_%26_DEFECTS-5B8DEF?style=for-the-badge&logo=jira&logoColor=white" /></a>
+  <a href="https://github.com/tani-codes" target="_blank"><img src="https://img.shields.io/badge/BUSINESS_ANALYSIS-6BA368?style=for-the-badge&logo=microsoftexcel&logoColor=white" /></a>
+  <a href="https://github.com/tani-codes" target="_blank"><img src="https://img.shields.io/badge/BRD_%2F_FRD-8B6FE8?style=for-the-badge&logo=markdown&logoColor=white" /></a>
 </p>
 
 <br>
 
 ### 🎨 FRONTEND & UI FRAMEWORKS
 <p align="center">
-  <a href="https://react.dev" target="_blank"><img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,bootstrap,html,css,js,ts" height="48" alt="Frontend Frameworks" /></a>
+  <a href="https://react.dev" target="_blank"><img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,bootstrap,html,css,js,ts" height="42" alt="Frontend Frameworks" /></a>
 </p>
 
 <br>
 
 ### 🛠️ DEVELOPER TOOLS & DESIGN
 <p align="center">
-  <a href="https://git-scm.com" target="_blank"><img src="https://skillicons.dev/icons?i=git,github,vscode,postman,figma,docker,linux" height="48" alt="Tools" /></a>
+  <a href="https://git-scm.com" target="_blank"><img src="https://skillicons.dev/icons?i=git,github,vscode,postman,figma,docker,linux" height="42" alt="Tools" /></a>
 </p>
 <p align="center">
-  <a href="https://canva.com" target="_blank"><img src="https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=canva&logoColor=white" height="48" /></a>
-  <a href="https://colab.research.google.com" target="_blank"><img src="https://img.shields.io/badge/Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white" height="48" /></a>
-  <a href="https://jupyter.org" target="_blank"><img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" height="48" /></a>
+  <a href="https://canva.com" target="_blank"><img src="https://img.shields.io/badge/CANVA-00C4CC?style=for-the-badge&logo=canva&logoColor=white" /></a>
+  <a href="https://colab.research.google.com" target="_blank"><img src="https://img.shields.io/badge/GOOGLE_COLAB-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white" /></a>
+  <a href="https://jupyter.org" target="_blank"><img src="https://img.shields.io/badge/JUPYTER_NOTEBOOK-F37626?style=for-the-badge&logo=jupyter&logoColor=white" /></a>
 </p>
 
 </div>
