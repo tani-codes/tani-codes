@@ -9,6 +9,9 @@ viewBox="0 0 1600 500">
 
 <defs>
 
+
+<!-- BACKGROUND -->
+
 <linearGradient id="bg"
 x1="0%"
 y1="0%"
@@ -21,83 +24,114 @@ y2="100%">
 </linearGradient>
 
 
+
+<!-- SHADOW -->
+
 <filter id="shadow">
 
-<feGaussianBlur stdDeviation="12"/>
+<feGaussianBlur stdDeviation="14"/>
 
 </filter>
 
 
 
-<!-- TEXT REVEAL -->
+<!--
+  ANIMATION TIMELINE  (total = 24 s)
+  ─────────────────────────────────────────────────────────────
+  Segment   begin   dur   pencil-start-x  pencil-end-x   text
+  ─────────────────────────────────────────────────────────────
+  Line 1    0.3 s   6 s   510             930            "Tanish Bandodkar"  (48 px font, ~420 px wide)
+  pause           0.5 s   (pencil jumps back to col-start of next line)
+  Line 2    6.8 s   4 s   510             770            "DATA ANALYTICS"    (22 px font, ~260 px wide)
+  pause           0.5 s
+  Line 3   11.3 s   4 s   510             840            "AI / ML ENTHUSIAST"(22 px font, ~330 px wide)
+  pause           0.5 s
+  Line 4   15.8 s   5 s   510             890            "SOFTWARE DEVELOPER" (22 px font, ~380 px wide)
+  ─────────────────────────────────────────────────────────────
+
+  Pencil tip = the very front point of the pencil group.
+  The pencil group origin IS the tip (polygon "0,0 22,-8 22,8").
+  So translate(x, baseline-y) puts the tip at (x, baseline-y).
+
+  Text baselines:
+    Line 1  y=165  → we want pencil tip y ≈ 155  (slightly above baseline)
+    Line 2  y=220  → pencil tip y ≈ 210
+    Line 3  y=265  → pencil tip y ≈ 255
+    Line 4  y=310  → pencil tip y ≈ 300
+
+  clipPath rects use the same begin/dur values as pencil x movement.
+  rect y and height are set to cover the full glyph ascent/descent.
+-->
+
+
+<!-- TEXT MASKS -->
+
 
 <clipPath id="nameClip">
 
-<rect x="500" y="115" width="0" height="60">
-
-<animate
-attributeName="width"
-from="0"
-to="430"
-begin="1s"
-dur="3s"
-fill="freeze"/>
-
-</rect>
+  <!-- Line 1: begin=0.3s dur=6s → 0 to 420 px wide -->
+  <rect x="510" y="115" width="0" height="58">
+    <animate
+      attributeName="width"
+      from="0"
+      to="420"
+      begin="0.3s"
+      dur="6s"
+      fill="freeze"/>
+  </rect>
 
 </clipPath>
+
 
 
 <clipPath id="dataClip">
 
-<rect x="500" y="190" width="0" height="45">
-
-<animate
-attributeName="width"
-from="0"
-to="260"
-begin="5s"
-dur="2s"
-fill="freeze"/>
-
-</rect>
+  <!-- Line 2: begin=6.8s dur=4s → 0 to 260 px wide -->
+  <rect x="510" y="190" width="0" height="38">
+    <animate
+      attributeName="width"
+      from="0"
+      to="260"
+      begin="6.8s"
+      dur="4s"
+      fill="freeze"/>
+  </rect>
 
 </clipPath>
+
 
 
 <clipPath id="aiClip">
 
-<rect x="500" y="235" width="0" height="45">
-
-<animate
-attributeName="width"
-from="0"
-to="300"
-begin="8s"
-dur="2s"
-fill="freeze"/>
-
-</rect>
+  <!-- Line 3: begin=11.3s dur=4s → 0 to 330 px wide -->
+  <rect x="510" y="235" width="0" height="38">
+    <animate
+      attributeName="width"
+      from="0"
+      to="330"
+      begin="11.3s"
+      dur="4s"
+      fill="freeze"/>
+  </rect>
 
 </clipPath>
+
 
 
 <clipPath id="devClip">
 
-<rect x="500" y="280" width="0" height="45">
-
-<animate
-attributeName="width"
-from="0"
-to="340"
-begin="11s"
-dur="2s"
-fill="freeze"/>
-
-</rect>
+  <!-- Line 4: begin=15.8s dur=5s → 0 to 380 px wide -->
+  <rect x="510" y="280" width="0" height="38">
+    <animate
+      attributeName="width"
+      from="0"
+      to="380"
+      begin="15.8s"
+      dur="5s"
+      fill="freeze"/>
+  </rect>
 
 </clipPath>
-
 
 </defs>
 
@@ -110,41 +144,76 @@ width="1600"
 height="500"
 fill="url(#bg)"/>
 
+<!-- NATURAL BOTANICAL LEAF ACCENTS FOR HERO -->
+<g opacity="0.30" transform="translate(240 80) rotate(-15)">
+  <path d="M0,0 Q20,-20 40,0 Q20,20 0,0 Z" fill="#5C7862"/>
+  <line x1="0" y1="0" x2="40" y2="0" stroke="#3E5443" stroke-width="0.8"/>
+  <path d="M12,0 Q25,-30 45,-15 Q28,-6 12,0 Z" fill="#6E8E75"/>
+</g>
+
+<g opacity="0.30" transform="translate(1320 380) rotate(20)">
+  <path d="M0,0 Q20,-20 40,0 Q20,20 0,0 Z" fill="#C87A5B"/>
+  <line x1="0" y1="0" x2="40" y2="0" stroke="#9E573C" stroke-width="0.8"/>
+  <path d="M12,0 Q25,-30 45,-15 Q28,-6 12,0 Z" fill="#D4886A"/>
+</g>
+
+
 
 
 <!-- NOTEBOOK SHADOW -->
 
 <rect
+
 x="330"
+
 y="40"
+
 width="950"
+
 height="390"
+
 rx="30"
+
 fill="#000"
+
 opacity="0.12"
+
 filter="url(#shadow)"/>
+
 
 
 
 <!-- NOTEBOOK -->
 
 <rect
+
 x="340"
+
 y="50"
+
 width="920"
+
 height="380"
+
 rx="25"
+
 fill="#FFFFFF"
+
 stroke="#E4D8C5"
+
 stroke-width="3"/>
+
 
 
 
 <!-- SPIRAL -->
 
 <g
+
 stroke="#B7AA98"
+
 stroke-width="4"
+
 fill="none">
 
 
@@ -155,37 +224,48 @@ fill="none">
 <circle cx="420" cy="275" r="8"/>
 <circle cx="420" cy="320" r="8"/>
 
+
 </g>
+
 
 
 
 <!-- PAGE LINES -->
 
 <g
+
 stroke="#EEE4D6"
+
 stroke-width="2">
 
 
-<line x1="430" y1="130" x2="1180" y2="130"/>
-<line x1="430" y1="180" x2="1180" y2="180"/>
-<line x1="430" y1="230" x2="1180" y2="230"/>
-<line x1="430" y1="280" x2="1180" y2="280"/>
-<line x1="430" y1="330" x2="1180" y2="330"/>
+<line x1="470" y1="130" x2="1180" y2="130"/>
+<line x1="470" y1="180" x2="1180" y2="180"/>
+<line x1="470" y1="225" x2="1180" y2="225"/>
+<line x1="470" y1="270" x2="1180" y2="270"/>
+<line x1="470" y1="315" x2="1180" y2="315"/>
 
 
 </g>
+<!-- ================================= -->
+<!-- TEXT CONTENT -->
+<!-- ================================= -->
 
-
-
-<!-- TEXT -->
 
 <text
+
 x="510"
+
 y="165"
+
 font-family="cursive"
+
 font-size="48"
+
 font-weight="700"
+
 fill="#2D2A26"
+
 clip-path="url(#nameClip)">
 
 Tanish Bandodkar
@@ -194,12 +274,19 @@ Tanish Bandodkar
 
 
 
+
 <text
+
 x="510"
-y="225"
+
+y="220"
+
 font-family="cursive"
-font-size="20"
+
+font-size="22"
+
 fill="#5C554C"
+
 clip-path="url(#dataClip)">
 
 DATA ANALYTICS
@@ -208,12 +295,19 @@ DATA ANALYTICS
 
 
 
+
 <text
+
 x="510"
+
 y="265"
+
 font-family="cursive"
-font-size="20"
+
+font-size="22"
+
 fill="#5C554C"
+
 clip-path="url(#aiClip)">
 
 AI / ML ENTHUSIAST
@@ -222,17 +316,28 @@ AI / ML ENTHUSIAST
 
 
 
+
 <text
+
 x="510"
-y="305"
+
+y="310"
+
 font-family="cursive"
-font-size="20"
+
+font-size="22"
+
 fill="#5C554C"
+
 clip-path="url(#devClip)">
 
 SOFTWARE DEVELOPER
 
 </text>
+
+
+
+
 <!-- ================================= -->
 <!-- CODE CARD -->
 <!-- ================================= -->
@@ -240,31 +345,34 @@ SOFTWARE DEVELOPER
 
 <rect
 
-x="1080"
+x="1060"
 
 y="90"
 
-width="190"
+width="210"
 
-height="95"
+height="100"
 
-rx="12"
+rx="14"
 
 fill="#FFF8ED"
 
-stroke="#E4D8C5"/>
+stroke="#E4D8C5"
+
+stroke-width="2"/>
+
 
 
 
 <text
 
-x="1100"
+x="1080"
 
-y="125"
+y="130"
 
 font-family="monospace"
 
-font-size="14"
+font-size="15"
 
 fill="#5B8DEF">
 
@@ -274,15 +382,16 @@ model.fit()
 
 
 
+
 <text
 
-x="1100"
+x="1080"
 
-y="155"
+y="160"
 
 font-family="monospace"
 
-font-size="14"
+font-size="15"
 
 fill="#6BA368">
 
@@ -293,15 +402,14 @@ accuracy = 98%
 
 
 
-
 <!-- ================================= -->
-<!-- SINGLE AI NETWORK -->
+<!-- AI NETWORK -->
 <!-- ================================= -->
 
 
 <g
 
-transform="translate(1120 260)"
+transform="translate(1120 250)"
 
 stroke="#5B8DEF"
 
@@ -377,7 +485,7 @@ cy="-35"
 
 r="8"
 
-fill="white"/>
+fill="#FFFFFF"/>
 
 
 
@@ -389,7 +497,7 @@ cy="35"
 
 r="8"
 
-fill="white"/>
+fill="#FFFFFF"/>
 
 
 
@@ -406,19 +514,12 @@ fill="#6BA368"/>
 
 
 </g>
-
-
-
-
-
 <!-- ================================= -->
 <!-- ANALYTICS GRAPH -->
 <!-- ================================= -->
 
 
-<g
-
-transform="translate(1100 350)">
+<g transform="translate(1090 350)">
 
 
 
@@ -451,190 +552,208 @@ stroke="#C8BBA8"/>
 
 
 <polyline
-
 points="10,50 45,40 80,45 120,20 160,10"
-
 fill="none"
-
 stroke="#5B8DEF"
-
 stroke-width="3"
-
-stroke-dasharray="250"
-
-stroke-dashoffset="250">
-
-
+stroke-linecap="round"
+stroke-linejoin="round"
+stroke-dasharray="165"
+stroke-dashoffset="165">
 <animate
-
 attributeName="stroke-dashoffset"
-
-from="250"
-
+from="165"
 to="0"
-
+begin="3s"
 dur="3s"
-
-begin="2s"
-
 fill="freeze"/>
-
-
 </polyline>
 
-
+<!-- TECH STYLUS DRAWING LINE GRAPH LIVE (Synched at t=3s to 6s) -->
+<g opacity="0">
+  <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.95;1" begin="2.8s" dur="3.4s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="translate"
+    values="10 50; 45 40; 80 45; 120 20; 160 10"
+    keyTimes="0; 0.227; 0.448; 0.743; 1"
+    begin="3s" dur="3s" fill="freeze"/>
+  
+  <g transform="rotate(-35)">
+    <polygon points="0,0 -3,-12 3,-12" fill="#5B8DEF"/>
+    <circle cx="0" cy="0" r="1.5" fill="#FFF"/>
+    <rect x="-3.5" y="-24" width="7" height="12" rx="1" fill="#4A4A4A" stroke="#222" stroke-width="0.5"/>
+    <polygon points="-2.5,-24 2.5,-24 3.5,-75 -3.5,-75" fill="#24292E"/>
+    <line x1="0" y1="-24" x2="0" y2="-72" stroke="#5B8DEF" stroke-width="0.8" opacity="0.8"/>
+  </g>
+</g>
 
 </g>
+
+
+
+
 <!-- ================================= -->
-<!-- WRITING PENCIL ANIMATION -->
+<!-- PENCIL WRITING ANIMATION -->
 <!-- ================================= -->
 
+<!--
+  The pencil group origin = the TIP of the pencil.
+  translate(x, y) moves the tip to absolute SVG coordinates (x, y).
+
+  Timeline (all values in seconds):
+    t=0.3   tip at (510, 155)   — start of "Tanish Bandodkar"
+    t=6.3   tip at (930, 155)   — end of "Tanish Bandodkar"   (+420 px in 6 s)
+    t=6.3   tip jumps to (510, 210) — start of "DATA ANALYTICS"
+    t=6.8   tip at (510, 210)   — tiny pause / re-position
+    t=10.8  tip at (770, 210)   — end of "DATA ANALYTICS"     (+260 px in 4 s)
+    t=10.8  tip jumps to (510, 255) — start of "AI / ML…"
+    t=11.3  tip at (510, 255)   — tiny pause / re-position
+    t=15.3  tip at (840, 255)   — end of "AI / ML ENTHUSIAST" (+330 px in 4 s)
+    t=15.3  tip jumps to (510, 300) — start of "SOFTWARE DEVELOPER"
+    t=15.8  tip at (510, 300)   — tiny pause / re-position
+    t=20.8  tip at (890, 300)   — end of "SOFTWARE DEVELOPER" (+380 px in 5 s)
+
+  We express all this within a single animateTransform on dur="21s"
+  (total = 20.8 s rounded up with a small hold).
+
+  keyTimes are fractions of 21 s:
+    0.3/21  = 0.0143  → writing line 1 starts
+    6.3/21  = 0.3000  → writing line 1 ends
+    6.3/21  = 0.3000  → jump (same keyTime, instant)
+    6.8/21  = 0.3238  → arrive at line 2 start
+    10.8/21 = 0.5143  → writing line 2 ends
+    10.8/21 = 0.5143  → jump
+    11.3/21 = 0.5381  → arrive at line 3 start
+    15.3/21 = 0.7286  → writing line 3 ends
+    15.3/21 = 0.7286  → jump
+    15.8/21 = 0.7524  → arrive at line 4 start
+    20.8/21 = 0.9905  → writing line 4 ends
+    1.0000           → hold
+
+  Because SVG animateTransform can't repeat a keyTime, we use calcMode="linear"
+  and tiny epsilon offsets (0.0001) for instant jumps.
+-->
 
 <g>
 
+  <animateTransform
+    attributeName="transform"
+    type="translate"
+    calcMode="linear"
+    values="
+      510 155;
+      510 155;
+      930 155;
+      510 210;
+      510 210;
+      770 210;
+      510 255;
+      510 255;
+      840 255;
+      510 300;
+      510 300;
+      890 300;
+      890 300
+    "
+    keyTimes="
+      0;
+      0.0143;
+      0.3000;
+      0.3001;
+      0.3238;
+      0.5143;
+      0.5144;
+      0.5381;
+      0.7286;
+      0.7287;
+      0.7524;
+      0.9905;
+      1
+    "
+    dur="21s"
+    fill="freeze"/>
 
-<!-- PENCIL PATH -->
 
-<animateTransform
+  <!-- PENCIL -->
 
-attributeName="transform"
+  <g transform="rotate(-25)">
 
-type="translate"
 
-values="
 
-500 145;
+    <!-- TIP -->
 
-850 145;
+    <polygon
 
-500 205;
+    points="0,0 22,-8 22,8"
 
-760 205;
+    fill="#333"/>
 
-500 245;
 
-830 245;
 
-500 285;
+    <!-- WOOD -->
 
-880 285
+    <polygon
 
-"
+    points="22,-8 48,-8 48,8 22,8"
 
-keyTimes="
+    fill="#C49A6A"/>
 
-0;
 
-0.25;
 
-0.32;
+    <!-- BODY -->
 
-0.50;
+    <rect
 
-0.57;
+    x="48"
 
-0.72;
+    y="-8"
 
-0.79;
+    width="125"
 
-1
+    height="16"
 
-"
+    rx="8"
 
-dur="13s"
+    fill="#F4C95D"/>
 
-fill="freeze"/>
 
 
+    <!-- METAL -->
 
+    <rect
 
-<!-- ================================= -->
-<!-- PENCIL -->
-<!-- TIP TOUCHES TEXT -->
-<!-- ================================= -->
+    x="173"
 
+    y="-8"
 
-<g transform="rotate(-25)">
+    width="8"
 
+    height="16"
 
+    fill="#B8B8B8"/>
 
-<!-- GRAPHITE TIP -->
 
-<polygon
 
-points="0,0 22,-8 22,8"
+    <!-- ERASER -->
 
-fill="#333"/>
+    <rect
 
+    x="181"
 
+    y="-8"
 
-<!-- WOOD -->
+    width="22"
 
-<polygon
+    height="16"
 
-points="22,-8 48,-8 48,8 22,8"
+    rx="4"
 
-fill="#C49A6A"/>
+    fill="#E57C7C"/>
 
 
-
-<!-- YELLOW BODY -->
-
-<rect
-
-x="48"
-
-y="-8"
-
-width="125"
-
-height="16"
-
-rx="8"
-
-fill="#F4C95D"/>
-
-
-
-<!-- METAL BAND -->
-
-<rect
-
-x="173"
-
-y="-8"
-
-width="8"
-
-height="16"
-
-fill="#B8B8B8"/>
-
-
-
-<!-- ERASER -->
-
-<rect
-
-x="181"
-
-y="-8"
-
-width="22"
-
-height="16"
-
-rx="4"
-
-fill="#E57C7C"/>
-
+  </g>
 
 
 </g>
-
-
-</g>
-
 <!-- ================================= -->
 <!-- COFFEE MUG -->
 <!-- ================================= -->
@@ -652,7 +771,7 @@ ry="12"
 
 fill="#000"
 
-opacity=".12"/>
+opacity="0.12"/>
 
 
 
@@ -702,7 +821,6 @@ fill="none"
 stroke="#D8CCBA"
 
 stroke-width="8"/>
-
 
 
 
@@ -769,7 +887,6 @@ stroke="#D5B95A"/>
 
 
 </g>
-
 
 
 
@@ -842,8 +959,12 @@ stroke-width="3"/>
 
 
 </g>
+
+
+
+
 <!-- ================================= -->
-<!-- FINAL POLISH -->
+<!-- SMALL DECORATION -->
 <!-- ================================= -->
 
 
@@ -906,11 +1027,6 @@ r="2"/>
 
 
 </g>
-
-
-
-
-
 <!-- ================================= -->
 <!-- SIGNATURE -->
 <!-- ================================= -->
@@ -937,7 +1053,6 @@ fill="#5B8DEF">
 
 
 
-
 <!-- ================================= -->
 <!-- AI LABEL -->
 <!-- ================================= -->
@@ -960,7 +1075,6 @@ AI Experiment #01
 
 
 </text>
-
 
 
 
