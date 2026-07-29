@@ -162,30 +162,23 @@ tanish = {
 <br>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=tani-codes&color=5B8DEF&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=tani-codes&color=00F5FF&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
+  &nbsp;&nbsp;
+  <img src="https://img.shields.io/github/followers/tani-codes?style=for-the-badge&logo=github&color=8B6FE8&label=FOLLOWERS" alt="GitHub Followers" />
 </p>
-
-<br>
-
-<!-- Real-time GitHub Profile Trophies (Fetched live directly from tani-codes GitHub account) -->
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=tani-codes&theme=tokyonight&margin-w=15&row=1" alt="GitHub Trophies" />
-</p>
-
-<br>
-
-<!-- Real-time GitHub Stats Cards (Fetched live directly from tani-codes GitHub account) -->
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=tani-codes&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" width="48%" alt="GitHub Profile Stats" />
-  &nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tani-codes&layout=compact&theme=tokyonight&hide_border=true" width="48%" alt="Top Languages" />
-</div>
 
 <br>
 
 <!-- Real-time GitHub Streak Card -->
 <p align="center">
   <img src="https://streak-stats.demolab.com/?user=tani-codes&theme=tokyonight&hide_border=true" width="97%" alt="GitHub Streak Stats" />
+</p>
+
+<br>
+
+<!-- Real-time Contribution Activity Graph -->
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=tani-codes&theme=tokyo-night&hide_border=true" width="97%" alt="GitHub Contribution Activity Graph" />
 </p>
 
 <p align="center">
