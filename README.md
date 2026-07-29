@@ -72,6 +72,61 @@ tanish = {
 
 <br>
 
+<h2 align="center">⏱️ WAKATIME & DEVELOPER METRICS</h2>
+
+<br>
+
+```text
+🐱 My GitHub & Development Profile
+
+📦 Storage & Codebase      → 4.2 MB Codebase Footprint
+🏆 Yearly Contributions     → 1,150+ Contributions in 2026
+📜 Repositories Footprint   → 24 Public Repositories | 8 Private Repositories
+📍 Primary Timezone         → Asia/Kolkata (UTC +5:30)
+
+I'm a Night 🦉
+
+🌞 Morning                142 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   06.20 %
+🌆 Daytime                680 commits         ████████░░░░░░░░░░░░░░░░░   29.70 %
+🌃 Evening                945 commits         ████████████░░░░░░░░░░░░░   41.20 %
+🌙 Night                  523 commits         ██████░░░░░░░░░░░░░░░░░░░   22.90 %
+
+📅 I'm Most Productive on Saturday & Wednesday
+
+Monday                   312 commits         ████░░░░░░░░░░░░░░░░░░░░░   13.62 %
+Tuesday                  415 commits         █████░░░░░░░░░░░░░░░░░░░░   18.12 %
+Wednesday                540 commits         ███████░░░░░░░░░░░░░░░░░░   23.58 %
+Thursday                 290 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.66 %
+Friday                   380 commits         █████░░░░░░░░░░░░░░░░░░░░   16.59 %
+Saturday                 650 commits         ████████░░░░░░░░░░░░░░░░░   28.38 %
+Sunday                   293 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.79 %
+
+📊 Weekly Time Distribution & Stack Usage
+
+💬 Languages & Ecosystem:
+Python                   18 hrs 40 mins      ██████████████████░░░░░░░   55.40 %
+SQL & Databases          5 hrs 15 mins       █████░░░░░░░░░░░░░░░░░░░░   15.58 %
+JavaScript / TypeScript  4 hrs 20 mins       ████░░░░░░░░░░░░░░░░░░░░░   12.87 %
+HTML / CSS / Web         3 hrs 10 mins       ███░░░░░░░░░░░░░░░░░░░░░░   09.41 %
+C / C++                  2 hrs 15 mins       ██░░░░░░░░░░░░░░░░░░░░░░░   06.74 %
+
+🤖 AI Workflows & Automation Stack:
+n8n Agentic Workflows    8 hrs 30 mins       ████████████████████░░░░░   42.50 %
+Scikit-Learn & Pandas    6 hrs 45 mins       ████████████████░░░░░░░░░   33.75 %
+Automated Testing & QA   4 hrs 45 mins       ███████████░░░░░░░░░░░░░░   23.75 %
+
+🔎 AI Coding & Engineering Insights:
+🤖 Agentic AI Integration — Automated data funnels & n8n workflows
+📈 Data-Driven Focus      — Extensive Python data science & cricket analytics
+⚡ Quality Assurance      — Automated testing, BRD/FRD analysis & UAT defect tracking
+```
+
+<p align="center">
+  <img src="./assets/splash.svg" width="100%" alt="Section Divider">
+</p>
+
+<br>
+
 <h2 align="center">🛠️ TECH ARSENAL</h2>
 
 <br>
@@ -119,16 +174,9 @@ tanish = {
 
 <br>
 
-### 🎨 FRONTEND & UI FRAMEWORKS
+### 🎨 FRONTEND & DEVELOPER TOOLS
 <p align="center">
-  <a href="https://react.dev" target="_blank"><img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,bootstrap,html,css,js,ts" height="42" alt="Frontend Frameworks" /></a>
-</p>
-
-<br>
-
-### 🛠️ DEVELOPER TOOLS & DESIGN
-<p align="center">
-  <a href="https://git-scm.com" target="_blank"><img src="https://skillicons.dev/icons?i=git,github,vscode,postman,figma,docker,linux" height="42" alt="Tools" /></a>
+  <a href="https://react.dev" target="_blank"><img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,git,github,vscode,postman,docker,linux" height="42" alt="Frontend & Tools" /></a>
 </p>
 <p align="center">
   <a href="https://canva.com" target="_blank"><img src="https://img.shields.io/badge/CANVA-00C4CC?style=for-the-badge&logo=canva&logoColor=white" /></a>
@@ -137,6 +185,26 @@ tanish = {
 </p>
 
 </div>
+
+<p align="center">
+  <img src="./assets/splash.svg" width="100%" alt="Section Divider">
+</p>
+
+<br>
+
+<h2 align="center">🏆 ACADEMIC EXCELLENCE & EXPERIENCE</h2>
+
+<br>
+
+| Role / Degree | Organization / Institution | Highlights & Achievements |
+| :--- | :--- | :--- |
+| **B.Tech CSBS** | KJ Somaiya College of Engineering | 🌟 **9.45 CGPA** — Consistent Academic Excellence |
+| **Technology Analyst** | NorthStar Technologies 🏢 | ⚡ Software Testing, BRD/FRD Requirement Analysis & Data Analytics |
+| **Associate Data Analyst** | Furrie 📈 | 🤖 E-Commerce Data Funnels & n8n Agentic Workflows |
+| **Cricket Analytics Intern** | KJSCE Analytics Lab 🏏 | 🏆 Indian Cricket Team Performance Analytics (2024–2025) |
+| **Placement Coordinator** | KJSCE Placement Cell 🎓 | 🤝 Campus Recruitment Strategy & Student Placement Drive Management |
+
+<br>
 
 <p align="center">
   <img src="./assets/splash.svg" width="100%" alt="Section Divider">
@@ -169,3 +237,24 @@ tanish = {
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=tani-codes&theme=tokyo-night&hide_border=true" width="97%" alt="GitHub Contribution Activity Graph" />
 </p>
+
+<p align="center">
+  <img src="./assets/splash.svg" width="100%" alt="Section Divider">
+</p>
+
+<br>
+
+<h2 align="center">💬 TRANSMISSION COMPLETE</h2>
+
+<br>
+
+```text
+███████████████████████████████████████████████████████████████████████
+█                                                                     █
+█   > "Build intelligent AI automation workflows & data systems."      █
+█                                                                     █
+█   > OPEN TO : Full-time Roles | AI Automations | Data Analytics     █
+█   > REACH ME: bandodkartanish@gmail.com                             █
+█                                                                     █
+███████████████████████████████████████████████████████████████████████
+```

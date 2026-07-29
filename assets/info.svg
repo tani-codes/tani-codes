@@ -167,7 +167,7 @@
 <g filter="url(#bsh)">
   <rect x="154" y="62" width="145" height="46" rx="6" fill="#474747"/>
   <rect x="234" y="62" width="65"  height="46" fill="#F49A24" clip-path="url(#c1)"/>
-  <text x="164" y="82" font-family="'Segoe UI',sans-serif" font-size="9.5" font-weight="700" fill="#FFF">📍 MUMBAI</text>
+  <text x="164" y="89" font-family="'Segoe UI',sans-serif" font-size="9.5" font-weight="700" fill="#FFF">📍 MUMBAI</text>
   <text x="266" y="90" font-family="'Segoe UI',sans-serif" font-size="11" font-weight="800" fill="#FFF" text-anchor="middle" letter-spacing="1">INDIA</text>
 </g>
 
