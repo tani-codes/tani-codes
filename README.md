@@ -2,6 +2,14 @@
   <img src="./assets/hero.svg" width="100%" alt="Tanish Bandodkar Hero Banner">
 </p>
 
+<p align="center">
+  <img src="./assets/splash.svg" width="100%" alt="Section Divider">
+</p>
+
+<br>
+
+<h2 align="center">🔮 PROFILE MATRIX</h2>
+
 <br>
 
 <p align="center">
@@ -9,12 +17,12 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/tani-codes" target="_blank"><img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
-  &nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/tanishbandodkar/" target="_blank"><img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  &nbsp;&nbsp;
-  <a href="mailto:bandodkartanish@gmail.com" target="_blank"><img src="https://img.shields.io/badge/GMAIL-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <img src="./assets/splash.svg" width="100%" alt="Section Divider">
 </p>
+
+<br>
+
+<h2 align="center">⚡ SYSTEM TERMINAL</h2>
 
 <br>
 
@@ -58,7 +66,10 @@ tanish = {
 ╚════════════════════════════════════════════════════════════════════════════╝
 ```
 
-<br>
+<p align="center">
+  <img src="./assets/splash.svg" width="100%" alt="Section Divider">
+</p>
+
 <br>
 
 <h2 align="center">🛠️ TECH ARSENAL</h2>
@@ -127,10 +138,13 @@ tanish = {
 
 </div>
 
-<br>
+<p align="center">
+  <img src="./assets/splash.svg" width="100%" alt="Section Divider">
+</p>
+
 <br>
 
-<h2 align="center">📈 REAL-TIME GITHUB ANALYTICS & STATS</h2>
+<h2 align="center">📈 GITHUB ANALYTICS</h2>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=tani-codes&color=5B8DEF&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />

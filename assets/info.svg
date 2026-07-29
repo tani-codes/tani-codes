@@ -19,6 +19,15 @@
     <feDropShadow dx="0" dy="2" stdDeviation="3.5" flood-color="#000000" flood-opacity="0.45"/>
   </filter>
 
+  <!-- ── Neon Glow Filter ── -->
+  <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="4" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
   <!-- ══════════════════════════════════════════════════════════
        Clip paths for typewriter single-line cycling commands
        ══════════════════════════════════════════════════════════ -->
@@ -86,6 +95,9 @@
 <!--  BACKGROUND CANVAS                         -->
 <!-- ══════════════════════════════════════════ -->
 <rect width="860" height="340" fill="url(#bg)" rx="16"/>
+
+
+
 
 <!-- ══════════════════════════════════════════════════════════════ -->
 <!--  CYCLING COMMAND LINE PROMPT — CENTERED TYPEWRITER             -->

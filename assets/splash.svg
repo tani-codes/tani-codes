@@ -1,129 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  splash.svg — Dynamic Paint Splash Section Divider Animation
-  Author: Tanish Bandodkar
+  splash.svg — Minimal Cyber Gradient Section Divider
 -->
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="70" viewBox="0 0 900 70">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="24" viewBox="0 0 900 24">
 <defs>
 
-  <linearGradient id="lineGlow" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%"   stop-color="#FF3B70" stop-opacity="0.2"/>
-    <stop offset="25%"  stop-color="#FF3B70" stop-opacity="0.8"/>
-    <stop offset="50%"  stop-color="#7C4DFF" stop-opacity="0.9"/>
-    <stop offset="75%"  stop-color="#00D2FF" stop-opacity="0.8"/>
-    <stop offset="100%" stop-color="#FF9F43" stop-opacity="0.2"/>
+  <linearGradient id="divGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%"   stop-color="#00F5FF" stop-opacity="0.0"/>
+    <stop offset="25%"  stop-color="#00F5FF" stop-opacity="0.4"/>
+    <stop offset="50%"  stop-color="#8B6FE8" stop-opacity="0.75"/>
+    <stop offset="75%"  stop-color="#00D2FF" stop-opacity="0.4"/>
+    <stop offset="100%" stop-color="#00D2FF" stop-opacity="0.0"/>
   </linearGradient>
 
-  <filter id="glow">
-    <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+  <filter id="softGlow">
+    <feGaussianBlur stdDeviation="2.5" result="blur"/>
     <feMerge>
-      <feMergeNode in="coloredBlur"/>
+      <feMergeNode in="blur"/>
       <feMergeNode in="SourceGraphic"/>
     </feMerge>
   </filter>
 
 </defs>
 
-<!-- Center Gradient Divider Line -->
-<rect x="50" y="34" width="800" height="3" rx="1.5" fill="url(#lineGlow)" filter="url(#glow)"/>
+<!-- Center Sleek Gradient Divider Line -->
+<rect x="80" y="11" width="740" height="1.5" rx="0.75" fill="url(#divGlow)" filter="url(#softGlow)"/>
 
-<!-- ══════════════════════════════════════════════════════════════ -->
-<!--  LIVE ANIMATED PAINT SPLASH IMPACT BURSTS ACROSS DIVIDER LINE  -->
-<!-- ══════════════════════════════════════════════════════════════ -->
-
-<!-- SPLASH 1: Rose Pink Paint Splash Impact at x=200 (t=0s to 4s) -->
-<g transform="translate(200, 35)">
-  <g>
-    <animateTransform attributeName="transform" type="scale"
-      values="0; 0; 1.3; 1; 1; 0"
-      keyTimes="0; 0.05; 0.18; 0.25; 0.85; 0.95"
-      dur="4s" repeatCount="indefinite"/>
-    <animate attributeName="opacity"
-      values="0; 0; 0.95; 0.85; 0.85; 0"
-      keyTimes="0; 0.05; 0.14; 0.25; 0.85; 0.95"
-      dur="4s" repeatCount="indefinite"/>
-    
-    <!-- Paint Splash Core -->
-    <path d="M-15,-10 Q0,-22 15,-12 Q28,0 18,14 Q32,22 15,28 Q0,32 -14,24 Q-28,30 -25,12 Q-36,0 -22,-14 Z" fill="#FF3B70"/>
-    <!-- Splatter Drips -->
-    <path d="M15,-12 Q32,-24 40,-20 Q35,-12 18,-10 Z" fill="#FF3B70"/>
-    <path d="M-25,12 Q-48,22 -55,18 Q-48,10 -20,8 Z" fill="#FF3B70"/>
-    <!-- Flying Droplets -->
-    <circle cx="48"  cy="-24" r="2.8" fill="#FF3B70"/>
-    <circle cx="58"  cy="-28" r="1.6" fill="#FF3B70"/>
-    <circle cx="-64" cy="20"  r="3"   fill="#FF3B70"/>
-    <circle cx="-72" cy="22"  r="1.5" fill="#FF3B70"/>
-  </g>
-</g>
-
-<!-- SPLASH 2: Violet Paint Splash Impact at x=400 (begins t=1s) -->
-<g transform="translate(400, 35)">
-  <g>
-    <animateTransform attributeName="transform" type="scale"
-      values="0; 0; 1.3; 1; 1; 0"
-      keyTimes="0; 0.05; 0.18; 0.25; 0.85; 0.95"
-      dur="4s" begin="1s" repeatCount="indefinite"/>
-    <animate attributeName="opacity"
-      values="0; 0; 0.95; 0.85; 0.85; 0"
-      keyTimes="0; 0.05; 0.14; 0.25; 0.85; 0.95"
-      dur="4s" begin="1s" repeatCount="indefinite"/>
-    
-    <!-- Paint Splash Core -->
-    <path d="M-12,-16 Q5,-26 20,-14 Q30,2 16,18 Q28,26 12,30 Q-4,34 -18,22 Q-30,24 -24,8 Q-32,-6 -18,-18 Z" fill="#7C4DFF"/>
-    <!-- Splatter Drips -->
-    <path d="M20,-14 Q45,-26 52,-20 Q44,-14 22,-8 Z" fill="#7C4DFF"/>
-    <path d="M-18,22 Q-42,34 -50,30 Q-44,22 -15,16 Z" fill="#7C4DFF"/>
-    <!-- Flying Droplets -->
-    <circle cx="60"  cy="-24" r="3" fill="#7C4DFF"/>
-    <circle cx="70"  cy="-28" r="1.8" fill="#7C4DFF"/>
-    <circle cx="-58" cy="34"  r="2.8" fill="#7C4DFF"/>
-  </g>
-</g>
-
-<!-- SPLASH 3: Cyan Paint Splash Impact at x=600 (begins t=2s) -->
-<g transform="translate(600, 35)">
-  <g>
-    <animateTransform attributeName="transform" type="scale"
-      values="0; 0; 1.3; 1; 1; 0"
-      keyTimes="0; 0.05; 0.18; 0.25; 0.85; 0.95"
-      dur="4s" begin="2s" repeatCount="indefinite"/>
-    <animate attributeName="opacity"
-      values="0; 0; 0.95; 0.85; 0.85; 0"
-      keyTimes="0; 0.05; 0.14; 0.25; 0.85; 0.95"
-      dur="4s" begin="2s" repeatCount="indefinite"/>
-    
-    <!-- Paint Splash Core -->
-    <path d="M-15,-12 Q2,-24 18,-10 Q32,4 18,16 Q26,26 10,28 Q-6,32 -16,20 Q-28,24 -22,10 Q-34,-4 -18,-16 Z" fill="#00D2FF"/>
-    <!-- Splatter Drips -->
-    <path d="M18,-10 Q42,-22 50,-18 Q42,-10 20,-6 Z" fill="#00D2FF"/>
-    <path d="M-16,20 Q-38,30 -46,26 Q-40,18 -12,14 Z" fill="#00D2FF"/>
-    <!-- Flying Droplets -->
-    <circle cx="58"  cy="-20" r="3.2" fill="#00D2FF"/>
-    <circle cx="68"  cy="-24" r="1.6" fill="#00D2FF"/>
-    <circle cx="-54" cy="28"  r="2.6" fill="#00D2FF"/>
-  </g>
-</g>
-
-<!-- SPLASH 4: Sunset Orange Paint Splash Impact at x=750 (begins t=3s) -->
-<g transform="translate(750, 35)">
-  <g>
-    <animateTransform attributeName="transform" type="scale"
-      values="0; 0; 1.3; 1; 1; 0"
-      keyTimes="0; 0.05; 0.18; 0.25; 0.85; 0.95"
-      dur="4s" begin="3s" repeatCount="indefinite"/>
-    <animate attributeName="opacity"
-      values="0; 0; 0.95; 0.85; 0.85; 0"
-      keyTimes="0; 0.05; 0.14; 0.25; 0.85; 0.95"
-      dur="4s" begin="3s" repeatCount="indefinite"/>
-    
-    <!-- Paint Splash Core -->
-    <path d="M-14,-14 Q4,-22 16,-12 Q28,2 14,16 Q24,24 8,28 Q-8,30 -16,18 Q-26,20 -20,6 Q-30,-8 -16,-16 Z" fill="#FF9F43"/>
-    <!-- Splatter Drips -->
-    <path d="M16,-12 Q38,-22 45,-18 Q38,-10 18,-6 Z" fill="#FF9F43"/>
-    <!-- Flying Droplets -->
-    <circle cx="52"  cy="-20" r="2.8" fill="#FF9F43"/>
-    <circle cx="60"  cy="-22" r="1.5" fill="#FF9F43"/>
-  </g>
-</g>
+<!-- Minimal Center Pulse Orb -->
+<circle cx="450" cy="12" r="3" fill="#00F5FF" filter="url(#softGlow)">
+  <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
+  <animate attributeName="r" values="2.5;3.5;2.5" dur="2.5s" repeatCount="indefinite"/>
+</circle>
+<circle cx="450" cy="12" r="1.2" fill="#FFFFFF"/>
 
 </svg>
