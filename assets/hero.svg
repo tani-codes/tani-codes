@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  hero.svg — Tanish AI Laboratory Hero Banner
-  Theme: Dark AI Research Lab + Glowing AI Neural Core Orb (AI version of moon effect) + Cyber Wave Floor
+  hero.svg — Tanish AI Laboratory Hero Banner (Spacious Bold Edition)
+  Theme: Dark AI Research Lab + Glowing AI Neural Core Orb + Cyber Wave Floor
   Palette: Deep Obsidian (#050816) · Neon Cyan (#00F5FF) · Electric Purple (#8B6FE8) · Mint (#00FF88)
   Author: Tanish Bandodkar
 -->
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="460" viewBox="0 0 1600 460">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="500" viewBox="0 0 1600 500">
 
 <defs>
 
@@ -18,12 +18,12 @@
 
   <!-- ── Electric Cyan / Purple Border Gradient ── -->
   <linearGradient id="borderGlow" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%"   stop-color="#00F5FF" stop-opacity="0.8"/>
-    <stop offset="50%"  stop-color="#8B6FE8" stop-opacity="0.5"/>
-    <stop offset="100%" stop-color="#00D2FF" stop-opacity="0.8"/>
+    <stop offset="0%"   stop-color="#00F5FF" stop-opacity="0.85"/>
+    <stop offset="50%"  stop-color="#8B6FE8" stop-opacity="0.60"/>
+    <stop offset="100%" stop-color="#00D2FF" stop-opacity="0.85"/>
   </linearGradient>
 
-  <!-- ── Glowing AI Core Orb (AI Version of Moon Effect) ── -->
+  <!-- ── Glowing AI Core Orb ── -->
   <radialGradient id="aiOrbGlow" cx="50%" cy="50%" r="50%">
     <stop offset="0%"   stop-color="#00F5FF" stop-opacity="0.95"/>
     <stop offset="40%"  stop-color="#8B6FE8" stop-opacity="0.70"/>
@@ -33,7 +33,7 @@
 
   <!-- ── White Name Glow ── -->
   <filter id="whiteGlow" x="-20%" y="-20%" width="140%" height="140%">
-    <feGaussianBlur stdDeviation="6" result="blur"/>
+    <feGaussianBlur stdDeviation="8" result="blur"/>
     <feMerge>
       <feMergeNode in="blur"/>
       <feMergeNode in="SourceGraphic"/>
@@ -51,7 +51,7 @@
 
   <!-- ── Glassmorphism Drop Shadow ── -->
   <filter id="glassShadow" x="-10%" y="-10%" width="120%" height="120%">
-    <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#00F5FF" flood-opacity="0.14"/>
+    <feDropShadow dx="0" dy="6" stdDeviation="14" flood-color="#00F5FF" flood-opacity="0.16"/>
   </filter>
 
 </defs>
@@ -59,86 +59,86 @@
 <!-- ══════════════════════════════════════════ -->
 <!--  DARK OBSIDIAN CANVAS BACKGROUND           -->
 <!-- ══════════════════════════════════════════ -->
-<rect width="1600" height="460" fill="url(#heroBg)" rx="16"/>
+<rect width="1600" height="500" fill="url(#heroBg)" rx="16"/>
 
 <!-- Cybernetic Grid Overlay -->
 <g stroke="#14213D" stroke-width="0.7" opacity="0.35">
-  <line x1="0" y1="90"  x2="1600" y2="90"/>
-  <line x1="0" y1="230" x2="1600" y2="230"/>
-  <line x1="0" y1="370" x2="1600" y2="370"/>
-  <line x1="250" y1="0" x2="250" y2="460"/>
-  <line x1="800" y1="0" x2="800" y2="460"/>
-  <line x1="1350" y1="0" x2="1350" y2="460"/>
+  <line x1="0" y1="100" x2="1600" y2="100"/>
+  <line x1="0" y1="250" x2="1600" y2="250"/>
+  <line x1="0" y1="400" x2="1600" y2="400"/>
+  <line x1="250" y1="0" x2="250" y2="500"/>
+  <line x1="800" y1="0" x2="800" y2="500"/>
+  <line x1="1350" y1="0" x2="1350" y2="500"/>
 </g>
 
 <!-- ══════════════════════════════════════════════════════════════ -->
 <!--  GLOWING AI NEURAL CORE ORB (RIGHT SIDE)                       -->
 <!-- ══════════════════════════════════════════════════════════════ -->
-<g transform="translate(1360, 110)">
+<g transform="translate(1380, 125)">
   <!-- Outer Glow Halo -->
-  <circle cx="0" cy="0" r="75" fill="url(#aiOrbGlow)" filter="url(#neonBlur)"/>
-  <circle cx="0" cy="0" r="42" fill="#00F5FF" opacity="0.85" filter="url(#neonBlur)">
-    <animate attributeName="r" values="40;46;40" dur="3s" repeatCount="indefinite"/>
+  <circle cx="0" cy="0" r="82" fill="url(#aiOrbGlow)" filter="url(#neonBlur)"/>
+  <circle cx="0" cy="0" r="46" fill="#00F5FF" opacity="0.85" filter="url(#neonBlur)">
+    <animate attributeName="r" values="44;50;44" dur="3s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="0" cy="0" r="18" fill="#FFF"/>
+  <circle cx="0" cy="0" r="20" fill="#FFF"/>
 
   <!-- Rotating Hologram Orbit Rings -->
-  <circle cx="0" cy="0" r="58" fill="none" stroke="#00F5FF" stroke-width="1.2" stroke-dasharray="10,8" opacity="0.65">
+  <circle cx="0" cy="0" r="64" fill="none" stroke="#00F5FF" stroke-width="1.2" stroke-dasharray="10,8" opacity="0.65">
     <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="18s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="0" cy="0" r="72" fill="none" stroke="#8B6FE8" stroke-width="1" stroke-dasharray="14,6" opacity="0.45">
+  <circle cx="0" cy="0" r="78" fill="none" stroke="#8B6FE8" stroke-width="1" stroke-dasharray="14,6" opacity="0.45">
     <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="24s" repeatCount="indefinite"/>
   </circle>
 
   <!-- Surrounding Synapse Nodes -->
-  <circle cx="58" cy="-20" r="4" fill="#00FF88" filter="url(#neonBlur)"/>
-  <circle cx="-52" cy="30" r="3.5" fill="#8B6FE8" filter="url(#neonBlur)"/>
-  <circle cx="20" cy="62" r="3" fill="#00F5FF" filter="url(#neonBlur)"/>
+  <circle cx="64" cy="-22" r="4.5" fill="#00FF88" filter="url(#neonBlur)"/>
+  <circle cx="-58" cy="34" r="4" fill="#8B6FE8" filter="url(#neonBlur)"/>
+  <circle cx="22" cy="68" r="3.5" fill="#00F5FF" filter="url(#neonBlur)"/>
 </g>
 
 <!-- ══════════════════════════════════════════════════════════════ -->
-<!--  UNCLUTTERED NEURAL NETWORK CONNECTIONS                         -->
+<!--  NEURAL NETWORK CONNECTIONS                                    -->
 <!-- ══════════════════════════════════════════════════════════════ -->
 <g stroke="#00D2FF" stroke-width="1" opacity="0.2">
-  <line x1="120" y1="120" x2="320" y2="70"  stroke-dasharray="4,4"/>
-  <line x1="320" y1="70"  x2="520" y2="120" stroke-dasharray="4,4"/>
-  <line x1="1080" y1="120" x2="1280" y2="70" stroke-dasharray="4,4"/>
+  <line x1="100" y1="130" x2="300" y2="75"  stroke-dasharray="4,4"/>
+  <line x1="300" y1="75"  x2="500" y2="130" stroke-dasharray="4,4"/>
+  <line x1="1100" y1="130" x2="1300" y2="75" stroke-dasharray="4,4"/>
 </g>
 
 <!-- Floating Synapse Nodes (Left) -->
-<circle cx="120"  cy="120" r="4" fill="#00F5FF" filter="url(#neonBlur)">
+<circle cx="100" cy="130" r="4.5" fill="#00F5FF" filter="url(#neonBlur)">
   <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
 </circle>
-<circle cx="320"  cy="70"  r="5" fill="#8B6FE8" filter="url(#neonBlur)">
+<circle cx="300" cy="75" r="5.5" fill="#8B6FE8" filter="url(#neonBlur)">
   <animate attributeName="opacity" values="1;0.3;1" dur="2.5s" repeatCount="indefinite"/>
 </circle>
 
-<!-- Background Code Snippet Watermarks -->
-<g font-family="'Courier New', Courier, monospace" font-size="11" fill="#00F5FF" opacity="0.10">
-  <text x="40"   y="400">model.fit(X_train, y_train) // val_accuracy: 98.45%</text>
-  <text x="1260" y="400">deep_learning_pipeline() --status: active</text>
+<!-- Background Code Watermarks -->
+<g font-family="'Courier New', Courier, monospace" font-size="11.5" fill="#00F5FF" opacity="0.10">
+  <text x="40"   y="435">model.fit(X_train, y_train) // val_accuracy: 98.45%</text>
+  <text x="1240" y="435">deep_learning_pipeline() --status: active</text>
 </g>
 
 <!-- ══════════════════════════════════════════════════════════════ -->
-<!--  CENTERED SPACIOUS GLASSMORPHISM PANEL                         -->
+<!--  CENTERED SPACIOUS BOLD GLASSMORPHISM PANEL                    -->
 <!-- ══════════════════════════════════════════════════════════════ -->
-<g transform="translate(250, 50)" filter="url(#glassShadow)">
+<g transform="translate(220, 45)" filter="url(#glassShadow)">
   <!-- Outer Glass Frame -->
-  <rect width="1100" height="360" rx="18" fill="#0B132B" fill-opacity="0.85" stroke="url(#borderGlow)" stroke-width="1.5"/>
+  <rect width="1160" height="390" rx="20" fill="#0B132B" fill-opacity="0.88" stroke="url(#borderGlow)" stroke-width="1.8"/>
 
   <!-- Corner Tech Accent Lines -->
-  <path d="M12,0 L30,0 M0,12 L0,30" stroke="#00F5FF" stroke-width="2.5" fill="none"/>
-  <path d="M1088,0 L1070,0 M1100,12 L1100,30" stroke="#00F5FF" stroke-width="2.5" fill="none"/>
-  <path d="M12,360 L30,360 M0,348 L0,330" stroke="#00F5FF" stroke-width="2.5" fill="none"/>
-  <path d="M1088,360 L1070,360 M1100,348 L1100,330" stroke="#00F5FF" stroke-width="2.5" fill="none"/>
+  <path d="M14,0 L32,0 M0,14 L0,32" stroke="#00F5FF" stroke-width="2.8" fill="none"/>
+  <path d="M1146,0 L1128,0 M1160,14 L1160,32" stroke="#00F5FF" stroke-width="2.8" fill="none"/>
+  <path d="M14,390 L32,390 M0,376 L0,358" stroke="#00F5FF" stroke-width="2.8" fill="none"/>
+  <path d="M1146,390 L1128,390 M1160,376 L1160,358" stroke="#00F5FF" stroke-width="2.8" fill="none"/>
 
-  <!-- Top Status Badge (WIDENED TO 275px TO PREVENT TEXT OVERFLOW) -->
-  <g transform="translate(412, 26)">
-    <rect width="275" height="28" rx="8" fill="#05261E" stroke="#00FF88" stroke-width="1"/>
-    <circle cx="16" cy="14" r="4" fill="#00FF88">
+  <!-- Top Status Badge -->
+  <g transform="translate(432, 28)">
+    <rect width="296" height="30" rx="8" fill="#05261E" stroke="#00FF88" stroke-width="1.2"/>
+    <circle cx="16" cy="15" r="4.5" fill="#00FF88">
       <animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite"/>
     </circle>
-    <text x="30" y="19" font-family="'Courier New', monospace" font-size="10.5" font-weight="700" fill="#00FF88" letter-spacing="1">
+    <text x="32" y="20" font-family="'Courier New', monospace" font-size="11" font-weight="700" fill="#00FF88" letter-spacing="1">
       STATUS: BUILDING ML &amp; DL PROJECTS
     </text>
   </g>
@@ -148,40 +148,40 @@
   <!-- ══════════════════════════════════════════ -->
 
   <!-- Main Name Header -->
-  <text x="550" y="145"
+  <text x="580" y="155"
         font-family="'Segoe UI', sans-serif"
-        font-size="64" font-weight="900"
+        font-size="72" font-weight="900"
         fill="#FFFFFF" text-anchor="middle"
-        letter-spacing="3" filter="url(#whiteGlow)">
+        letter-spacing="3.5" filter="url(#whiteGlow)">
     TANISH BANDODKAR
   </text>
 
   <!-- Subtitle 1: Roles -->
-  <text x="550" y="215"
+  <text x="580" y="235"
         font-family="'Segoe UI', sans-serif"
-        font-size="23" font-weight="700"
+        font-size="25" font-weight="700"
         fill="#00F5FF" text-anchor="middle"
-        letter-spacing="1">
+        letter-spacing="1.2">
     Software Developer <tspan fill="#8B6FE8">•</tspan> ML / DL Engineer <tspan fill="#8B6FE8">•</tspan> Data Analyst
   </text>
 
-  <!-- Subtitle 2: Tagline -->
-  <text x="550" y="260"
+  <!-- Subtitle 2: Tagline Quote -->
+  <text x="580" y="285"
         font-family="'Courier New', Courier, monospace"
-        font-size="15" font-style="italic"
+        font-size="17" font-style="italic" font-weight="700"
         fill="#00F5FF" text-anchor="middle"
         letter-spacing="1.5">
     "Craving for reality in the world of AI."
   </text>
 
   <!-- Bottom Accent Line -->
-  <line x1="350" y1="300" x2="750" y2="300" stroke="url(#borderGlow)" stroke-width="1.5" opacity="0.6"/>
+  <line x1="360" y1="330" x2="800" y2="330" stroke="url(#borderGlow)" stroke-width="1.8" opacity="0.75"/>
 
 </g>
 
 <!-- ══════════════════════════════════════════════════════════════ -->
-<!--  BOTTOM CYBER WAVE FLOOR (Matching Niharika's Wave Style)     -->
+<!--  BOTTOM CYBER WAVE FLOOR                                       -->
 <!-- ══════════════════════════════════════════════════════════════ -->
-<path d="M0,410 Q400,450 800,410 Q1200,370 1600,410 L1600,460 L0,460 Z" fill="#070D1F" opacity="0.9"/>
+<path d="M0,450 Q400,490 800,450 Q1200,410 1600,450 L1600,500 L0,500 Z" fill="#070D1F" opacity="0.9"/>
 
 </svg>

@@ -17,6 +17,14 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/tani-codes" target="_blank"><img src="https://img.shields.io/badge/GitHub-tani--codes-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+  &nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/tanishbandodkar/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Tanish%20Bandodkar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  &nbsp;&nbsp;
+  <a href="mailto:bandodkartanish@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Email-bandodkartanish%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+</p>
+
+<p align="center">
   <img src="./assets/splash.svg" width="100%" alt="Section Divider">
 </p>
 
@@ -208,3 +216,15 @@ tanish = {
 </p>
 
 </div>
+
+<br>
+
+<p align="center">
+  <img src="./assets/splash.svg" width="100%" alt="Section Divider">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="./assets/footer.svg" width="100%" alt="Tanish Bandodkar Footer Banner">
+</p>
