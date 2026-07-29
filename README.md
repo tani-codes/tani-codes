@@ -8,6 +8,14 @@
   <img src="./assets/info.svg" width="100%" alt="Tanish Bandodkar — Profile Badges">
 </p>
 
+<p align="center">
+  <a href="https://github.com/tani-codes" target="_blank"><img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+  &nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/tanishbandodkar/" target="_blank"><img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  &nbsp;&nbsp;
+  <a href="mailto:bandodkartanish@gmail.com" target="_blank"><img src="https://img.shields.io/badge/GMAIL-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+</p>
+
 <br>
 
 ```python
@@ -139,7 +147,7 @@ tanish = {
 <br>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=tani-codes&theme=tokyonight&hide_border=true" width="97%" alt="GitHub Streak Stats" />
+  <img src="https://streak-stats.demolab.com/?user=tani-codes&theme=tokyonight&hide_border=true" width="97%" alt="GitHub Streak Stats" />
 </p>
 
 <br>
