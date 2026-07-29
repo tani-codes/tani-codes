@@ -171,14 +171,14 @@ tanish = {
 
 <!-- Real-time GitHub Streak Card -->
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=tani-codes&theme=tokyonight&hide_border=true" width="97%" alt="GitHub Streak Stats" />
+  <img src="https://streak-stats.demolab.com/?user=tani-codes&theme=tokyonight&hide_border=true" alt="GitHub Streak Stats" />
 </p>
 
 <br>
 
 <!-- Real-time Contribution Activity Graph -->
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=tani-codes&theme=tokyo-night&hide_border=true" width="97%" alt="GitHub Contribution Activity Graph" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=tani-codes&theme=tokyo-night&hide_border=true" alt="GitHub Contribution Activity Graph" />
 </p>
 
 <p align="center">
